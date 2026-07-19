@@ -93,11 +93,12 @@ def train_models(
     random_state: int = 42,
     test_size: float = 0.25,
     thresholds: DecisionThresholds | None = None,
-) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+) -> tuple[pd.DataFrame, pd.DataFrame, dict, pd.DataFrame]:
     output_dir.mkdir(parents=True, exist_ok=True)
     thresholds = thresholds or DecisionThresholds()
     metric_rows = []
     prediction_rows = []
+    split_audit_rows = []
     manifest = {
         "feature_type": feature_type,
         "thresholds": asdict(thresholds),
@@ -115,6 +116,7 @@ def train_models(
             continue
 
         train, test = grouped_train_test_split(antibiotic_rows, random_state, test_size)
+        overlap = sorted(set(train["group"].astype(str)) & set(test["group"].astype(str)))
         if train["y"].nunique() < 2 or test["y"].nunique() < 2:
             manifest["skipped"][antibiotic] = "grouped split lost one class"
             print(f"Skipping {antibiotic}: {manifest['skipped'][antibiotic]}")
@@ -138,6 +140,7 @@ def train_models(
                 "test_rows": len(test),
                 "train_groups": train["group"].nunique(),
                 "test_groups": test["group"].nunique(),
+                "overlapping_groups": len(overlap),
                 "resistant_train": int((train["y"] == 1).sum()),
                 "susceptible_train": int((train["y"] == 0).sum()),
                 "resistant_test": int((test["y"] == 1).sum()),
@@ -145,6 +148,20 @@ def train_models(
             }
         )
         metric_rows.append(metrics)
+        split_audit_rows.append(
+            {
+                "antibiotic": antibiotic,
+                "group_column": "cgmlst_hc100" if "cgmlst_hc100" in antibiotic_rows.columns else "genome_id",
+                "train_rows": len(train),
+                "test_rows": len(test),
+                "train_genomes": train["genome_id"].nunique(),
+                "test_genomes": test["genome_id"].nunique(),
+                "train_groups": int(train["group"].nunique()),
+                "test_groups": int(test["group"].nunique()),
+                "overlapping_groups": len(overlap),
+                "overlap_examples": ", ".join(overlap[:10]),
+            }
+        )
 
         for row, probability in zip(test.itertuples(index=False), probabilities):
             decision, confidence = classify_probability(float(probability), thresholds)
@@ -173,7 +190,7 @@ def train_models(
         }
         print(f"Trained {antibiotic}")
 
-    return pd.DataFrame(metric_rows), pd.DataFrame(prediction_rows), manifest
+    return pd.DataFrame(metric_rows), pd.DataFrame(prediction_rows), manifest, pd.DataFrame(split_audit_rows)
 
 
 def write_manifest(manifest: dict, path: Path, root: Path) -> None:

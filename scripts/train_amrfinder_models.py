@@ -42,6 +42,8 @@ def main() -> None:
             "reports/metrics/amrfinder_heldout_predictions.csv",
             "--manifest-out",
             "models/amrfinder/manifest.json",
+            "--split-audit-out",
+            "reports/metrics/amrfinder_split_audit.csv",
             "--likely-to-work-max",
             str(args.likely_to_work_max),
             "--likely-to-fail-min",

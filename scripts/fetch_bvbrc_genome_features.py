@@ -37,6 +37,19 @@ def fetch_features_for_genome(session: requests.Session, genome_id: str, limit: 
     return rows
 
 
+def write_checkpoint(output_path: Path, existing: pd.DataFrame, rows: list[dict]) -> None:
+    new_frame = pd.DataFrame(rows)
+    if not existing.empty and not new_frame.empty:
+        frame = pd.concat([existing, new_frame], ignore_index=True, sort=False)
+    elif not existing.empty:
+        frame = existing
+    else:
+        frame = new_frame
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    frame.to_csv(output_path, index=False)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Fetch BV-BRC genome_feature annotations for the current E. coli cohort."
@@ -44,6 +57,7 @@ def main() -> None:
     parser.add_argument("--metadata", type=Path, default=METADATA_PATH)
     parser.add_argument("--out", type=Path, default=OUT_PATH)
     parser.add_argument("--limit-per-genome", type=int, default=25000)
+    parser.add_argument("--checkpoint-every", type=int, default=10)
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
 
@@ -72,6 +86,8 @@ def main() -> None:
             rows.extend(fetched)
         else:
             rows.append({"genome_id": genome_id, "fetch_error": "no_features_returned"})
+        if args.checkpoint_every > 0 and index % args.checkpoint_every == 0:
+            write_checkpoint(args.out, existing, rows)
 
     new_frame = pd.DataFrame(rows)
     if not existing.empty and not new_frame.empty:

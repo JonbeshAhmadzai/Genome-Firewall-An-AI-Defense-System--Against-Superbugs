@@ -77,18 +77,33 @@ These are useful for genome-to-feature conversion, but they are not by themselve
 
 ## Major Improvement Areas
 
-The current 53-genome cohort is a working demo cohort, not a strong training dataset. The cleaned BV-BRC label table already has `2,762` usable lab-labeled rows across `1,105` genomes, so the highest-impact next step is scaling from `50` FASTA-backed genomes to a few hundred.
+The local cohort has now been synchronized against the manually downloaded FASTAs. The cleaned BV-BRC label table has `2,762` usable lab-labeled rows across `1,105` genomes; the current local cohort contains `497` quality-filtered FASTA-backed genomes and `1,136` lab-label rows across six antibiotics. The AMRFinderPlus TSV generation is still catching up, so the next model retrain should happen after those annotations finish.
 
 Priority improvements:
 
-- Scale the cohort: target `300-800` quality-filtered FASTA-backed genomes for the hackathon model if time allows.
-- Use auto-selected balanced antibiotics instead of hard-coding a small list.
+- Keep the cohort synchronized from existing FASTAs using `scripts/prepare_ecoli_cohort.py --use-existing-fasta`.
+- Retain auto-selected balanced antibiotics instead of hard-coding a small list.
 - Run AMRFinderPlus over the larger FASTA set in WSL.
 - Retrain the AMRFinderPlus models and regenerate reports.
 - Improve split quality with `mash`, `fastANI`, or `mmseqs2` clustering instead of relying only on BV-BRC `cgmlst_hc100`.
 - Expand target-presence verification beyond BV-BRC annotation markers by supporting Bakta/Prokka GFF inputs for uploaded genomes.
 - Improve no-call calibration with a larger calibration split.
 - Add more drug-specific evidence logic, so explanations emphasize resistance mechanisms relevant to each antibiotic.
+
+## Strong-Submission Readiness
+
+The challenge's strong-submission criteria are addressed in the design, but several still need stronger evidence before submission:
+
+| Criterion | Current status | Remaining work |
+| --- | --- | --- |
+| One species and a few antibiotics | E. coli scope is enforced; three antibiotics currently have trained models and four are configured for target checks | Finish the larger cohort and retain only drugs with both reliable classes and enough lab labels |
+| Calibrated confidence and no-call | Sigmoid calibration, Brier score, reliability plots, and configurable no-call thresholds are implemented | Recalibrate with a larger validation/calibration split and report calibration error; current test sets have only seven rows per drug |
+| Honest generalization | `cgmlst_hc100` groups are kept on one side of the split; training now writes a split-audit CSV with overlap counts | Add per-group/generalization reporting; sequence-similarity clustering would be stronger |
+| Honest explanations | AMRFinderPlus hits and target-gate matches are shown in reports; AMRFinderPlus report categories are now drug-specific | Keep expanding curated relevant AMR classes and mutation interpretation per antibiotic |
+| Molecular-target compatibility | Target markers are checked from BV-BRC annotations for the current metadata genomes | Refresh target annotations after the cohort is expanded and add an annotation path for uploaded FASTAs |
+| Defensive scope and oversight | E. coli-only scope, lab-confirmation warning, and no organism-design functionality are present | Keep these limits visible in the demo and presentation |
+
+Current data-processing warning: `data/raw/fasta/` contains `500` FASTA files and the synchronized cohort metadata now contains `497` quality-filtered genomes. AMRFinderPlus TSVs are still incomplete while the WSL annotation run continues, so only genomes with completed TSVs can be used in the next AMRFinderPlus feature build.
 
 ## Model Architecture
 
@@ -99,6 +114,7 @@ Current behavior:
 - Merges labels, genome metadata, and a feature matrix by `genome_id`.
 - Trains one binary model per antibiotic.
 - Uses `cgmlst_hc100` as the grouped split key when available, falling back to `genome_id`.
+- Writes split-audit files such as `reports/metrics/amrfinder_split_audit.csv` with train/test group counts and any group overlap.
 - Skips antibiotics with insufficient class balance.
 - Uses balanced logistic regression wrapped in sigmoid calibration.
 - Saves one model artifact per antibiotic plus a manifest.
@@ -205,17 +221,17 @@ Current implementation:
 
 Configured target classes:
 
-- `cefotaxime` and `ampicillin`: penicillin-binding proteins.
+- `cefotaxime`, `ceftazidime`, `ampicillin`, and `amoxicillin`: penicillin-binding proteins.
 - `gentamicin`: 30S ribosomal subunit / 16S rRNA A-site markers.
 - `chloramphenicol`: 50S ribosomal subunit / 23S rRNA peptidyl-transferase center markers.
 
 The current target marker YAML cites public references, including NCBI Bookshelf pages and peer-reviewed review articles. The markers are class-level compatibility checks, not resistance mechanisms and not proof of susceptibility.
 
-Current target-module outputs for the local 50-genome cohort:
+Current target-module outputs for the synchronized 497-genome cohort:
 
-- BV-BRC genome feature rows fetched: `257,546`
-- Target-presence rows built: `200`
-- Target status: all 50 current genomes have configured target markers present for `ampicillin`, `cefotaxime`, `chloramphenicol`, and `gentamicin`
+- BV-BRC genome feature rows fetched: `2,657,869`
+- Target-presence rows built: `2,982`
+- Target status: `496` genomes have configured target markers present for each of `ampicillin`, `amoxicillin`, `cefotaxime`, `ceftazidime`, `chloramphenicol`, and `gentamicin`; `1` genome has unknown annotation status for each drug
 
 Current limitation:
 
@@ -293,6 +309,12 @@ This can download several GB of FASTA data and makes the WSL AMRFinderPlus step 
 
 ```bash
 conda run -n genome python scripts/prepare_ecoli_cohort.py --max-genomes 700 --target-genomes 250 --top-antibiotics 5
+```
+
+Use already downloaded browser FASTAs without redownloading:
+
+```bash
+conda run -n genome python scripts/prepare_ecoli_cohort.py --use-existing-fasta --skip-fasta --max-genomes 1200 --target-genomes 500 --top-antibiotics 6
 ```
 
 Skip FASTA download when only refreshing metadata/labels:
@@ -404,9 +426,9 @@ The k-mer baseline is not the final scientific approach. It exists to validate p
 
 Current prepared cohort:
 
-- Quality-filtered FASTA-backed genomes selected for the starter cohort: `50`
-- FASTA files currently present on disk: `53` (`50` are used by the current metadata; extras are harmless leftovers from previous runs)
-- Cohort labels: `195`
+- Quality-filtered FASTA-backed genomes currently represented in metadata: `497`
+- FASTA files currently present on disk: `500` (`269` had completed AMRFinderPlus TSVs at last count; the WSL AMRFinderPlus run may increase this)
+- Cohort labels: `1,136`
 - Cohort labels file: `data/processed/ecoli_cohort_labels.csv`
 - Cohort metadata file: `data/processed/ecoli_genome_metadata.csv`
 - Skipped FASTA log: `reports/metrics/ecoli_skipped_fasta.csv`
@@ -472,7 +494,7 @@ Current AMRFinderPlus model path status:
 - Target-presence table exists at `data/interim/target_presence.csv`.
 - AMRFinderPlus prediction report now includes target-gate columns: `target_gate_status`, `target_gate_reason`, `target_present`, `matched_target_markers`, and `molecular_targets`.
 
-Current AMRFinderPlus metrics for the 53-genome local cohort:
+Current AMRFinderPlus metrics from the previous 50-genome training run, before the 497-genome cohort sync:
 
 | Antibiotic | Balanced accuracy | Resistant recall | Susceptible recall | F1 | AUROC | PR-AUC | No-call rate |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -480,7 +502,7 @@ Current AMRFinderPlus metrics for the 53-genome local cohort:
 | chloramphenicol | 0.500 | 1.000 | 0.000 | 0.727 | 0.833 | 0.917 | 0.143 |
 | gentamicin | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 |
 
-These AMRFinderPlus metrics are from a small local cohort and should not be treated as final scientific performance. Rerun `scripts/train_amrfinder_models.py`, `scripts/predict_amrfinder_models.py`, and the AMRFinderPlus report command whenever the cohort changes.
+These AMRFinderPlus metrics are from a small local cohort and should not be treated as final scientific performance. The gentamicin result has zero confident held-out calls, so its apparent perfect score is not evidence of a reliable predictor. Rerun `scripts/train_amrfinder_models.py`, `scripts/predict_amrfinder_models.py`, and the AMRFinderPlus report command whenever the cohort changes.
 
 ## Safety Notes
 

@@ -92,8 +92,8 @@ def write_model_card(metrics: pd.DataFrame, predictions: pd.DataFrame, model_car
     no_call_columns = ["antibiotic", "no_call_rate"]
 
     if "amrfinder" in feature_source.lower():
-        feature_limitation = "- AMRFinderPlus annotations are used as features, but the local cohort is still small and should be rerun after all TSVs finish."
-        explanation_line = "- Honest explanations: AMRFinderPlus features support known gene/mutation evidence; statistical model associations are still not proof of biological causality."
+        feature_limitation = "- AMRFinderPlus annotations are used as features; regenerate this card after all TSVs finish so metrics reflect the full synchronized cohort."
+        explanation_line = "- Honest explanations: drug-specific AMRFinderPlus hits are reported separately from statistical model associations; statistical associations are not proof of biological causality."
     else:
         feature_limitation = "- Current scores are not submission-quality because the temporary baseline is not AMRFinderPlus-based."
         explanation_line = "- Honest explanations: current k-mer evidence is marked as statistical association only; AMRFinderPlus features will support known gene/mutation evidence."
@@ -129,7 +129,7 @@ def write_model_card(metrics: pd.DataFrame, predictions: pd.DataFrame, model_car
         "## Responsibility Requirements",
         "",
         "- Defensive by construction: predicts resistance that may already exist; does not generate or suggest organism changes.",
-        "- Honest generalization: grouped split uses `cgmlst_hc100` when available.",
+        "- Honest generalization: grouped split uses `cgmlst_hc100` when available; training writes a split-audit CSV with train/test group overlap counts.",
         "- Calibrated confidence: model uses sigmoid calibration and reports Brier score plus reliability plots.",
         "- No-call option: uncertainty is surfaced as a first-class output.",
         explanation_line,
@@ -138,8 +138,8 @@ def write_model_card(metrics: pd.DataFrame, predictions: pd.DataFrame, model_car
         "## Limitations",
         "",
         feature_limitation,
-        "- Small local cohort means confidence and generalization estimates are unstable.",
-        "- Target gate currently enforces configured species/drug scope and assumes conserved targets for supported E. coli drugs; final version should verify target presence from genome annotation.",
+        "- Confidence and generalization estimates are unstable until the AMRFinderPlus run covers the synchronized FASTA-backed cohort.",
+        "- Target gate verifies configured target markers from BV-BRC genome annotations when `data/interim/target_presence.csv` is refreshed for the current cohort; uploaded FASTAs still need an annotation path.",
     ]
     model_card_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 

@@ -23,6 +23,7 @@ def main() -> None:
     parser.add_argument("--metrics-out", type=Path, default=ROOT / "reports" / "metrics" / "model_metrics.csv")
     parser.add_argument("--predictions-out", type=Path, default=ROOT / "reports" / "metrics" / "heldout_predictions.csv")
     parser.add_argument("--manifest-out", type=Path, default=ROOT / "models" / "genome_firewall" / "manifest.json")
+    parser.add_argument("--split-audit-out", type=Path, default=ROOT / "reports" / "metrics" / "split_audit.csv")
     parser.add_argument("--min-class-count", type=int, default=8)
     parser.add_argument("--likely-to-work-max", type=float, default=0.30)
     parser.add_argument("--likely-to-fail-min", type=float, default=0.70)
@@ -37,7 +38,7 @@ def main() -> None:
         features_path=args.features,
         feature_prefix=args.feature_prefix,
     )
-    metrics, predictions, manifest = train_models(
+    metrics, predictions, manifest, split_audit = train_models(
         table=table,
         feature_columns=feature_columns,
         output_dir=args.output_dir,
@@ -51,12 +52,15 @@ def main() -> None:
 
     args.metrics_out.parent.mkdir(parents=True, exist_ok=True)
     args.predictions_out.parent.mkdir(parents=True, exist_ok=True)
+    args.split_audit_out.parent.mkdir(parents=True, exist_ok=True)
     metrics.to_csv(args.metrics_out, index=False)
     predictions.to_csv(args.predictions_out, index=False)
+    split_audit.to_csv(args.split_audit_out, index=False)
     write_manifest(manifest, args.manifest_out, ROOT)
 
     print(f"Wrote {args.metrics_out}")
     print(f"Wrote {args.predictions_out}")
+    print(f"Wrote {args.split_audit_out}")
     print(f"Wrote {args.manifest_out}")
 
 

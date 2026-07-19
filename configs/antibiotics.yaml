@@ -107,3 +107,57 @@ antibiotics:
     resistance_evidence_examples:
       - beta-lactamase genes
       - altered porins
+  amoxicillin:
+    class: aminopenicillin
+    relevant_amr_classes:
+      - BETA-LACTAM
+    primary_targets:
+      - penicillin-binding proteins
+    target_presence_rule: annotation_markers
+    target_confidence: curated_class_level
+    target_sources:
+      - https://www.ncbi.nlm.nih.gov/books/NBK545311/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6268044/
+    target_markers:
+      genes:
+        - ftsI
+        - mrdA
+        - mrcA
+        - mrcB
+        - dacA
+        - dacB
+      product_keywords:
+        - penicillin-binding protein
+        - peptidoglycan transpeptidase
+        - transglycosylase/transpeptidase
+        - d-alanyl-d-alanine carboxypeptidase
+    resistance_evidence_examples:
+      - beta-lactamase genes
+      - altered porins
+  ceftazidime:
+    class: third-generation cephalosporin
+    relevant_amr_classes:
+      - BETA-LACTAM
+    primary_targets:
+      - penicillin-binding proteins
+    target_presence_rule: annotation_markers
+    target_confidence: curated_class_level
+    target_sources:
+      - https://www.ncbi.nlm.nih.gov/books/NBK545311/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6268044/
+    target_markers:
+      genes:
+        - ftsI
+        - mrdA
+        - mrcA
+        - mrcB
+        - dacA
+        - dacB
+      product_keywords:
+        - penicillin-binding protein
+        - peptidoglycan transpeptidase
+        - transglycosylase/transpeptidase
+        - d-alanyl-d-alanine carboxypeptidase
+    resistance_evidence_examples:
+      - beta-lactamase genes
+      - altered porins

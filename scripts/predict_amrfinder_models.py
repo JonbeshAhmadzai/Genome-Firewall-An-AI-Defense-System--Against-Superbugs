@@ -23,6 +23,11 @@ OUT_PATH = ROOT / "reports" / "metrics" / "amrfinder_cohort_predictions.csv"
 ANTIBIOTICS_PATH = ROOT / "configs" / "antibiotics.yaml"
 
 
+KNOWN_EVIDENCE = "known drug-relevant AMR gene or DNA change detected"
+STATISTICAL_EVIDENCE = "statistical association only; no drug-relevant AMRFinderPlus hit"
+NO_SIGNAL_EVIDENCE = "no known AMRFinderPlus AMR signal detected"
+
+
 def summarize_evidence(evidence: pd.DataFrame, antibiotics: dict) -> pd.DataFrame:
     if evidence.empty:
         return pd.DataFrame(
@@ -72,6 +77,23 @@ def summarize_evidence(evidence: pd.DataFrame, antibiotics: dict) -> pd.DataFram
     return summary
 
 
+def assign_drug_specific_evidence_category(report: pd.DataFrame) -> pd.Series:
+    supporting_hits = report.get("supporting_amr_hits", pd.Series("", index=report.index)).fillna("").astype(str)
+    all_hits = report.get("all_amr_hits", pd.Series("", index=report.index)).fillna("").astype(str)
+
+    return pd.Series(
+        [
+            KNOWN_EVIDENCE
+            if supporting.strip()
+            else STATISTICAL_EVIDENCE
+            if observed.strip()
+            else NO_SIGNAL_EVIDENCE
+            for supporting, observed in zip(supporting_hits, all_hits)
+        ],
+        index=report.index,
+    )
+
+
 def main() -> None:
     features = pd.read_csv(FEATURES_PATH)
     evidence = pd.read_csv(EVIDENCE_PATH) if EVIDENCE_PATH.exists() else pd.DataFrame()
@@ -89,6 +111,7 @@ def main() -> None:
     report["supporting_amr_hits"] = report["supporting_amr_hits"].fillna("")
     report["supporting_amr_classes"] = report["supporting_amr_classes"].fillna("")
     report["all_amr_hits"] = report["all_amr_hits"].fillna("")
+    report["evidence_category"] = assign_drug_specific_evidence_category(report)
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     report.to_csv(OUT_PATH, index=False)
     print(f"Wrote {OUT_PATH}")

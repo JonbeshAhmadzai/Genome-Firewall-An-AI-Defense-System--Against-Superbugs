@@ -139,6 +139,12 @@ def choose_balanced_genomes(labels: pd.DataFrame, max_genomes: int) -> list[str]
     return selected
 
 
+def existing_fasta_ids() -> set[str]:
+    if not FASTA_DIR.exists():
+        return set()
+    return {path.stem for path in FASTA_DIR.glob("*.fna") if path.stat().st_size > 0}
+
+
 def download_fasta(genome_id: str, output_path: Path) -> None:
     if output_path.exists() and output_path.stat().st_size > 0:
         return
@@ -171,10 +177,22 @@ def main() -> None:
     parser.add_argument("--antibiotics", help="Comma-separated antibiotics. Defaults to auto-selected balanced drugs.")
     parser.add_argument("--top-antibiotics", type=int, default=5)
     parser.add_argument("--skip-fasta", action="store_true")
+    parser.add_argument(
+        "--use-existing-fasta",
+        action="store_true",
+        help="Build the cohort only from FASTA files already present in data/raw/fasta.",
+    )
     args = parser.parse_args()
 
     labels = pd.read_csv(LABELS_PATH)
     labels["genome_id"] = labels["genome_id"].astype(str)
+    if args.use_existing_fasta:
+        fasta_ids = existing_fasta_ids()
+        print(f"Existing non-empty FASTA files: {len(fasta_ids)}", flush=True)
+        labels = labels[labels["genome_id"].isin(fasta_ids)].copy()
+        if labels.empty:
+            raise SystemExit("No BV-BRC labels match existing FASTA files in data/raw/fasta.")
+
     selected_antibiotics = choose_antibiotics(labels, args.antibiotics, args.top_antibiotics)
     print(f"Selected antibiotics: {', '.join(selected_antibiotics)}", flush=True)
     labels = labels[labels["antibiotic"].isin(selected_antibiotics)].copy()
@@ -190,7 +208,15 @@ def main() -> None:
 
     available_ids = selected_ids[: args.target_genomes]
     skipped_rows: list[dict[str, str]] = []
-    if not args.skip_fasta:
+    if args.use_existing_fasta:
+        fasta_ids = existing_fasta_ids()
+        available_ids = [genome_id for genome_id in selected_ids if genome_id in fasta_ids][: args.target_genomes]
+        missing_after_quality = [genome_id for genome_id in selected_ids if genome_id not in fasta_ids]
+        skipped_rows.extend(
+            {"genome_id": genome_id, "reason": "quality-passing metadata but local FASTA missing"}
+            for genome_id in missing_after_quality
+        )
+    elif not args.skip_fasta:
         available_ids = []
         for index, genome_id in enumerate(selected_ids, start=1):
             print(f"Downloading FASTA {index}/{len(selected_ids)}: {genome_id}", flush=True)
