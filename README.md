@@ -336,6 +336,30 @@ Build AMRFinderPlus gene/mutation features from the annotation TSVs:
 conda run -n genome python scripts/build_amrfinder_features.py
 ```
 
+Build an interpretable reduced AMRFinderPlus training matrix:
+
+```bash
+conda run -n genome python scripts/build_refined_amrfinder_features.py
+```
+
+This keeps the raw AMRFinderPlus evidence table unchanged and writes a separate
+`data/interim/ecoli_amrfinder_refined_features.csv` matrix with `refined_`
+columns. It removes constant/singleton source features, excludes AMR classes
+outside the configured drug scope, collapses allele-level markers into
+class/subclass/family features, and writes an audit catalogue plus manifest.
+Use it with the generic trainer as follows:
+
+```bash
+conda run -n genome python scripts/train_models.py \
+  --features data/interim/ecoli_amrfinder_refined_features.csv \
+  --feature-prefix refined_ \
+  --feature-type amrfinderplus_refined_biological_aggregates
+```
+
+The reduced CSV is useful for exploratory training and pipeline wiring. For a
+final held-out evaluation, fit any prevalence or label-driven selection inside
+each grouped training fold rather than once across the whole cohort.
+
 Fetch BV-BRC genome annotations for target compatibility checks:
 
 ```bash
