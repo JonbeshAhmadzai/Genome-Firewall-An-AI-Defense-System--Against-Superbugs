@@ -64,10 +64,17 @@ def train_target(
     species: str,
     antibiotic: str,
     random_state: int = 42,
+    test_size: float = 0.20,
+    calibration_size: float = 0.20,
 ) -> dict[str, object]:
     """Fit, calibrate, and save a single target model with a split receipt."""
 
-    assignment: SplitAssignment = grouped_three_way_split(target_frame, random_state=random_state)
+    assignment: SplitAssignment = grouped_three_way_split(
+        target_frame,
+        test_size=test_size,
+        calibration_size=calibration_size,
+        random_state=random_state,
+    )
     split = assignment.frame
     excluded = {"genome_id", "species", "antibiotic", "phenotype", "y", "homology_group_id", "split", "_original_index"}
     feature_columns = [

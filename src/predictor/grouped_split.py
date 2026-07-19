@@ -14,6 +14,8 @@ class SplitAssignment:
     frame: pd.DataFrame
     group_column: str
     random_state: int
+    test_size: float = 0.20
+    calibration_size: float = 0.20
 
     @property
     def train(self) -> pd.DataFrame:
@@ -96,7 +98,7 @@ def grouped_three_way_split(
             if left < right and groups_by_split[left] & groups_by_split[right]:
                 raise RuntimeError(f"Genetic groups overlap between {left} and {right}")
 
-    return SplitAssignment(result, group_column, random_state)
+    return SplitAssignment(result, group_column, random_state, test_size, calibration_size)
 
 
 def split_receipt(assignment: SplitAssignment) -> dict[str, object]:
@@ -106,6 +108,11 @@ def split_receipt(assignment: SplitAssignment) -> dict[str, object]:
     return {
         "group_column": assignment.group_column,
         "random_state": assignment.random_state,
+        "requested_fractions": {
+            "train": round(1.0 - assignment.test_size - assignment.calibration_size, 6),
+            "calibration": assignment.calibration_size,
+            "test": assignment.test_size,
+        },
         "rows": {split: int(frame["split"].eq(split).sum()) for split in ("train", "calibration", "test")},
         "groups": {
             split: sorted(frame.loc[frame["split"].eq(split), assignment.group_column].astype(str).unique().tolist())

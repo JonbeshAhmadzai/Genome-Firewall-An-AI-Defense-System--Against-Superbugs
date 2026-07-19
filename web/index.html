@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genome Firewall</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">GENOME FIREWALL · RESEARCH PROTOTYPE</p>
+        <h1>Defensive antibiotic-response screening</h1>
+        <p class="subtitle">Upload one reconstructed bacterial genome to inspect QC, AMR evidence, and calibrated model outputs.</p>
+      </div>
+      <span class="status-pill" id="api-status">Checking API…</span>
+    </header>
+
+    <section class="panel overview-panel">
+      <div class="section-heading"><div><p class="eyebrow">CURRENT COVERAGE</p><h2>Prototype overview</h2></div><span class="scope-status" id="scope-status">Loading scope…</span></div>
+      <div class="cards" id="overview-cards"></div>
+      <div class="scope-line" id="scope-line"></div>
+      <h3>Model comparison</h3>
+      <p class="hint">Exploratory held-out benchmark. The MVP cohort is too small for clinical model ranking.</p>
+      <div class="table-wrap" id="model-comparison"></div>
+      <h3>Primary held-out metrics</h3>
+      <div class="table-wrap" id="held-out-metrics"></div>
+      <details class="details"><summary>Pipeline and decision policy</summary><div id="pipeline-info"></div></details>
+    </section>
+
+    <section class="panel form-panel">
+      <div class="form-grid">
+        <label>Species
+          <select id="species"></select>
+        </label>
+        <label class="file-label">Genome FASTA
+          <input id="fasta" type="file" accept=".fa,.fna,.fasta,.gz">
+        </label>
+      </div>
+      <label class="check"><input id="explain" type="checkbox"> Generate optional GPT explanation</label>
+      <button id="run" type="button">Run genome analysis</button>
+      <p class="hint">The API returns JSON. The optional LLM only explains structured results; it cannot change predictions.</p>
+    </section>
+
+    <section id="message" class="message hidden"></section>
+    <section id="results" class="hidden">
+      <div class="cards" id="qc-cards"></div>
+      <div class="panel"><h2>Decision summary</h2><div class="decision-grid" id="decisions"></div></div>
+      <div class="panel"><h2>AMR evidence</h2><div class="table-wrap" id="evidence"></div></div>
+      <div class="panel hidden" id="explanation-panel"><h2>AI explanation</h2><p id="explanation"></p></div>
+      <button class="secondary" id="download" type="button">Download JSON response</button>
+    </section>
+    <footer>Decision support only. Confirm every result with standard laboratory testing.</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

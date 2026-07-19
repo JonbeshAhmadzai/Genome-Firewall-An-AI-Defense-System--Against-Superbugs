@@ -30,6 +30,9 @@ def main() -> int:
     parser.add_argument("--target-presence", type=Path, default=Path("data/processed/cohort20_target_presence.csv"))
     parser.add_argument("--model-dir", type=Path, default=Path("models/cohort20"))
     parser.add_argument("--report-dir", type=Path, default=Path("reports/cohort20"))
+    parser.add_argument("--test-size", type=float, default=0.20, help="Fraction reserved for the grouped test split")
+    parser.add_argument("--calibration-size", type=float, default=0.20, help="Fraction reserved for grouped probability calibration")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for the grouped split")
     args = parser.parse_args()
 
     labels = pd.read_csv(args.labels, dtype=str)
@@ -49,7 +52,15 @@ def main() -> int:
             continue
         try:
             frame = prepare_target_frame(labels, features, groups, species=species, antibiotic=antibiotic)
-            receipt = train_target(frame, output_dir=args.model_dir, species=species, antibiotic=antibiotic)
+            receipt = train_target(
+                frame,
+                output_dir=args.model_dir,
+                species=species,
+                antibiotic=antibiotic,
+                random_state=args.seed,
+                test_size=args.test_size,
+                calibration_size=args.calibration_size,
+            )
             artifact = load_model(Path(receipt["model_path"]))
             split_frame = pd.read_csv(receipt["split_path"])
             slug = Path(receipt["model_path"]).stem

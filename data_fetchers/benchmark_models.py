@@ -30,6 +30,9 @@ def main() -> int:
     parser.add_argument("--features", type=Path, default=Path("data/processed/cohort20/amrfinder_features.csv"))
     parser.add_argument("--out", type=Path, default=Path("reports/cohort20/model_benchmark.csv"))
     parser.add_argument("--model-dir", type=Path, default=Path("models/cohort20/benchmarks"))
+    parser.add_argument("--test-size", type=float, default=0.20, help="Fraction reserved for the grouped test split")
+    parser.add_argument("--calibration-size", type=float, default=0.20, help="Fraction reserved for grouped probability calibration")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for the grouped split")
     args = parser.parse_args()
     labels = pd.read_csv(args.labels, dtype=str)
     metadata = pd.read_csv(args.metadata, dtype=str)
@@ -57,7 +60,12 @@ def main() -> int:
     for species, antibiotic in labels[["species", "antibiotic"]].drop_duplicates().itertuples(index=False):
         try:
             frame = prepare_target_frame(labels, features, groups, species=species, antibiotic=antibiotic)
-            assignment = grouped_three_way_split(frame, random_state=42)
+            assignment = grouped_three_way_split(
+                frame,
+                test_size=args.test_size,
+                calibration_size=args.calibration_size,
+                random_state=args.seed,
+            )
             split = assignment.frame
             excluded = {"genome_id", "species", "antibiotic", "phenotype", "y", "homology_group_id", "split", "_original_index"}
             columns = [column for column in split.columns if column not in excluded and pd.api.types.is_numeric_dtype(split[column])]

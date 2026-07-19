@@ -1,0 +1,109 @@
+{
+  "metrics": {
+    "n_test": 19,
+    "balanced_accuracy": 0.7727272727272727,
+    "resistant_recall": 0.5454545454545454,
+    "susceptible_recall": 1.0,
+    "f1": 0.7058823529411765,
+    "auroc": 0.7386363636363636,
+    "pr_auc": 0.8744155955843262,
+    "brier": 0.21896145743810336,
+    "no_call_rate": 0.2631578947368421,
+    "called_accuracy": 0.7857142857142857,
+    "reliability_bins": 10
+  },
+  "brier": 0.21896145743810336,
+  "group_breakdown": [
+    {
+      "homology_group_id": "cgmlst_hc100:10810",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:1231",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:18",
+      "n": 7,
+      "called": 5,
+      "no_call_rate": 0.2857142857142857,
+      "called_accuracy": 0.4
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:18122",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:21670",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:3274",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:3580",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:3821",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:42233",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:46256",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:47766",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:5777",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "group-00067",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    }
+  ]
+}

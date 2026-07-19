@@ -1,0 +1,67 @@
+{
+  "metrics": {
+    "n_test": 7,
+    "balanced_accuracy": 0.5,
+    "resistant_recall": 0.0,
+    "susceptible_recall": 1.0,
+    "f1": 0.0,
+    "auroc": 0.8333333333333334,
+    "pr_auc": 0.8055555555555556,
+    "brier": 0.21654587862063443,
+    "no_call_rate": 0.5714285714285714,
+    "called_accuracy": 1.0,
+    "reliability_bins": 10
+  },
+  "brier": 0.21654587862063443,
+  "group_breakdown": [
+    {
+      "homology_group_id": "cgmlst_hc100:10",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:21670",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:2938",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:3580",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:46111",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:46256",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:5777",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    }
+  ]
+}

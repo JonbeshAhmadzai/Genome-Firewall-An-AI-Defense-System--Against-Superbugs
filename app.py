@@ -19,11 +19,11 @@ from targets_config import enabled_species
 
 
 ROOT = Path(__file__).resolve().parent
-REPORT_DIR = ROOT / "reports" / "cohort30"
-MODEL_ROOT = ROOT / "models" / "cohort30"
-FEATURES_PATH = ROOT / "data" / "processed" / "cohort30" / "amrfinder_features.csv"
-EVIDENCE_PATH = ROOT / "data" / "processed" / "cohort30" / "amrfinder_evidence.csv"
-LABELS_PATH = ROOT / "data" / "raw" / "bvbrc" / "selected" / "selected_labels.csv"
+REPORT_DIR = ROOT / "reports" / "cohort100_test25"
+MODEL_ROOT = ROOT / "models" / "cohort100_test25"
+FEATURES_PATH = ROOT / "data" / "processed" / "cohort100" / "amrfinder_features.csv"
+EVIDENCE_PATH = ROOT / "data" / "processed" / "cohort100" / "amrfinder_evidence.csv"
+LABELS_PATH = ROOT / "data" / "raw" / "bvbrc" / "cohort100" / "selected_labels.csv"
 
 
 @st.cache_data
@@ -123,7 +123,7 @@ with st.sidebar:
     st.write(f"{features['genome_id'].nunique() if 'genome_id' in features else 0} genomes")
     st.write(f"{max(len(features.columns) - 1, 0)} AMR features")
     st.write("AMRFinderPlus + calibrated logistic models")
-    st.markdown('<span class="scope-badge">30-genome MVP</span><span class="scope-badge">3 antibiotics</span>', unsafe_allow_html=True)
+    st.markdown('<span class="scope-badge">100-genome MVP</span><span class="scope-badge">3 antibiotics</span>', unsafe_allow_html=True)
     if llm_available():
         st.success("OpenAI explanations enabled")
     else:
@@ -293,4 +293,4 @@ with tab_models:
         if not chart_data.empty:
             st.subheader("Balanced accuracy comparison")
             st.bar_chart(chart_data)
-        st.caption("The 30-genome MVP is too small for reliable model ranking; this table is for plumbing and demo comparison only.")
+        st.caption("The 100-genome MVP uses a 60% train / 15% calibration / 25% group-disjoint test split. It is exploratory and not clinically validated; use this table for model comparison, not treatment decisions.")
