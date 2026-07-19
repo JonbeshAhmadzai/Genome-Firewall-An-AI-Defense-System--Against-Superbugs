@@ -26,8 +26,10 @@ from targets_config import enabled_species
 ROOT = Path(__file__).resolve().parent
 WEB_DIR = ROOT / "web"
 MODEL_ROOT = ROOT / "models" / "cohort100_test25"
+REPORT_DIR = ROOT / "reports" / "cohort100_test25"
 METRICS_PATH = ROOT / "reports" / "cohort100_test25" / "model_metrics.csv"
 BENCHMARK_PATH = ROOT / "reports" / "cohort100_test25" / "model_benchmark.csv"
+COHORT_SUMMARY_PATH = REPORT_DIR / "cohort_summary.json"
 FEATURES_PATH = ROOT / "data" / "processed" / "cohort100" / "amrfinder_features.csv"
 EVIDENCE_PATH = ROOT / "data" / "processed" / "cohort100" / "amrfinder_evidence.csv"
 AMRFINDER = os.getenv("AMRFINDER_EXECUTABLE", "/home/becode/miniconda3/envs/genome-firewall/bin/amrfinder")
@@ -102,13 +104,14 @@ def overview() -> dict[str, Any]:
     benchmark = _csv(BENCHMARK_PATH)
     features = _csv(FEATURES_PATH)
     evidence = _csv(EVIDENCE_PATH)
+    summary_file = json.loads(COHORT_SUMMARY_PATH.read_text(encoding="utf-8")) if COHORT_SUMMARY_PATH.exists() else {}
     genome_count = int(features["genome_id"].nunique()) if "genome_id" in features else 0
     return {
         "summary": {
-            "genomes": genome_count,
+            "genomes": genome_count or int(summary_file.get("genomes", 0)),
             "drug_models": int(metrics["antibiotic"].nunique()) if "antibiotic" in metrics else 0,
-            "amr_features": max(len(features.columns) - 1, 0) if not features.empty else 0,
-            "evidence_rows": len(evidence),
+            "amr_features": max(len(features.columns) - 1, 0) if not features.empty else int(summary_file.get("amr_features", 0)),
+            "evidence_rows": len(evidence) or int(summary_file.get("evidence_rows", 0)),
         },
         "scope": {
             "species": _available_species(),
@@ -158,7 +161,10 @@ async def predict(
             input_path = Path(temporary) / safe_name
             output_path = Path(temporary) / "amrfinder.tsv"
             input_path.write_bytes(await file.read())
-            qc = fasta_stats(input_path)
+            raw_qc = fasta_stats(input_path)
+            # Never expose the server's temporary filesystem path to the UI or LLM.
+            qc = {key: value for key, value in raw_qc.items() if key != "path"}
+            qc["file_name"] = safe_name
             route = resolve_route(species, drugs[0], model_root=MODEL_ROOT)
             if not route.supported:
                 raise HTTPException(status_code=400, detail=route.unsupported_reason())
@@ -200,6 +206,15 @@ async def predict(
                 "species": species,
                 "predictions": _json_records(scored_frame),
                 "amr_evidence": _json_records(evidence),
+                "amr_summary": {
+                    "detected": not evidence.empty,
+                    "rows": int(len(evidence)),
+                    "message": (
+                        "Reportable AMR determinants detected."
+                        if not evidence.empty
+                        else "No reportable AMR determinant detected; this does not prove susceptibility."
+                    ),
+                },
                 "safety_warning": "Research prototype only. Confirm with standard laboratory testing.",
                 "llm_explanation": None,
             }

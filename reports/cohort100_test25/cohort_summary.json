@@ -1,0 +1,7 @@
+{
+  "genomes": 100,
+  "amr_features": 115,
+  "evidence_rows": 947,
+  "validation": "60% train / 15% calibration / 25% group-disjoint test",
+  "note": "Static summary for the hosted research demo; raw and intermediate processed data are not included."
+}

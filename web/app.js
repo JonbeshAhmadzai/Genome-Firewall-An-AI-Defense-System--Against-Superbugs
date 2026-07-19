@@ -9,6 +9,7 @@ const resultsEl = document.querySelector('#results');
 function showMessage(text, error = false) {
   messageEl.textContent = text;
   messageEl.classList.toggle('hidden', !text);
+  messageEl.classList.toggle('error', error);
   messageEl.style.background = error ? '#ffe8ea' : '#fff2e2';
   messageEl.style.color = error ? '#932f3b' : '#8b5315';
 }
@@ -23,6 +24,33 @@ function esc(value) {
 
 function percent(value) {
   return value === null || value === undefined || Number.isNaN(Number(value)) ? '—' : `${(Number(value) * 100).toFixed(1)}%`;
+}
+
+function renderMarkdown(source) {
+  const safe = esc(source || '');
+  const inline = value => value.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\*(.+?)\*/g, '<em>$1</em>');
+  const lines = safe.split(/\r?\n/);
+  const output = [];
+  let listOpen = false;
+  const closeList = () => { if (listOpen) { output.push('</ul>'); listOpen = false; } };
+  lines.forEach(line => {
+    if (/^###\s+/.test(line)) { closeList(); output.push(`<h3>${inline(line.replace(/^###\s+/, ''))}</h3>`); return; }
+    if (/^####\s+/.test(line)) { closeList(); output.push(`<h4>${inline(line.replace(/^####\s+/, ''))}</h4>`); return; }
+    if (/^\s*[-*]\s+/.test(line)) {
+      if (!listOpen) { output.push('<ul>'); listOpen = true; }
+      output.push(`<li>${inline(line.replace(/^\s*[-*]\s+/, ''))}</li>`); return;
+    }
+    closeList();
+    if (/^\s*\d+\.\s+/.test(line)) {
+      const number = line.match(/^\s*(\d+)\./)[1];
+      const copy = line.replace(/^\s*\d+\.\s+/, '');
+      output.push(`<p class="numbered"><strong>${number}.</strong> ${inline(copy)}</p>`);
+      return;
+    }
+    if (line.trim()) output.push(`<p>${inline(line)}</p>`);
+  });
+  closeList();
+  return output.join('');
 }
 
 function comparisonTable(rows) {
@@ -79,24 +107,28 @@ function render(response) {
   ].join('');
   document.querySelector('#decisions').innerHTML = (response.predictions || []).map(row => {
     const decision = row.prediction || 'no-call';
-    const klass = decision.includes('fail') ? 'fail' : decision.includes('work') ? 'work' : '';
+    const modelDecision = row.prediction_before_target_gate;
+    const normalized = decision.toLowerCase();
+    const klass = normalized.includes('resist') || normalized.includes('fail') ? 'fail' : normalized.includes('suscept') || normalized.includes('work') ? 'work' : '';
+    const gateNote = modelDecision && modelDecision !== decision ? `<div class="decision-gate">Safety gate changed model call from <strong>${esc(modelDecision)}</strong>.</div>` : '';
     return `<div class="decision ${klass}"><div class="decision-title">${esc(row.antibiotic)}: ${esc(decision)}</div>` +
       `<div class="decision-meta">Confidence ${(Number(row.confidence || 0) * 100).toFixed(0)}% · target ${esc(row.target_status || 'unknown')}</div>` +
-      `<div class="decision-meta">${esc(row.target_gate_reason || '')}</div></div>`;
+      `<div class="decision-meta">${esc(row.target_gate_reason || '')}</div>${gateNote}</div>`;
   }).join('');
   const evidence = response.amr_evidence || [];
   document.querySelector('#evidence').innerHTML = evidence.length ?
     `<table><thead><tr><th>Feature</th><th>Gene</th><th>Class</th><th>Subtype</th></tr></thead><tbody>` +
     evidence.map(row => `<tr><td>${esc(row.feature)}</td><td>${esc(row.gene_symbol)}</td><td>${esc(row.amr_class)}</td><td>${esc(row.subtype)}</td></tr>`).join('') +
-    '</tbody></table>' : '<p class="hint">No AMRFinderPlus AMR determinants detected.</p>';
+    '</tbody></table>' : '<div class="evidence-empty"><span class="evidence-empty-icon">i</span><div><strong>No reportable AMR determinant detected</strong><span>AMRFinderPlus found no matching resistance gene or mutation in this input. This does not prove susceptibility; interpret it with the model confidence and laboratory AST.</span></div></div>';
   const explanationPanel = document.querySelector('#explanation-panel');
   explanationPanel.classList.toggle('hidden', !response.llm_explanation);
-  document.querySelector('#explanation').textContent = response.llm_explanation || '';
+  document.querySelector('#explanation').innerHTML = renderMarkdown(response.llm_explanation || '');
   resultsEl.classList.remove('hidden');
 }
 
 async function loadConfig() {
   const [configResponse, overviewResponse] = await Promise.all([fetch('/api/config'), fetch('/api/overview')]);
+  if (!configResponse.ok || !overviewResponse.ok) throw new Error('The API is online but the overview could not be loaded.');
   const config = await configResponse.json();
   const overview = await overviewResponse.json();
   (config.species || []).forEach(species => speciesEl.add(new Option(species, species)));
@@ -116,6 +148,24 @@ runEl.addEventListener('click', async () => {
     render(data);
   } catch (error) { showMessage(error.message, true); }
   finally { runEl.disabled = false; runEl.textContent = 'Run genome analysis'; }
+});
+
+fileEl.addEventListener('change', () => {
+  const file = fileEl.files[0];
+  document.querySelector('#file-name').textContent = file ? `${file.name} · ${(file.size / 1024 / 1024).toFixed(2)} MB` : '.fa, .fna, .fasta, or .gz';
+});
+
+const uploadZone = document.querySelector('.upload-zone');
+['dragenter', 'dragover'].forEach(eventName => uploadZone.addEventListener(eventName, event => {
+  event.preventDefault(); uploadZone.classList.add('dragging');
+}));
+['dragleave', 'drop'].forEach(eventName => uploadZone.addEventListener(eventName, event => {
+  event.preventDefault(); uploadZone.classList.remove('dragging');
+}));
+uploadZone.addEventListener('drop', event => {
+  const files = event.dataTransfer.files;
+  if (!files.length) return;
+  try { fileEl.files = files; fileEl.dispatchEvent(new Event('change')); } catch (_) { showMessage('Use the file picker to select this genome.', true); }
 });
 
 document.querySelector('#download').addEventListener('click', () => {

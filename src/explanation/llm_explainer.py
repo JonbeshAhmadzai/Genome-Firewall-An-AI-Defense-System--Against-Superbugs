@@ -77,6 +77,7 @@ def build_explanation_payload(
             "genome_id",
             "antibiotic",
             "prediction",
+            "prediction_before_target_gate",
             "probability_resistant",
             "confidence",
             "target_status",
@@ -113,7 +114,11 @@ def build_explanation_payload(
     return {
         "species": species,
         "antibiotic": antibiotic,
-        "qc": {key: _json_safe(value) for key, value in (qc or {}).items()},
+        "qc": {
+            key: _json_safe(value)
+            for key, value in (qc or {}).items()
+            if key not in {"path", "input_path", "temporary_path"}
+        },
         "predictions": prediction_rows,
         "amr_evidence": evidence_rows,
     }
@@ -157,8 +162,13 @@ def explain_predictions(
         "Do not act as a predictor and do not recommend, select, or change treatment. "
         "Use only the supplied structured data; never invent missing genes, mutations, "
         "phenotypes, or certainty. Explain each prediction, confidence, target status, "
-        "and no-call reason in plain language. Clearly separate detected AMR evidence "
-        "from statistical model output. End with: 'Confirm with standard laboratory AST; "
+        "and no-call reason in plain language. If prediction is 'no-call' but "
+        "prediction_before_target_gate is a different call, explicitly say that the "
+        "target-compatibility gate overrode the model call. A high model probability "
+        "does not override an uncertain target gate. Clearly separate detected AMR evidence "
+        "from statistical model output. If no AMR evidence is supplied, say that no "
+        "reportable determinant was detected and that this does not prove susceptibility. "
+        "End with: 'Confirm with standard laboratory AST; "
         "this research prototype is not a treatment decision.'"
     )
     response = OpenAI(api_key=api_key).responses.create(

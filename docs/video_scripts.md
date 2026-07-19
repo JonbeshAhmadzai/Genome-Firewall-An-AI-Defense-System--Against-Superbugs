@@ -43,28 +43,29 @@ Every result clearly says to confirm with standard laboratory AST.”
 
 **Speaker 1 — 0:00–0:14**
 
-“Hi, we are the four-person team behind Genome Firewall. We built a defensive
-AI system to help interpret genomic resistance evidence faster, while keeping
-laboratory confirmation and human oversight at the center.”
+"Hi, we are the four-person team behind Genome Firewall. I worked on the data
+pipeline: selecting the BV-BRC genomes, organizing the cohort, checking FASTA
+inputs, and making the raw data reproducible for the rest of the team."
 
 **Speaker 2 — 0:14–0:28**
 
-“I worked on the data and bioinformatics pipeline: BV-BRC cohort selection,
-FASTA quality control, AMRFinderPlus annotation, evidence extraction, and the
-reproducible feature artifacts.”
+"I worked on feature engineering. I ran AMRFinderPlus evidence through our
+feature builder, encoded resistance determinants and target signals, and
+created the 115-feature matrix used consistently by every model."
 
 **Speaker 3 — 0:28–0:43**
 
-“I worked on machine learning and validation: grouped train/test splits,
-calibrated per-antibiotic models, model comparisons, confidence thresholds,
-target compatibility, and the conservative no-call policy.”
+"I built and evaluated the machine-learning layer: grouped train, calibration,
+and test splits prevent genetic leakage; calibrated antibiotic models produce
+confidence scores; and we compare logistic regression, random forest, extra
+trees, and XGBoost with a conservative no-call policy."
 
 **Speaker 4 — 0:43–0:58**
 
-“I worked on product integration: the FastAPI JSON backend, HTML dashboard,
-Streamlit fallback, downloadable reports, and the optional evidence-grounded
-LLM explanation. Together, we turned the research pipeline into a demo people
-can inspect.”
+"I built the product layer: the FastAPI JSON backend, HTML dashboard, model
+comparison view, downloadable results, and Streamlit fallback. The optional
+GPT explanation summarizes evidence but cannot change a prediction. Together,
+we made the pipeline easy to inspect and safe to demonstrate."
 
 **End card — 0:58–1:00**
 

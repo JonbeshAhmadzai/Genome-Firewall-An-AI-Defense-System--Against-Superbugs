@@ -9,8 +9,8 @@
 <body>
   <main class="shell">
     <header class="hero">
-      <div>
-        <p class="eyebrow">GENOME FIREWALL · RESEARCH PROTOTYPE</p>
+      <div class="hero-copy">
+        <div class="brand-line"><span class="logo-mark">GF</span><p class="eyebrow">GENOME FIREWALL · RESEARCH PROTOTYPE</p></div>
         <h1>Defensive antibiotic-response screening</h1>
         <p class="subtitle">Upload one reconstructed bacterial genome to inspect QC, AMR evidence, and calibrated model outputs.</p>
       </div>
@@ -18,7 +18,7 @@
     </header>
 
     <section class="panel overview-panel">
-      <div class="section-heading"><div><p class="eyebrow">CURRENT COVERAGE</p><h2>Prototype overview</h2></div><span class="scope-status" id="scope-status">Loading scope…</span></div>
+      <div class="section-heading"><div><p class="eyebrow">CURRENT COVERAGE</p><h2>Prototype overview</h2><p class="section-subtitle">A quick view of the cohort, evidence layer, and model health.</p></div><span class="scope-status" id="scope-status">Loading scope…</span></div>
       <div class="cards" id="overview-cards"></div>
       <div class="scope-line" id="scope-line"></div>
       <h3>Model comparison</h3>
@@ -30,25 +30,27 @@
     </section>
 
     <section class="panel form-panel">
+      <div class="form-heading"><div><p class="eyebrow">ANALYZE A GENOME</p><h2>Run a new screening</h2></div><span class="step-chip">01 · INPUT</span></div>
       <div class="form-grid">
         <label>Species
           <select id="species"></select>
         </label>
-        <label class="file-label">Genome FASTA
-          <input id="fasta" type="file" accept=".fa,.fna,.fasta,.gz">
+        <label class="file-label" for="fasta">Genome FASTA
+          <span class="upload-zone"><span class="upload-icon">↑</span><span><strong>Choose a FASTA file</strong><small id="file-name">.fa, .fna, .fasta, or .gz</small></span><input id="fasta" type="file" accept=".fa,.fna,.fasta,.gz"></span>
         </label>
       </div>
       <label class="check"><input id="explain" type="checkbox"> Generate optional GPT explanation</label>
-      <button id="run" type="button">Run genome analysis</button>
+      <div class="action-row"><button id="run" type="button">Run genome analysis <span class="button-arrow">→</span></button><span class="action-note">Usually takes under a minute</span></div>
       <p class="hint">The API returns JSON. The optional LLM only explains structured results; it cannot change predictions.</p>
     </section>
 
-    <section id="message" class="message hidden"></section>
+    <section id="message" class="message hidden" aria-live="polite"></section>
     <section id="results" class="hidden">
+      <div class="results-heading"><div><p class="eyebrow">ANALYSIS RESULT</p><h2>Genome screening summary</h2></div><span class="result-chip">REVIEW REQUIRED</span></div>
       <div class="cards" id="qc-cards"></div>
       <div class="panel"><h2>Decision summary</h2><div class="decision-grid" id="decisions"></div></div>
       <div class="panel"><h2>AMR evidence</h2><div class="table-wrap" id="evidence"></div></div>
-      <div class="panel hidden" id="explanation-panel"><h2>AI explanation</h2><p id="explanation"></p></div>
+      <div class="panel hidden" id="explanation-panel"><h2>AI explanation</h2><div id="explanation" class="markdown"></div></div>
       <button class="secondary" id="download" type="button">Download JSON response</button>
     </section>
     <footer>Decision support only. Confirm every result with standard laboratory testing.</footer>

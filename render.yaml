@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: genome-firewall-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: OPENAI_LLM_ENABLED
+        value: "false"
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: AMRFINDER_EXECUTABLE
+        value: amrfinder

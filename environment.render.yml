@@ -1,0 +1,10 @@
+name: genome-firewall-render
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - ncbi-amrfinderplus
+  - pip
+  - pip:
+      - -r requirements.render.txt

@@ -1,0 +1,32 @@
+.git
+.gitignore
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Never send private/raw or local intermediate data to the Render builder.
+data/raw/
+data/external/
+# Only the compact, non-raw active-cohort summaries are needed by /api/overview.
+# Keep the rest of the local intermediate data out of the image.
+data/processed/*
+!data/processed/cohort100/
+data/processed/cohort100/*
+!data/processed/cohort100/amrfinder_features.csv
+!data/processed/cohort100/amrfinder_evidence.csv
+
+# Keep only the active committed model/report artifacts in the image.
+models/cohort30/
+models/cohort100/
+reports/cohort20/
+reports/cohort30/
+reports/cohort100/
+
+# Development-only files.
+notebooks/
+app.py
+tools/
