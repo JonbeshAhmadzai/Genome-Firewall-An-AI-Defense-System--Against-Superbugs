@@ -1,5 +1,10 @@
 # Genome Firewall
 
+![Status](https://img.shields.io/badge/status-research%20prototype-f0a34a)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![API](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)
+![Deployment](https://img.shields.io/badge/deployment-Docker-2496ED?logo=docker&logoColor=white)
+
 Genome Firewall is a research prototype for transparent genomic
 antibiotic-resistance screening. It accepts a reconstructed bacterial FASTA,
 runs sequence quality control and AMRFinderPlus, builds resistance features,
@@ -10,7 +15,38 @@ target compatibility, AMR evidence, and a conservative `no-call` option.
 > Confirm every result with standard laboratory antimicrobial susceptibility
 > testing (AST) and qualified human review.
 
-## What the MVP includes
+> **Core proposition:** Evidence-grounded genomic prediction with a built-in
+> safety firewall that abstains when confidence or biological compatibility is
+> insufficient.
+
+## Contents
+
+- [Project overview](#project-overview)
+- [Unique selling proposition](#unique-selling-proposition)
+- [Architecture](#end-to-end-pipeline)
+- [Modeling approach](#modeling-approach)
+- [Held-out results](#current-held-out-results)
+- [Quick start](#quick-start)
+- [API](#api)
+- [Safety and responsible AI](#safety-and-responsible-ai)
+- [Adding coverage](#adding-coverage)
+- [Training and evaluation](#training-and-evaluation)
+- [Deployment](#render-deployment)
+- [Limitations](#known-limitations)
+
+## Project overview
+
+| Area | Current MVP |
+|---|---|
+| Pathogen | *Escherichia coli* |
+| Cohort | 100 genomes |
+| Antibiotics | Ampicillin, ceftriaxone, ciprofloxacin |
+| Feature space | 115 AMR determinant and evidence-summary features |
+| Primary models | One calibrated logistic classifier per antibiotic |
+| Benchmarks | Logistic regression, random forest, extra trees, XGBoost |
+| Validation | Group-disjoint 60% train / 15% calibration / 25% test |
+| Safety policy | 70% confidence threshold plus molecular-target gate |
+| Interfaces | FastAPI, responsive HTML, JSON API, Streamlit fallback |
 
 - A 100-genome *Escherichia coli* research cohort.
 - 115 engineered AMR features and 947 AMRFinderPlus evidence rows.
@@ -76,18 +112,130 @@ The language model is downstream of the deterministic scientific pipeline. It
 never receives the FASTA sequence, and it cannot alter probabilities,
 predictions, target status, or the no-call decision.
 
+## Modeling approach
+
+Genome Firewall trains an independent binary classifier for every validated
+species–antibiotic pair. This avoids treating resistance as one universal
+label and makes each artifact, feature schema, split, and validation report
+auditable at the antibiotic level.
+
+### Feature engineering
+
+AMRFinderPlus results are converted into a sparse, interpretable matrix. The
+feature builder retains binary gene, mutation, sequence, and element indicators
+and adds compact evidence summaries:
+
+- Total AMR hit count.
+- Number of distinct AMR classes and subclasses.
+- Number of detected gene-level signals.
+- Number of point-mutation signals.
+
+Only AMR rows enter the model feature space; stress-response and virulence rows
+emitted by AMRFinderPlus `--plus` remain in the source output but are excluded
+from prediction features. The active cohort contains 115 numeric features.
+
+### Primary calibrated models
+
+The main inference path uses class-balanced logistic regression because it is
+stable on a small, sparse dataset and keeps the relationship between features
+and predictions relatively inspectable. Each base classifier is trained on the
+training groups and then sigmoid-calibrated on a separate calibration split.
+The test groups are untouched until final evaluation.
+
+| Setting | Value |
+|---|---|
+| Objective | Binary susceptible (`0`) vs resistant (`1`) classification |
+| Class handling | `class_weight="balanced"` |
+| Optimizer limit | `max_iter=2000` |
+| Calibration | Sigmoid calibration on the group-disjoint calibration set |
+| Random seed | `42` by default |
+| Saved unit | One model artifact per species–antibiotic pair |
+
+### Comparative models
+
+The benchmark suite evaluates four model families on the same group-disjoint
+test assignment. These models are exploratory comparisons and are not silently
+substituted for the calibrated primary model.
+
+| Model | MVP configuration | Purpose |
+|---|---|---|
+| Logistic regression | Balanced classes, 2,000 iterations | Interpretable linear baseline |
+| Random forest | 200 trees, balanced classes | Non-linear ensemble baseline |
+| Extra trees | 200 trees, balanced classes | Randomized tree ensemble comparison |
+| XGBoost | 100 trees, depth 2, learning rate 0.05 | Regularized boosting comparison |
+
+### Leakage controls and evaluation
+
+Near-identical genomes can make random row-level splitting look unrealistically
+strong. Genome Firewall therefore assigns complete homology groups—not
+individual rows—to training, calibration, or test. The active evaluation uses:
+
+| Split | Requested proportion | Purpose |
+|---|---:|---|
+| Training | 60% | Fit model parameters |
+| Calibration | 15% | Calibrate probabilities without touching test data |
+| Test | 25% | Final held-out evaluation |
+
+Actual row counts vary by antibiotic because phenotype availability and group
+sizes differ. Every saved model includes a split receipt listing the rows and
+genetic groups assigned to each partition.
+
+### Decision and abstention policy
+
+The model probability is only the first stage of the decision:
+
+1. Probabilities at or above `0.5` indicate a raw resistant/“likely to fail”
+   direction; lower values indicate a susceptible/“likely to work” direction.
+2. Confidence is `max(p, 1-p)`. Values below `0.70` become `no-call`.
+3. The molecular-target gate checks whether the relevant target machinery is
+   verified. An absent or uncertain target can override a proposed call.
+4. The API returns both the model call before the gate and the final decision,
+   preserving the reason for every override.
+
+This separation is central to the project: model confidence is not treated as
+clinical certainty.
+
+### Model artifacts and reproducibility
+
+| Artifact | Contents |
+|---|---|
+| `*.joblib` | Fitted estimator, exact feature order, species, and antibiotic |
+| `*.json` | Model receipt, class mapping, feature schema, and split summary |
+| `*__splits.csv` | Genome-level train/calibration/test assignments |
+| `model_metrics.csv` | Primary calibrated-model scorecard |
+| `model_benchmark.csv` | Four-model exploratory comparison |
+| `validation_report.json` | Metrics and safety-oriented validation output |
+| `reliability.csv` | Probability calibration bins |
+
+Active artifacts live under [`models/cohort100_test25`](models/cohort100_test25)
+and [`reports/cohort100_test25`](reports/cohort100_test25).
+
 ## Current held-out results
 
 These figures are exploratory and use genetically separated held-out groups.
 The test sets—especially ceftriaxone—are too small for clinical claims.
 
-| Antibiotic | Test genomes | Balanced accuracy | Resistant recall | Susceptible recall | AUROC | No-call rate |
-|---|---:|---:|---:|---:|---:|---:|
-| Ampicillin | 19 | 77.3% | 54.5% | 100.0% | 73.9% | 26.3% |
-| Ceftriaxone | 7 | 50.0% | 0.0% | 100.0% | 83.3% | 57.1% |
-| Ciprofloxacin | 20 | 87.5% | 75.0% | 100.0% | 95.3% | 20.0% |
+| Antibiotic | Test | Balanced accuracy | Resistant recall | Susceptible recall | F1 | AUROC | Brier ↓ | No-call | Called accuracy |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Ampicillin | 19 | 77.3% | 54.5% | 100.0% | 70.6% | 73.9% | 0.219 | 26.3% | 78.6% |
+| Ceftriaxone | 7 | 50.0% | 0.0% | 100.0% | 0.0% | 83.3% | 0.217 | 57.1% | 100.0% |
+| Ciprofloxacin | 20 | 87.5% | 75.0% | 100.0% | 85.7% | 95.3% | 0.064 | 20.0% | 100.0% |
 
 Full reports are under [`reports/cohort100_test25`](reports/cohort100_test25).
+
+### How to read the metrics
+
+| Metric | Interpretation | Preferred direction |
+|---|---|---|
+| Balanced accuracy | Average recall across resistant and susceptible classes | Higher |
+| Resistant recall | Fraction of resistant genomes correctly identified | Higher |
+| Susceptible recall | Fraction of susceptible genomes correctly identified | Higher |
+| F1 | Balance between resistant precision and recall | Higher |
+| AUROC | Ranking performance across classification thresholds | Higher |
+| PR-AUC | Precision–recall performance, useful with imbalanced classes | Higher |
+| Brier score | Error of predicted probabilities | Lower |
+| No-call rate | Fraction withheld by confidence or safety policy | Context-dependent |
+| Called accuracy | Accuracy among predictions that were not withheld | Higher |
 
 ## Quick start
 
@@ -153,6 +301,19 @@ clinical conclusions.
 The spoken walkthrough is available at
 [`docs/demo_walkthrough_script.md`](docs/demo_walkthrough_script.md).
 
+## Technology stack
+
+| Layer | Technologies |
+|---|---|
+| Bioinformatics | NCBI AMRFinderPlus, Biopython |
+| Data processing | pandas, NumPy |
+| Machine learning | scikit-learn, XGBoost, joblib |
+| API | FastAPI, Uvicorn, multipart uploads |
+| Frontend | Responsive HTML, CSS, JavaScript |
+| Alternative UI | Streamlit |
+| Explanation | OpenAI Responses API with a constrained structured payload |
+| Deployment | Docker, Conda/Bioconda, Render Blueprint |
+
 ## API
 
 Useful endpoints:
@@ -172,6 +333,19 @@ curl -F species='Escherichia coli' \
      -F file=@data/demo/mock_genome.fna \
      http://127.0.0.1:8001/api/predict
 ```
+
+## Safety and responsible AI
+
+- Raw FASTA sequences remain inside the deterministic bioinformatics pipeline
+  and are never included in the GPT payload.
+- Temporary server paths are removed before results reach the UI or explanation
+  layer.
+- OpenAI response storage is disabled for explanation requests.
+- The explanation layer receives bounded QC, prediction, and AMR-evidence
+  records and cannot call or modify the predictor.
+- `no-call`, target-gate reasons, and pre-gate decisions are preserved in the
+  JSON response for auditability.
+- Every interface displays a laboratory-confirmation warning.
 
 ## Adding coverage
 
