@@ -1,0 +1,22 @@
+species: Escherichia coli
+taxon_id: 562
+source: BV-BRC Data API
+api_base_url: https://www.bv-brc.org/api
+evidence: Laboratory Method
+max_rows: 20000
+page_size: 500
+label_values:
+  resistant:
+    - resistant
+    - non-susceptible
+  susceptible:
+    - susceptible
+  uncertain:
+    - intermediate
+preferred_antibiotics:
+  - ciprofloxacin
+  - ampicillin
+  - ceftriaxone
+  - gentamicin
+  - tetracycline
+

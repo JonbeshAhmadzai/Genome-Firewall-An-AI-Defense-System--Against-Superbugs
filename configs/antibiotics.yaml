@@ -1,0 +1,109 @@
+supported_species: Escherichia coli
+notes:
+  - Target gates are scaffold metadata for defensive decision support.
+  - Target presence is verified from general genome annotations when data/interim/target_presence.csv exists.
+  - AMRFinderPlus detects AMR determinants; it is not a complete target annotation source by itself.
+antibiotics:
+  cefotaxime:
+    class: third-generation cephalosporin
+    relevant_amr_classes:
+      - BETA-LACTAM
+    primary_targets:
+      - penicillin-binding proteins
+    target_presence_rule: annotation_markers
+    target_confidence: curated_class_level
+    target_sources:
+      - https://www.ncbi.nlm.nih.gov/books/NBK545311/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6268044/
+    target_markers:
+      genes:
+        - ftsI
+        - mrdA
+        - mrcA
+        - mrcB
+        - dacA
+        - dacB
+      product_keywords:
+        - penicillin-binding protein
+        - peptidoglycan transpeptidase
+        - transglycosylase/transpeptidase
+        - d-alanyl-d-alanine carboxypeptidase
+    resistance_evidence_examples:
+      - beta-lactamase genes
+      - altered porins
+  chloramphenicol:
+    class: phenicol
+    relevant_amr_classes:
+      - PHENICOL
+      - EFFLUX
+      - MULTIDRUG
+    primary_targets:
+      - 50S ribosomal subunit
+      - 23S rRNA peptidyl-transferase center
+    target_presence_rule: annotation_markers
+    target_confidence: curated_class_level
+    target_sources:
+      - https://www.ncbi.nlm.nih.gov/books/NBK555966/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6023675/
+    target_markers:
+      genes:
+        - rrl
+      product_keywords:
+        - 23s rrna
+        - large subunit ribosomal rna
+        - lsu rrna
+        - 50s ribosomal protein
+        - peptidyl transferase
+    resistance_evidence_examples:
+      - chloramphenicol acetyltransferase genes
+      - efflux genes
+  gentamicin:
+    class: aminoglycoside
+    relevant_amr_classes:
+      - AMINOGLYCOSIDE
+    primary_targets:
+      - 30S ribosomal subunit
+      - 16S rRNA A-site
+    target_presence_rule: annotation_markers
+    target_confidence: curated_class_level
+    target_sources:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6182148/
+    target_markers:
+      genes:
+        - rrs
+        - rpsL
+      product_keywords:
+        - 16s rrna
+        - small subunit ribosomal rna
+        - ssu rrna
+        - ribosomal protein s12
+    resistance_evidence_examples:
+      - aminoglycoside-modifying enzyme genes
+      - 16S rRNA methyltransferase genes
+  ampicillin:
+    class: aminopenicillin
+    relevant_amr_classes:
+      - BETA-LACTAM
+    primary_targets:
+      - penicillin-binding proteins
+    target_presence_rule: annotation_markers
+    target_confidence: curated_class_level
+    target_sources:
+      - https://www.ncbi.nlm.nih.gov/books/NBK545311/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6268044/
+    target_markers:
+      genes:
+        - ftsI
+        - mrdA
+        - mrcA
+        - mrcB
+        - dacA
+        - dacB
+      product_keywords:
+        - penicillin-binding protein
+        - peptidoglycan transpeptidase
+        - transglycosylase/transpeptidase
+        - d-alanyl-d-alanine carboxypeptidase
+    resistance_evidence_examples:
+      - beta-lactamase genes
+      - altered porins

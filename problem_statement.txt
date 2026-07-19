@@ -1,0 +1,340 @@
+               In collaboration with MIT Club of Northern California and MIT Club of Germany
+
+
+
+
+                       06
+                                        CHALLENGE
+
+
+
+
+                                        ····················
+
+
+
+
+Genome Firewall: An AI Defense System​
+         Against Superbugs
+Use artificial intelligence (AI) to predict which antibiotics may fail from a bacterial
+                     genome — before standard lab results arrive
+
+
+
+
+           POWERED BY                                                    ENABLED BY
+                          GENOME FIREWALL · OPENAI × Hack-Nation · Challenge Brief
+
+
+
+Goals and Motivation
+The Next Global Health Crisis Is Already Here
+
+Antibiotics transformed modern medicine. Today, that foundation is beginning to crack. Antibiotic-resistant
+infections are associated with more than 4.7 million deaths each year, and over one million people die directly
+because existing antibiotics no longer work. If this trend continues, routine surgery, cancer treatment, organ
+transplants, and even common infections could become far more dangerous.
+
+The challenge is not only that antibiotics can fail. It is that healthcare teams often do not know which antibiotic will
+work quickly enough. Standard laboratory testing usually takes one to three days. During that window, doctors
+must make their best-informed guess. Every ineffective treatment can cost a patient critical time and give
+resistant bacteria another opportunity to survive and spread.
+
+
+Two Futures
+Future 1 - We Get the AI Revolution Right
+
+Imagine every hospital can analyze a bacterial genome in minutes. Healthcare professionals receive an
+AI-generated prediction of which antibiotics are most likely to work, together with a clear explanation, confidence
+score, and an honest no-call when the evidence is uncertain. Patients receive effective treatment sooner,
+unnecessary broad antibiotic use falls, and resistant outbreaks can be detected earlier. AI becomes a defensive
+layer for global biosecurity.
+
+
+Future 2 - We Fail to Act
+
+Now imagine nothing changes. Hospitals continue treating patients with incomplete information while resistant
+bacteria spread faster than laboratory results arrive. More infections become difficult - or impossible - to treat.
+Procedures that depend on reliable antibiotics become riskier, and the world begins to lose one of the greatest
+medical advances of the last century.
+
+
+The Opportunity
+
+Much of the answer is already written in a bacterium's deoxyribonucleic acid (DNA). Once its genome has been
+sequenced and reconstructed, AI can identify patterns that predict which antibiotics are likely to work - potentially
+days before standard laboratory testing is complete. Your challenge is to build a trustworthy AI defense system
+that turns a bacterial genome into an earlier antibiotic-response prediction, helping healthcare teams act faster
+and public-health teams track resistance sooner.
+
+This challenge is strictly defensive. The system must never design, modify, or suggest changes to an organism.
+Its purpose is to help slow antibiotic resistance, protect patients, and strengthen global biosecurity.
+
+Current Challenges
+  STANDARD LAB TESTING               Standard laboratory testing takes one to three days. Until the result arrives,
+  TAKES DAYS                         treatment is based on the best available guess - and in a serious infection,
+                                     every hour without an effective drug matters.
+
+  BEST-GUESS TREATMENT               Using an antibiotic that targets many bacteria while waiting can save lives,
+  CAN DRIVE RESISTANCE               but unnecessary use also increases resistance. Faster, targeted choices
+                                     protect patients and preserve the drugs that still work.
+
+  GENOME DATA IS NOT YET             Sequencing is increasingly fast and affordable, and a bacterial genome
+  TRUSTED DECISION                   contains many clues about resistance. The missing step is a trusted system
+  SUPPORT                            that turns a reconstructed genome into a clear, well-calibrated prediction for
+                                     each antibiotic.
+
+
+
+
+     Hack-Nation × MIT Club of Northern California × MIT Club of Germany · 6th Global AI Hackathon · Page 2
+                         GENOME FIREWALL · OPENAI × Hack-Nation · Challenge Brief
+
+
+
+Your Challenge
+Build GENOME FIREWALL - a research prototype that takes a reconstructed, quality-checked genome from
+ONE supported bacterial species and predicts which antibiotics are likely to work, likely to fail, or remain
+uncertain. Each result must include a well-calibrated confidence score, an explicit no-call option, and the genes
+or DNA changes supporting the prediction. The prediction should also account for the presence of the drug’s
+molecular target, so the system does not report “likely to work” based solely on the absence of resistance
+markers. This is protective decision support for faster, more targeted antibiotic use and earlier resistance tracking
+- never organism design or modification.
+
+  In scope vs out of scope - read this first
+  IN SCOPE: a quality-checked FASTA file (the standard plain-text format for DNA and protein sequences)
+  containing one reconstructed bacterial genome -> for each antibiotic, likely to fail / likely to work / no-call,
+  with a confidence score and supporting genes or DNA changes. OUT OF SCOPE: collecting samples,
+  reading DNA directly from blood, identifying the bacterial species, reconstructing the genome, or separating
+  multiple bacteria in one sample. Your system starts only after bacterial isolation, sequencing and genome
+  reconstruction are complete.
+
+
+Build these modules:
+
+  01 The Genome Reader - From DNA to AI Features
+  Turn a reconstructed bacterial genome into features an AI model can use. The gold standard is
+  AMRFinderPlus (developed by the National Center for Biotechnology Information (NCBI); public-domain,
+  unrestricted); it identifies antimicrobial-resistance (AMR) genes and resistance-associated mutations using
+  protein annotations and/or assembled nucleotide sequence. Can you build an AI model that replaces or
+  improves upon AMRFinderPlus? Whether you choose to rely on AMRFinderPlus or build an alternative, the
+  next step is to develop a model that takes the presence/absence of known AMR genes or mutations as
+  input.
+  Required: A documented, repeatable path from an assembled FASTA file to model features on the
+  provided fixed dataset, using AMRFinderPlus as the default annotation tool, and a specification for the
+  output format.
+
+
+  02 The Predictor - Will Each Antibiotic Work?
+  Compile a database of available antimicrobial drugs and their properties. For each set of features produced
+  by Module 01 from a bacterial species FASTA, generate predictions for each drug (likely to fail / likely to
+  work / no-call). Ensure antibiotic compatibility by applying a deterministic gate: the presence or absence of
+  the drug’s molecular target. The training stage will need a de-duplication step based on sequence
+  homology, so the model maximizes diversity in the training set by recognizing sequences seen previously,
+  rather than memorizing closely related genomes.
+  Required: Predictions for all antibiotics on each species, evaluated after a de-duplication clustering step.
+  Identical or near-identical genomes should not appear in both training and testing - the sequence-homology
+  threshold used for de-duplication is left to each team to tune and justify.
+
+
+  03 The Decision Report - Explain Confidence and Know When Not to Predict
+  Present every result as a clear antibiotic-response report: the drug, likely to fail / likely to work / no-call, a
+  calibrated confidence score, and the type of evidence behind it - (i) a known resistance gene or DNA
+  change was detected, (ii) the model found only a statistical association, or (iii) no known resistance signal
+  was found. Forcing every sample into a yes/no answer creates false confidence; returning no-call for weak
+  or conflicting evidence is a strength. Build a small app that tells users every result must be confirmed by
+  standard lab testing.
+  Required: A working Streamlit or Gradio demo that returns likely to fail / likely to work / no-call for each
+  drug, with calibrated confidence and an evidence category, plus a mandatory "confirm with standard lab
+  testing" message.
+
+
+
+
+     Hack-Nation × MIT Club of Northern California × MIT Club of Germany · 6th Global AI Hackathon · Page 3
+                        GENOME FIREWALL · OPENAI × Hack-Nation · Challenge Brief
+
+
+
+The Responsibility Requirement
+This is a biosecurity challenge with a strictly protective goal. Your prototype must address the following:
+• Defensive by construction: the tool predicts and explains resistance that already exists to support treatment
+choices and public-health tracking. It must never generate, design, or suggest changes to an organism.
+• Honest generalization: report performance using the provided split by genetically related groups, ideally
+including groups the model has not seen before. State clearly which bacterial species and antibiotics the system
+does and does not cover.
+• Calibrated confidence and a no-call option: a confident but wrong result could point a care team toward the
+wrong drug. Show that confidence scores match real performance, and return no-call when the evidence is weak,
+conflicting, or unlike the training data.
+• Honest explanations: clearly separate a known resistance gene or DNA change from a feature that is only
+statistically associated with resistance. A feature-importance score or SHAP (SHapley Additive exPlanations)
+value does not automatically prove a biological cause.
+• Human oversight: the antibiotic-response report is decision support that must be confirmed by a trained
+healthcare or laboratory professional. It must never make a treatment decision on its own.
+Show these on the held-out data in your demo and explain how you addressed each.
+
+
+OpenAI Tools & Credits
+This challenge is powered by OpenAI. We recommend exploring OpenAI's models for this challenge.
+Hack-Nation is providing $50 in free OpenAI application programming interface (API) credits per team, available
+on a first-come, first-served basis.
+• Be creative in exploring multimodal approaches and combining data inputs across domains - combine OpenAI's
+multimodal capabilities and image generation (gpt-image-2) with other modality models.
+• Strong entries show multimodal integration, user value, technical quality, creativity, responsible design, and
+demo quality.
+
+Data Sources and Hints
+Build your system using real, openly available bacterial genome data. Organizers will provide a fixed challenge
+dataset (see Appendix) so teams can focus on modeling rather than spending the event collecting and cleaning
+large raw archives.
+  GENOME + RESISTANCE DATA
+
+  BV-BRC (ex-PATRIC)               BV-BRC (Bacterial and Viral Bioinformatics Resource Center; formerly
+                                   PATRIC, the Pathosystems Resource Integration Center) is our primary
+                                   source: 15,000+ bacterial genomes linked to laboratory results showing
+                                   whether antibiotics worked, including measurements of how much drug was
+                                   needed to stop growth. Public data are freely available; bulk download uses
+                                   anonymous FTPS (File Transfer Protocol Secure). Use the
+                                   organizer-pinned, laboratory-measured test results - NOT general
+                                   phenotype fields, which may contain model-generated
+                                   predictions.bv-brc.org
+
+  AMRFinderPlus (default)          NCBI tool and database that detects known resistance genes and small
+                                   DNA changes. It is described as public-domain and unrestricted and is the
+                                   recommended default annotation tool for this event.github.com/ncbi/amr
+
+  ResFinder                        ResFinder identifies acquired genes and/or finds chromosomal mutations
+                                   mediating antimicrobial resistance in total or partial DNA sequence of
+                                   bacteria. genepi.food.dtu.dk/resfinder
+
+  cAMRah                           cAMRah is a curated workflow designed to predict AMR genes in microbial
+                                   genomes; it integrates and runs six AMR-finding tools and databases:
+                                   AMRFinderPlus, ResFinder, RGI (Resistance Gene Identifier) with the
+                                   CARD (Comprehensive Antibiotic Resistance Database) database,
+                                   Abricate with the NCBI database, Abricate with the ARG-ANNOT (Antibiotic
+
+
+
+
+     Hack-Nation × MIT Club of Northern California × MIT Club of Germany · 6th Global AI Hackathon · Page 4
+                          GENOME FIREWALL · OPENAI × Hack-Nation · Challenge Brief
+
+
+
+                                   Resistance Gene-ANNOTation) database, and the BV-BRC AMR detection
+                                   tool. pmc.ncbi.nlm.nih.gov/articles/PMC12910510/
+
+  XTree                            k-mer-based aligner designed for memory-efficient (and virtual/out-of-core
+                                   memory) parallel alignment of long or short sequencing reads to millions of
+                                   genomes. github.com/two-frontiers-project/2FP-XTree
+
+  Kaggle mirrors (optional)        Suitable for tutorials only. Use a mirror only when the dataset license,
+                                   version, and original source are clearly documented. A Kaggle copy alone
+                                   is not a verified open benchmark.
+
+  MODELS & COMPUTE
+
+  Baseline (recommended)           Use one regularized logistic-regression model per antibiotic with features
+                                   from AMRFinderPlus, such as known resistance genes and DNA changes.
+                                   It runs on a central processing unit (CPU) and is fast, easy to calibrate, and
+                                   easy to explain - a dependable core approach.
+
+  Deep-learning stretch            Genomic language models such as HyenaDNA (context lengths from 32k
+  (optional)                       up to 1 million bases in the largest checkpoint) and DNABERT-2 (117M
+                                   parameters) still cannot read an entire bacterial genome in one pass. A
+                                   realistic advanced option is to create embeddings for selected, annotated
+                                   DNA regions or genome chunks, combine them into one representation per
+                                   bacterial sample, and compare the result with the baseline.
+                                   Alternatives include translating the genome to a proteome and running a
+                                   protein-sequence model on the result, or hashing the genome sequence
+                                   into k-mers to collapse repetitive non-coding regions.
+
+  Compute                          Baseline: CPU. Advanced deep-learning option: one graphics processing
+                                   unit (GPU) using selected DNA regions or chunks. Free Colab does not
+                                   guarantee GPU access, so organizers should keep deep learning optional
+                                   and provide limited backup compute if they expect deep-learning
+                                   submissions.
+
+
+Success Criteria
+Judge submissions on safe, honest performance - not a single headline accuracy number from an unbalanced
+dataset. Report and be evaluated on:
+• Balanced accuracy, plus recall for resistant cases (the antibiotic is likely to fail) and susceptible cases (the
+antibiotic is likely to work), reported separately.
+• F1 score (the harmonic mean of precision and recall), AUROC (area under the receiver operating characteristic
+curve), and PR-AUC (precision-recall area under the curve) per drug (PR-AUC matters under class imbalance).
+• Confidence quality: Brier score and a reliability plot; also report how often the system returns no-call and how
+accurate the remaining predictions are.
+• Generalization: performance broken down by genetically related bacterial groups, using the organizer's hidden
+test set with groups not seen during training.
+Note: published baseline models perform strongly for some well-documented bacteria and antibiotics, but results
+depend on label quality, class balance, genetic similarity between samples, and how the data is split. There is no
+guaranteed target score - report results on the fixed held-out test split.
+
+What Makes a Strong Submission
+  Strong submissions…                                       Weak submissions…
+
+  — Use the grouped split and report results by             — Split rows randomly, allow nearly identical
+  genetically related group. Show that the model            genomes into both training and testing, and report
+  learns resistance signals rather than memorizing          an inflated score.
+  nearly identical bacteria.
+
+
+
+
+     Hack-Nation × MIT Club of Northern California × MIT Club of Germany · 6th Global AI Hackathon · Page 5
+                           GENOME FIREWALL · OPENAI × Hack-Nation · Challenge Brief
+
+
+
+  Strong submissions…                                             Weak submissions…
+
+  — Do one bacterial species and a few antibiotics                — Claim coverage for every disease-causing
+  well, with calibrated confidence and a no-call                  bacterium and every antibiotic, force every sample
+  option.                                                         into a yes/no answer, and hide uncertainty.
+
+  — Explain results honestly. Separate known                      — Present a raw SHAP or feature-importance
+  resistance genes or DNA changes from features                   score as if it proved a biological cause of
+  that are only statistically associated.                         resistance.
+
+  — Keep the system strictly defensive and say so.                — Drift toward designing, changing, strengthening,
+  Frame it as support for targeted antibiotic use and             or optimizing organisms.
+  public-health tracking.
+
+
+Why This Matters
+Antibiotic resistance is a slow-moving global crisis already underway. More than one million deaths each year are
+directly attributed to it, and the World Health Organization (WHO) identifies it as a major threat to human health.
+Two actions matter most: get the right antibiotic to the right patient sooner, and reduce unnecessary use of broad
+treatments while the lab catches up. A genome-to-antibiotic-response tool supports both by providing an earlier,
+evidence-based prediction and helping public-health teams see where resistance is spreading. The data is open,
+a reliable baseline can be built during a weekend, and the goal is clearly defensive.
+
+Appendix — Organizer Notes, Contact & Resources
+   Research prototype. Predictions based on historical bacterial genome data do not prove that the system is safe,
+   accurate enough, approved, or suitable for real healthcare decisions. Every antibiotic-response report must be confirmed
+   with standard laboratory testing.
+
+For organizers - provide a fixed challenge dataset (this is the difference between a productive event and
+24 hours spent cleaning data):
+• 1,000-3,000 reconstructed genomes for ONE bacterial species; 3-5 predefined antibiotics; only outcomes
+measured in a laboratory.
+• Standardized antibiotic names; a documented rule for likely to fail / likely to work / uncertain; one final label for
+each genome-antibiotic pair; genome quality flags; source and accession records; and a license and attribution
+file.
+• Group genomes by genetic similarity, with fixed training, confidence-calibration, and HIDDEN test sets; include
+file checksums and a repeatable download script.
+• Ideally provide precomputed AMRFinderPlus results and, optionally, a precomputed sparse k-mer feature
+matrix; include a hidden evaluation set scored with the metrics above and run the full reference pipeline before
+the event under the same computing limits participants will face.
+
+Scope & safety note: Limited to predicting and explaining resistance that already exists using
+reconstructed, openly available bacterial genomes. The tool may support treatment choices and
+public-health tracking, but it excludes all sample-to-genome processing and any design, synthesis, or
+enhancement of organisms.
+
+
+
+
+     Hack-Nation × MIT Club of Northern California × MIT Club of Germany · 6th Global AI Hackathon · Page 6
+
