@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 import tempfile
 
@@ -28,7 +29,38 @@ def load_csv(path: Path) -> pd.DataFrame:
     return pd.read_csv(path) if path.exists() else pd.DataFrame()
 
 
+@st.cache_resource
+def load_cached_model(path: str) -> dict:
+    """Keep model artifacts in memory so repeat uploads do not reload them."""
+
+    return load_model(Path(path))
+
+
 st.set_page_config(page_title="Genome Firewall MVP", page_icon="🧬", layout="wide")
+st.markdown(
+    """
+    <style>
+    .block-container { padding-top: 2rem; padding-bottom: 3rem; }
+    [data-testid="stMetric"] {
+        background: linear-gradient(135deg, #f8fbff 0%, #eef6ff 100%);
+        border: 1px solid #d8e7f5;
+        border-radius: 12px;
+        padding: 0.75rem 1rem;
+    }
+    .scope-badge {
+        display: inline-block; padding: 0.25rem 0.6rem; margin: 0.15rem 0.25rem 0.15rem 0;
+        border-radius: 999px; background: #e8f3ff; color: #14558a; font-size: 0.85rem;
+    }
+    .summary-card {
+        background: #f8fbff; border: 1px solid #d8e7f5; border-radius: 12px;
+        padding: 0.85rem 1rem; min-height: 86px; color: #16324f;
+    }
+    .summary-label { font-size: 0.82rem; color: #52708d; margin-bottom: 0.3rem; }
+    .summary-value { font-size: 1.65rem; font-weight: 700; color: #16324f; line-height: 1.1; }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 st.title("Genome Firewall")
 st.caption("Defensive antibiotic-response decision support — research prototype")
 st.warning("This is decision support, not a treatment decision. Confirm every result with standard laboratory testing.")
@@ -40,6 +72,36 @@ features = load_csv(FEATURES_PATH)
 evidence = load_csv(EVIDENCE_PATH)
 labels = load_csv(LABELS_PATH)
 
+
+def render_decision_cards(frame: pd.DataFrame) -> None:
+    """Render a compact, human-readable summary without changing the raw output."""
+
+    if frame.empty:
+        return
+    st.subheader("Decision summary")
+    columns = st.columns(min(3, len(frame)))
+    icons = {"likely to fail": "🔴", "likely to work": "🟢", "no-call": "🟡"}
+    for column, (_, row) in zip(columns, frame.iterrows()):
+        decision = str(row.get("prediction", "no-call"))
+        confidence = float(row.get("confidence", 0.0))
+        with column:
+            st.metric(
+                f"{icons.get(decision, '⚪')} {row.get('antibiotic', 'antibiotic')}",
+                decision,
+                f"confidence {confidence:.0%}",
+            )
+            st.caption(f"Target gate: {row.get('target_status', 'unknown')}")
+
+
+def render_summary_card(label: str, value: str, caption: str = "") -> None:
+    """Render a theme-independent summary card with explicit text colors."""
+
+    st.markdown(
+        f'<div class="summary-card"><div class="summary-label">{label}</div>'
+        f'<div class="summary-value">{value}</div><div class="summary-label">{caption}</div></div>',
+        unsafe_allow_html=True,
+    )
+
 if predictions.empty:
     st.error("No model predictions found. Run data_fetchers/train_cohort.py first.")
     st.stop()
@@ -50,6 +112,7 @@ with st.sidebar:
     st.write(f"{features['genome_id'].nunique() if 'genome_id' in features else 0} genomes")
     st.write(f"{max(len(features.columns) - 1, 0)} AMR features")
     st.write("AMRFinderPlus + calibrated logistic models")
+    st.markdown('<span class="scope-badge">30-genome MVP</span><span class="scope-badge">3 antibiotics</span>', unsafe_allow_html=True)
     if llm_available():
         st.success("OpenAI explanations enabled")
     else:
@@ -73,22 +136,27 @@ with tab_upload:
             output_path = Path(temporary) / "amrfinder.tsv"
             input_path.write_bytes(upload.getvalue())
             try:
-                qc = fasta_stats(input_path)
-                run_amrfinder(
-                    input_path,
-                    output_path,
-                    executable="/home/becode/miniconda3/envs/genome-firewall/bin/amrfinder",
-                    organism="Escherichia",
-                    plus=True,
-                    threads=8,
-                )
-                matrix, upload_evidence = build_feature_matrix([output_path])
+                with st.spinner("Running FASTA QC, AMRFinderPlus, and the prediction models…"):
+                    qc = fasta_stats(input_path)
+                    run_amrfinder(
+                        input_path,
+                        output_path,
+                        executable="/home/becode/miniconda3/envs/genome-firewall/bin/amrfinder",
+                        organism="Escherichia",
+                        plus=True,
+                        threads=8,
+                    )
+                    matrix, upload_evidence = build_feature_matrix([output_path])
                 st.success("Scored successfully")
-                st.caption(f"FASTA QC: {qc['contigs']} contigs, {qc['total_bases']:,} bases, N50 {qc['n50']:,}, ambiguous fraction {qc['ambiguous_fraction']:.4f}")
+                qc_columns = st.columns(4)
+                qc_columns[0].metric("Contigs", f"{qc['contigs']:,}")
+                qc_columns[1].metric("Assembly size", f"{qc['total_bases']:,} bp")
+                qc_columns[2].metric("N50", f"{qc['n50']:,} bp")
+                qc_columns[3].metric("Ambiguous bases", f"{qc['ambiguous_fraction']:.2%}")
                 all_scored = []
                 for upload_drug in sorted(metrics["antibiotic"].unique()):
                     model_path = ROOT / "models" / "cohort30" / f"escherichia_coli__{upload_drug}.joblib"
-                    artifact = load_model(model_path)
+                    artifact = load_cached_model(str(model_path))
                     for column in artifact["feature_columns"]:
                         if column not in matrix.columns:
                             matrix[column] = 0
@@ -105,7 +173,29 @@ with tab_upload:
                         else "no known resistance signal found"
                     )
                     all_scored.append(scored)
-                st.dataframe(pd.concat(all_scored, ignore_index=True), use_container_width=True, hide_index=True)
+                scored_frame = pd.concat(all_scored, ignore_index=True)
+                render_decision_cards(scored_frame)
+                with st.expander("Prediction details", expanded=True):
+                    st.dataframe(
+                        scored_frame,
+                        use_container_width=True,
+                        hide_index=True,
+                        column_config={
+                            "probability_resistant": st.column_config.NumberColumn("Resistance probability", format="%.1%"),
+                            "confidence": st.column_config.NumberColumn("Confidence", format="%.1%"),
+                        },
+                    )
+                report_json = json.dumps(
+                    {"qc": qc, "predictions": json.loads(scored_frame.to_json(orient="records"))},
+                    indent=2,
+                    default=str,
+                )
+                st.download_button(
+                    "Download prediction report (JSON)",
+                    report_json,
+                    file_name="genome_firewall_prediction_report.json",
+                    mime="application/json",
+                )
                 st.info("Target annotation was not supplied for this upload, so likely-to-work is conservatively blocked as no-call.")
                 if not upload_evidence.empty:
                     st.subheader("Detected AMR evidence")
@@ -115,7 +205,7 @@ with tab_upload:
                     try:
                         st.write(
                             explain_predictions(
-                                pd.concat(all_scored, ignore_index=True),
+                                scored_frame,
                                 species="Escherichia coli",
                                 antibiotic="all supported antibiotics",
                                 qc=qc,
@@ -129,11 +219,19 @@ with tab_upload:
                 st.error(f"Could not score this FASTA: {error}")
 
 with tab_overview:
+    genome_count = int(features["genome_id"].nunique()) if "genome_id" in features else int(predictions["genome_id"].nunique())
+    drug_count = int(metrics["antibiotic"].nunique()) if "antibiotic" in metrics else int(predictions["antibiotic"].nunique())
+    feature_count = max(len(features.columns) - 1, 0) if not features.empty else 0
     first, second, third, fourth = st.columns(4)
-    first.metric("Genomes", int(features["genome_id"].nunique()))
-    second.metric("Drug models", int(metrics["antibiotic"].nunique()) if not metrics.empty else 0)
-    third.metric("AMR features", max(len(features.columns) - 1, 0))
-    fourth.metric("Evidence rows", len(evidence))
+    with first:
+        render_summary_card("Genomes", f"{genome_count:,}", "active cohort")
+    with second:
+        render_summary_card("Drug models", f"{drug_count:,}", "supported antibiotics")
+    with third:
+        render_summary_card("AMR features", f"{feature_count:,}", "determinant + engineered")
+    with fourth:
+        render_summary_card("Evidence rows", f"{len(evidence):,}", "AMRFinderPlus findings")
+    st.markdown("**Scope:** <span class='scope-badge'>Escherichia coli</span><span class='scope-badge'>ampicillin</span><span class='scope-badge'>ceftriaxone</span><span class='scope-badge'>ciprofloxacin</span>", unsafe_allow_html=True)
     st.subheader("Held-out metrics")
     st.dataframe(metrics, use_container_width=True, hide_index=True)
     st.subheader("Decision policy")
@@ -163,4 +261,8 @@ with tab_models:
         st.info("Run the exploratory benchmark to compare models.")
     else:
         st.dataframe(benchmark, use_container_width=True, hide_index=True)
+        chart_data = benchmark.pivot_table(index="model", columns="antibiotic", values="balanced_accuracy")
+        if not chart_data.empty:
+            st.subheader("Balanced accuracy comparison")
+            st.bar_chart(chart_data)
         st.caption("The 30-genome MVP is too small for reliable model ranking; this table is for plumbing and demo comparison only.")
