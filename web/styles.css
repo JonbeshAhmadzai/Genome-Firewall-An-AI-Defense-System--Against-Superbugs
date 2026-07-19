@@ -26,6 +26,17 @@ h3 { margin: 25px 0 10px; color: #23445d; font-size: .94rem; }
 .status-pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 4px rgba(24, 115, 74, .12); }
 .panel { background: rgba(255,255,255,.92); border: 1px solid rgba(211, 227, 237, .9); border-radius: 21px; padding: 26px; box-shadow: var(--shadow); margin-bottom: 20px; }
 .section-heading, .form-heading, .results-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; }
+.coverage-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.coverage-link, .back-link { display: inline-flex; align-items: center; border-radius: 10px; padding: 8px 11px; color: #126a98; background: #e8f7fa; font-size: .75rem; font-weight: 800; text-decoration: none; }
+.coverage-link:hover, .back-link:hover { background: #d8f0f5; }
+.coverage-callout { display: flex; align-items: flex-start; gap: 12px; margin-top: 18px; padding: 14px 16px; border: 1px solid #cfe9ef; border-radius: 13px; background: #f3fbfd; color: #547488; }
+.coverage-callout-icon { display: grid; place-items: center; flex: 0 0 28px; height: 28px; border-radius: 8px; color: #137ca3; background: #dff5f8; font-weight: 900; }
+.coverage-callout strong, .coverage-callout span { display: block; }
+.coverage-callout strong { margin-bottom: 3px; color: #20536c; font-size: .82rem; }
+.coverage-callout span { font-size: .77rem; line-height: 1.45; }
+.coverage-shell .panel { margin-bottom: 20px; }
+.coverage-hero { align-items: center; }
+.back-link { background: #fff; border: 1px solid var(--line); }
 .section-subtitle { margin: 5px 0 0; color: var(--muted); font-size: .86rem; }
 .scope-status { padding: 7px 11px; color: #8d5b15; background: #fff3da; }
 .scope-line { color: #527188; background: #f1f8fb; border: 1px solid #e2eff4; border-radius: 12px; padding: 12px 14px; margin: 17px 0 22px; font-size: .84rem; }

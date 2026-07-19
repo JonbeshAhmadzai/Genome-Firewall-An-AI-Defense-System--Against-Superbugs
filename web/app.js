@@ -88,12 +88,15 @@ function renderOverview(data) {
   const scope = data.scope || {};
   document.querySelector('#scope-status').textContent = scope.status || 'Research scope';
   document.querySelector('#scope-line').innerHTML = `<strong>Species:</strong> ${(scope.species || []).map(esc).join(', ') || 'none'} · <strong>Antibiotics:</strong> ${(scope.antibiotics || []).map(esc).join(', ') || 'none'}`;
-  document.querySelector('#model-comparison').innerHTML = comparisonTable(data.model_comparison || []);
-  document.querySelector('#held-out-metrics').innerHTML = heldOutTable(data.held_out_metrics || []);
+  const comparisonEl = document.querySelector('#model-comparison');
+  const heldOutEl = document.querySelector('#held-out-metrics');
+  if (comparisonEl) comparisonEl.innerHTML = comparisonTable(data.model_comparison || []);
+  if (heldOutEl) heldOutEl.innerHTML = heldOutTable(data.held_out_metrics || []);
   const policy = data.decision_policy || {};
   const split = data.validation_split || {};
   const steps = (data.pipeline || []).map(step => `<li>${esc(step)}</li>`).join('');
-  document.querySelector('#pipeline-info').innerHTML = `<p><strong>Confidence threshold:</strong> ${percent(policy.minimum_confidence)} · <strong>No-call:</strong> ${esc(policy.no_call || '')}</p><p><strong>Validation:</strong> ${percent(split.train)} train · ${percent(split.calibration)} calibration · ${percent(split.test)} grouped test</p><p>${esc(split.method || '')}. ${esc(policy.safety || '')}</p><ol>${steps}</ol>`;
+  const pipelineEl = document.querySelector('#pipeline-info');
+  if (pipelineEl) pipelineEl.innerHTML = `<p><strong>Confidence threshold:</strong> ${percent(policy.minimum_confidence)} · <strong>No-call:</strong> ${esc(policy.no_call || '')}</p><p><strong>Validation:</strong> ${percent(split.train)} train · ${percent(split.calibration)} calibration · ${percent(split.test)} grouped test</p><p>${esc(split.method || '')}. ${esc(policy.safety || '')}</p><ol>${steps}</ol>`;
 }
 
 function render(response) {

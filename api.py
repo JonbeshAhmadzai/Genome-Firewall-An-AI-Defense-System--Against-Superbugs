@@ -80,6 +80,13 @@ def index() -> FileResponse:
     return FileResponse(WEB_DIR / "index.html")
 
 
+@app.get("/coverage", response_class=FileResponse)
+def coverage() -> FileResponse:
+    """Serve the cohort coverage and model-comparison view in its own tab."""
+
+    return FileResponse(WEB_DIR / "coverage.html")
+
+
 @app.get("/api/health")
 def health() -> dict[str, Any]:
     return {"status": "ok", "service": "genome-firewall-api", "llm_available": llm_available()}
