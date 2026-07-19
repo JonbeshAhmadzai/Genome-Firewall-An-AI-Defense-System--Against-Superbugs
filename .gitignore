@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments and local binaries
+.venv/
+venv/
+env/
+bin/
+
+# Local environment/config
+.env
+.env.*
+
+# Generated project artifacts
+data/
+models/
+reports/
+data.zip
+
+# Large/local source documents
+problem_statement.pdf
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/

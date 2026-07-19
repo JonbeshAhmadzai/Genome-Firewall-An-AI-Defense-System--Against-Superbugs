@@ -227,6 +227,8 @@ Current limitation:
 
 The active conda env is expected to be named `genome`.
 
+Python package requirements are listed in `requirements.txt`.
+
 Verified installed:
 
 - `pandas`, `numpy`, `scipy`, `scikit-learn`
