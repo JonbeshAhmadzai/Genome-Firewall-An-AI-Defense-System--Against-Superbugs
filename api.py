@@ -81,6 +81,8 @@ def index() -> FileResponse:
 
 
 @app.get("/coverage", response_class=FileResponse)
+@app.get("/coverage/", response_class=FileResponse)
+@app.get("/coverage.html", response_class=FileResponse)
 def coverage() -> FileResponse:
     """Serve the cohort coverage and model-comparison view in its own tab."""
 

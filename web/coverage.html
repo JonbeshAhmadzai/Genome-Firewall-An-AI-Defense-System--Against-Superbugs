@@ -25,7 +25,30 @@
 
     <section class="panel"><p class="eyebrow">BENCHMARK</p><h2>Model comparison</h2><p class="hint">Exploratory held-out comparison. The MVP cohort is too small for clinical model ranking.</p><div class="table-wrap" id="model-comparison"></div></section>
     <section class="panel"><p class="eyebrow">HELD-OUT VALIDATION</p><h2>Primary metrics</h2><div class="table-wrap" id="held-out-metrics"></div></section>
+    <section class="panel"><p class="eyebrow">READING THE RESULTS</p><h2>Metric guide</h2><div class="table-wrap"><table class="metric-guide"><thead><tr><th>Metric</th><th>Meaning</th><th>Better direction</th></tr></thead><tbody>
+      <tr><td>Balanced accuracy</td><td>Average recall across resistant and susceptible classes.</td><td>Higher</td></tr>
+      <tr><td>Resistant recall</td><td>Share of resistant genomes correctly identified.</td><td>Higher</td></tr>
+      <tr><td>Susceptible recall</td><td>Share of susceptible genomes correctly identified.</td><td>Higher</td></tr>
+      <tr><td>F1</td><td>Balance of resistant precision and recall.</td><td>Higher</td></tr>
+      <tr><td>AUROC / PR-AUC</td><td>Ranking quality across thresholds; PR-AUC is useful with imbalanced classes.</td><td>Higher</td></tr>
+      <tr><td>Brier score</td><td>How well predicted probabilities match outcomes.</td><td>Lower</td></tr>
+      <tr><td>No-call rate</td><td>Share abstained from because confidence or target compatibility was insufficient.</td><td>Context-dependent</td></tr>
+      <tr><td>Called accuracy</td><td>Accuracy only among predictions that were not abstained from.</td><td>Higher</td></tr>
+    </tbody></table></div></section>
     <section class="panel"><p class="eyebrow">METHOD</p><h2>Pipeline and decision policy</h2><div id="pipeline-info"></div></section>
+    <section class="panel config-builder">
+      <div class="section-heading"><div><p class="eyebrow">CONFIGURATION BUILDER</p><h2>Add future coverage</h2><p class="section-subtitle">Generate a reviewed snippet for <code>targets_config.py</code>.</p></div><span class="step-chip">SAFE DRAFT</span></div>
+      <div class="form-grid config-grid">
+        <label>Entity type<select id="config-kind"><option value="bacterium">Bacterium</option><option value="virus">Virus</option></select></label>
+        <label>Name<input id="config-name" type="text" placeholder="e.g. Klebsiella pneumoniae"></label>
+        <label>Taxon ID<input id="config-taxon" type="number" min="1" placeholder="e.g. 573"></label>
+        <label>Antibiotic<input id="config-antibiotic" type="text" placeholder="e.g. meropenem"></label>
+        <label class="config-wide">Molecular target genes <small>Comma-separated; e.g. gyrA, parC</small><input id="config-targets" type="text" placeholder="gyrA, parC"></label>
+      </div>
+      <div class="action-row"><button id="generate-config" type="button">Generate config snippet <span class="button-arrow">→</span></button><span class="action-note">Review, add data, then retrain before enabling.</span></div>
+      <pre id="config-output" class="config-output hidden"></pre>
+      <button id="download-config" class="secondary hidden" type="button">Download snippet</button>
+    </section>
     <footer>Research prototype only. Confirm every result with standard laboratory testing.</footer>
   </main>
   <script src="/static/coverage.js"></script>

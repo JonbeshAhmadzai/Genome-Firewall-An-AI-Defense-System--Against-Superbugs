@@ -27,3 +27,32 @@ async function load() {
   document.querySelector('#pipeline-info').innerHTML = `<p><strong>Confidence threshold:</strong> ${percent(policy.minimum_confidence)} · <strong>No-call:</strong> ${esc(policy.no_call || '')}</p><p><strong>Validation:</strong> ${percent(split.train)} train · ${percent(split.calibration)} calibration · ${percent(split.test)} grouped test</p><p>${esc(split.method || '')}. ${esc(policy.safety || '')}</p><ol>${steps}</ol>`;
 }
 load().catch(error => { document.querySelector('#scope-status').textContent = 'Unavailable'; document.querySelector('#scope-line').textContent = error.message; });
+
+const configOutput = document.querySelector('#config-output');
+const downloadConfig = document.querySelector('#download-config');
+let latestSnippet = '';
+document.querySelector('#generate-config').addEventListener('click', () => {
+  const kind = document.querySelector('#config-kind').value;
+  const name = document.querySelector('#config-name').value.trim();
+  const taxon = document.querySelector('#config-taxon').value.trim();
+  const antibiotic = document.querySelector('#config-antibiotic').value.trim().toLowerCase();
+  const targets = document.querySelector('#config-targets').value.split(',').map(value => value.trim()).filter(Boolean);
+  if (!name || !taxon || !antibiotic) {
+    configOutput.textContent = 'Enter an entity name, taxon ID, and antibiotic first.';
+    configOutput.classList.remove('hidden');
+    downloadConfig.classList.add('hidden');
+    return;
+  }
+  const reader = kind === 'virus' ? 'virus_placeholder' : 'amrfinderplus';
+  const organism = kind === 'virus' ? '' : `\n        "amrfinder_organism": "${name.split(' ')[0]}",`;
+  const targetTuple = targets.length ? `(${targets.map(target => `"${target}"`).join(', ')},)` : '()  # add validated target genes';
+  latestSnippet = `# Add to PATHOGEN_CONFIG\n"${name}": {\n    "kind": "${kind}",\n    "taxon_id": ${Number(taxon)},\n    "reader": "${reader}",${organism}\n    "enabled": False,\n},\n\n# Add to ANTIBIOTIC_ALIASES\n"${antibiotic}": "${antibiotic}",\n\n# Add to TARGET_DEFINITIONS\n("${name}", "${antibiotic}"): {"enabled": False},\n\n# Add to MOLECULAR_TARGETS\n"${antibiotic}": ${targetTuple},\n\n# Add to TARGET_ANNOTATION_MARKERS\n"${antibiotic}": {"genes": ${targetTuple}, "product_keywords": ()},`;
+  configOutput.textContent = latestSnippet;
+  configOutput.classList.remove('hidden');
+  downloadConfig.classList.remove('hidden');
+});
+downloadConfig.addEventListener('click', () => {
+  if (!latestSnippet) return;
+  const blob = new Blob([latestSnippet + '\n'], { type: 'text/plain' });
+  const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = 'targets_config_addition.txt'; link.click(); URL.revokeObjectURL(link.href);
+});
