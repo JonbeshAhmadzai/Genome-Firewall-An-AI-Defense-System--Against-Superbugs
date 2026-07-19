@@ -92,7 +92,7 @@ def write_model_card(metrics: pd.DataFrame, predictions: pd.DataFrame, model_car
     no_call_columns = ["antibiotic", "no_call_rate"]
 
     if "amrfinder" in feature_source.lower():
-        feature_limitation = "- AMRFinderPlus annotations are used as features; regenerate this card after all TSVs finish so metrics reflect the full synchronized cohort."
+        feature_limitation = "- AMRFinderPlus annotations are used as features; regenerate this card whenever cohort selection, AMRFinder TSVs, thresholds, or feature engineering changes."
         explanation_line = "- Honest explanations: drug-specific AMRFinderPlus hits are reported separately from statistical model associations; statistical associations are not proof of biological causality."
     else:
         feature_limitation = "- Current scores are not submission-quality because the temporary baseline is not AMRFinderPlus-based."
@@ -138,7 +138,7 @@ def write_model_card(metrics: pd.DataFrame, predictions: pd.DataFrame, model_car
         "## Limitations",
         "",
         feature_limitation,
-        "- Confidence and generalization estimates are unstable until the AMRFinderPlus run covers the synchronized FASTA-backed cohort.",
+        "- Confidence and generalization estimates remain limited by the small-data setting and should be interpreted per antibiotic, especially when held-out rows are few.",
         "- Target gate verifies configured target markers from BV-BRC genome annotations when `data/interim/target_presence.csv` is refreshed for the current cohort; uploaded FASTAs still need an annotation path.",
     ]
     model_card_path.write_text("\n".join(lines) + "\n", encoding="utf-8")

@@ -436,6 +436,18 @@ Generate AMRFinderPlus-specific evaluation plots and model card:
 conda run -n genome python scripts/generate_evaluation_report.py --metrics reports/metrics/amrfinder_model_metrics.csv --predictions reports/metrics/amrfinder_heldout_predictions.csv --model-card reports/amrfinder_model_card.md --prefix amrfinder --feature-source "AMRFinderPlus AMR gene and mutation presence features"
 ```
 
+Compare classical models on refined AMRFinderPlus aggregate features:
+
+```bash
+conda run -n genome python scripts/compare_classical_models.py
+```
+
+Run feature-group ablations with one fixed calibrated logistic model:
+
+```bash
+conda run -n genome python scripts/ablate_refined_features.py
+```
+
 Temporary plumbing baseline while AMRFinderPlus is unavailable:
 
 ```bash
@@ -451,7 +463,8 @@ The k-mer baseline is not the final scientific approach. It exists to validate p
 Current prepared cohort:
 
 - Quality-filtered FASTA-backed genomes currently represented in metadata: `497`
-- FASTA files currently present on disk: `500` (`269` had completed AMRFinderPlus TSVs at last count; the WSL AMRFinderPlus run may increase this)
+- FASTA files currently present on disk: `500`
+- AMRFinderPlus TSVs currently present on disk: `499`
 - Cohort labels: `1,136`
 - Cohort labels file: `data/processed/ecoli_cohort_labels.csv`
 - Cohort metadata file: `data/processed/ecoli_genome_metadata.csv`
@@ -463,10 +476,12 @@ Current cohort label balance:
 
 | Antibiotic | Resistant | Susceptible | Modeling status |
 | --- | ---: | ---: | --- |
-| ampicillin | 47 | 0 | skipped, one class only |
-| cefotaxime | 31 | 19 | usable |
-| chloramphenicol | 40 | 10 | usable |
-| gentamicin | 26 | 22 | usable |
+| amoxicillin | 187 | 134 | usable, weak separation |
+| ampicillin | 295 | 188 | usable |
+| cefotaxime | 51 | 37 | usable |
+| ceftazidime | 47 | 26 | usable |
+| chloramphenicol | 60 | 27 | usable |
+| gentamicin | 37 | 47 | usable |
 
 Temporary k-mer baseline outputs:
 
@@ -507,10 +522,16 @@ Current AMRFinderPlus model path status:
 
 - AMRFinderPlus TSVs for the current local FASTA set are in `data/interim/amrfinder/`.
 - AMRFinderPlus feature matrix exists at `data/interim/ecoli_amrfinder_features.csv`.
+- Refined AMRFinderPlus feature matrix exists at `data/interim/ecoli_amrfinder_refined_features.csv`.
 - AMRFinderPlus evidence table exists at `data/interim/ecoli_amrfinder_evidence.csv`.
 - Full AMRFinderPlus hit table exists at `data/interim/ecoli_amrfinder_all_hits.csv`.
 - AMRFinderPlus models are saved under `models/amrfinder/`.
+- Refined AMRFinderPlus models are saved under `models/amrfinder_refined/`.
+- Classical model comparison artifacts are saved under `models/classical_comparison/`.
 - AMRFinderPlus metrics are saved at `reports/metrics/amrfinder_model_metrics.csv`.
+- Refined AMRFinderPlus metrics are saved at `reports/metrics/amrfinder_refined_model_metrics.csv`.
+- Classical model comparison is saved at `reports/metrics/classical_model_comparison.csv`.
+- Best classical model per antibiotic is saved at `reports/metrics/best_classical_models.csv`.
 - AMRFinderPlus held-out predictions are saved at `reports/metrics/amrfinder_heldout_predictions.csv`.
 - AMRFinderPlus cohort prediction report with drug-relevant supporting hits is saved at `reports/metrics/amrfinder_cohort_predictions.csv`.
 - AMRFinderPlus model card is saved at `reports/amrfinder_model_card.md`.
@@ -518,15 +539,42 @@ Current AMRFinderPlus model path status:
 - Target-presence table exists at `data/interim/target_presence.csv`.
 - AMRFinderPlus prediction report now includes target-gate columns: `target_gate_status`, `target_gate_reason`, `target_present`, `matched_target_markers`, and `molecular_targets`.
 
-Current AMRFinderPlus metrics from the previous 50-genome training run, before the 497-genome cohort sync:
+Current raw AMRFinderPlus logistic-regression metrics after the 497-genome cohort sync:
 
 | Antibiotic | Balanced accuracy | Resistant recall | Susceptible recall | F1 | AUROC | PR-AUC | No-call rate |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| cefotaxime | 0.833 | 0.667 | 1.000 | 0.800 | 0.833 | 0.867 | 0.429 |
-| chloramphenicol | 0.500 | 1.000 | 0.000 | 0.727 | 0.833 | 0.917 | 0.143 |
-| gentamicin | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 |
+| amoxicillin | 0.552 | 0.925 | 0.179 | 0.731 | 0.595 | 0.678 | 0.957 |
+| ampicillin | 0.931 | 0.947 | 0.914 | 0.947 | 0.946 | 0.972 | 0.043 |
+| cefotaxime | 0.742 | 0.667 | 0.818 | 0.571 | 0.848 | 0.667 | 0.714 |
+| ceftazidime | 0.742 | 0.769 | 0.714 | 0.800 | 0.857 | 0.940 | 0.700 |
+| chloramphenicol | 0.900 | 1.000 | 0.800 | 0.957 | 0.982 | 0.992 | 0.375 |
+| gentamicin | 0.923 | 1.000 | 0.846 | 0.917 | 0.930 | 0.854 | 0.667 |
 
-These AMRFinderPlus metrics are from a small local cohort and should not be treated as final scientific performance. The gentamicin result has zero confident held-out calls, so its apparent perfect score is not evidence of a reliable predictor. Rerun `scripts/train_amrfinder_models.py`, `scripts/predict_amrfinder_models.py`, and the AMRFinderPlus report command whenever the cohort changes.
+Best classical model per antibiotic on refined AMRFinderPlus aggregate features:
+
+| Antibiotic | Best model | Balanced accuracy | Brier score | No-call rate |
+| --- | --- | ---: | ---: | ---: |
+| amoxicillin | gradient boosting | 0.558 | 0.229 | 0.880 |
+| ampicillin | linear SVC | 0.959 | 0.039 | 0.033 |
+| cefotaxime | extra trees | 0.909 | 0.085 | 0.071 |
+| ceftazidime | extra trees | 0.819 | 0.165 | 0.400 |
+| chloramphenicol | gradient boosting | 0.955 | 0.066 | 0.000 |
+| gentamicin | gradient boosting | 0.962 | 0.066 | 0.042 |
+
+These metrics use grouped splits with `cgmlst_hc100`; all current trained antibiotics report `0` overlapping train/test groups. The weaker `amoxicillin` result should be shown honestly as high-resistant-recall but poor susceptible recall.
+
+Feature-engineering ablation with the same calibrated logistic model:
+
+| Antibiotic | Best refined feature group | Balanced accuracy | Interpretation |
+| --- | --- | ---: | --- |
+| amoxicillin | subclass only | 0.562 | Very small gain; still weak |
+| ampicillin | family only | 0.968 | Family-level beta-lactamase/marker aggregates helped most |
+| cefotaxime | all refined / family / subclass tied | 0.909 | Mechanism aggregates fixed much of the raw sparse-marker weakness |
+| ceftazidime | subclass only / all refined tied | 0.819 | Subclass-level beta-lactam signal helped |
+| chloramphenicol | class/family/subclass all tied | 0.955 | Phenicol signal is strong and simple |
+| gentamicin | family only / class+family tied | 0.962 | Aminoglycoside family aggregates helped most |
+
+The ablation suggests the useful feature engineering is mainly collapsing sparse allele-level AMRFinder hits into `family` and `subclass` mechanism groups. Broad `summary_only` burden counts are weaker by themselves and should be presented as statistical context, not known biological evidence.
 
 ## Safety Notes
 
