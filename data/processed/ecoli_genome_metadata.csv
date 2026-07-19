@@ -1,0 +1,498 @@
+checkm_contamination,cgmlst_hc100,genome_id,genome_name,genome_quality,genome_length,contigs,species,genome_status,isolation_country,cgmlst_hc50,host_common_name,checkm_completeness,cgmlst_hc20,collection_year
+0.0,18,1438684.3,Escherichia coli CHS 68,Good,5227634,35,Escherichia coli,WGS,USA,18,Human,100.0,21853,
+0.4,18,1438685.3,Escherichia coli CHS 69,Good,5250696,72,Escherichia coli,WGS,USA,18,Human,100.0,21854,2013.0
+0.4,3718,1438686.3,Escherichia coli CHS 77,Good,5000065,32,Escherichia coli,WGS,USA,21855,Human,99.6,21855,2013.0
+0.0,36621,1328432.3,Escherichia coli BWH 32,Good,5087927,47,Escherichia coli,WGS,USA,36621,Human,100.0,36621,2012.0
+0.0,18,1328433.3,Escherichia coli BWH 34,Good,5410353,5,Escherichia coli,WGS,USA,18,Human,100.0,36627,2012.0
+0.4,99,1328434.3,Escherichia coli BWH 40,Good,5288563,23,Escherichia coli,WGS,USA,2760,Human,100.0,3665,2012.0
+0.0,18,562.17359,Escherichia coli strain 81009,Good,5147804,2,Escherichia coli,Complete,United Arab Emirates,18,Human,100.0,43,2009.0
+0.4,1471,562.19151,Escherichia coli strain 104,Good,4921291,78,Escherichia coli,WGS,Norway,35533,Human,100.0,35533,2013.0
+0.11,18,562.42635,Escherichia coli strain 108,Good,5286714,256,Escherichia coli,WGS,Norway,18,Human,99.78,15942,2015.0
+0.11,59,562.42686,Escherichia coli strain 24,Good,5050545,238,Escherichia coli,WGS,USA,102,Human,99.78,2951,
+1.86,50381,562.48345,Escherichia coli 590,Good,5745298,332,Escherichia coli,WGS,Canada,50381,,99.78,50381,2016.0
+0.11,2008,562.48346,Escherichia coli 290,Good,5399739,225,Escherichia coli,WGS,Canada,2606,,99.78,2606,2016.0
+0.11,2008,562.48348,Escherichia coli 292,Good,5397571,229,Escherichia coli,WGS,Canada,2008,,99.78,2008,2016.0
+0.22,2008,562.48349,Escherichia coli 291,Good,5337373,218,Escherichia coli,WGS,Canada,4205,,99.78,4205,2016.0
+0.0,6065,562.58704,Escherichia coli strain 14037824,Good,5480990,153,Escherichia coli,WGS,Italy,24496,Turkey,99.78,24496,2014.0
+0.0,24497,562.58705,Escherichia coli strain 14040376,Good,5196353,235,Escherichia coli,WGS,Italy,24497,Turkey,99.78,24497,2014.0
+0.33,24498,562.58706,Escherichia coli strain 14043377,Good,5370377,161,Escherichia coli,WGS,Italy,24498,Turkey,99.78,24498,2014.0
+0.0,24499,562.58707,Escherichia coli strain 14043512,Good,4868412,116,Escherichia coli,WGS,Italy,24499,Turkey,99.78,24499,2014.0
+0.55,24501,562.58709,Escherichia coli strain 14045775,Good,5640030,209,Escherichia coli,WGS,Italy,24501,Turkey,99.78,24501,2014.0
+0.0,24503,562.58711,Escherichia coli strain 14063820,Good,5195515,203,Escherichia coli,WGS,Italy,24503,Turkey,99.78,24503,2014.0
+0.0,177,562.58712,Escherichia coli strain 14053473,Good,4953062,102,Escherichia coli,WGS,Italy,177,Turkey,99.78,24504,2014.0
+0.11,959,562.58713,Escherichia coli strain 14050802,Good,5359126,197,Escherichia coli,WGS,Italy,18364,Turkey,99.78,24505,2014.0
+0.55,177,562.58714,Escherichia coli strain 14047606,Good,4679182,93,Escherichia coli,WGS,Italy,24506,Turkey,99.78,24506,2014.0
+0.44,2553,562.58715,Escherichia coli strain 14050800,Good,5602950,325,Escherichia coli,WGS,Italy,2553,Turkey,99.78,2553,2014.0
+0.33,24508,562.58716,Escherichia coli strain 14057877,Good,5319355,242,Escherichia coli,WGS,Italy,24508,Turkey,99.78,24508,2014.0
+0.0,24509,562.58717,Escherichia coli strain 14054555,Good,5164506,63,Escherichia coli,WGS,Italy,24509,Turkey,99.78,24509,2014.0
+0.0,24510,562.58718,Escherichia coli strain 14062120,Good,5365159,142,Escherichia coli,WGS,Italy,24510,Turkey,99.78,24510,2014.0
+0.33,1948,562.58719,Escherichia coli strain 14062104,Good,5116609,163,Escherichia coli,WGS,Italy,8462,Turkey,99.78,24511,2014.0
+0.0,24342,562.58721,Escherichia coli strain 14066715,Good,5436157,200,Escherichia coli,WGS,Italy,24513,Turkey,99.78,24513,2014.0
+0.0,24503,562.58722,Escherichia coli strain 14067330,Good,5275875,163,Escherichia coli,WGS,Italy,24503,Turkey,99.78,24514,2014.0
+0.0,131,562.58723,Escherichia coli strain 14069546,Good,5251512,176,Escherichia coli,WGS,Italy,24515,Turkey,99.78,24515,2014.0
+0.11,7972,562.58724,Escherichia coli strain 15038100,Good,5049728,332,Escherichia coli,WGS,Italy,31770,Cow,99.78,31770,2015.0
+0.0,341,562.58725,Escherichia coli strain 14091902,Good,5145383,128,Escherichia coli,WGS,Italy,24689,Turkey,99.78,24689,2014.0
+0.11,177,562.58726,Escherichia coli strain 14085180,Good,4897892,102,Escherichia coli,WGS,Italy,24690,Turkey,99.78,24690,2014.0
+0.11,24691,562.58727,Escherichia coli strain 14083136,Good,4864232,142,Escherichia coli,WGS,Italy,24691,Turkey,99.67,24691,2014.0
+0.0,268,562.58728,Escherichia coli strain 14087995,Good,5127901,182,Escherichia coli,WGS,Italy,24692,Turkey,99.78,24692,2014.0
+0.0,35,562.58729,Escherichia coli strain 14073256,Good,5172819,146,Escherichia coli,WGS,Italy,24693,Turkey,99.78,24693,2014.0
+0.11,76,562.58731,Escherichia coli strain 14072934,Good,5346116,105,Escherichia coli,WGS,Italy,24695,Turkey,99.78,24695,2014.0
+0.11,24380,562.58732,Escherichia coli strain 15051805,Good,5115630,110,Escherichia coli,WGS,Italy,31764,Cow,99.78,31764,2015.0
+0.55,3652,562.58733,Escherichia coli strain 15050011,Good,5316596,377,Escherichia coli,WGS,Italy,31772,Cow,99.78,31772,2015.0
+0.0,177,562.58734,Escherichia coli strain 15054212,Good,4896318,134,Escherichia coli,WGS,Italy,177,Cow,99.78,31773,2015.0
+0.0,24696,562.58735,Escherichia coli strain 15056393,Good,5030299,153,Escherichia coli,WGS,Italy,24696,Pig,99.78,24696,2015.0
+0.22,24697,562.58736,Escherichia coli strain 15062645,Good,5123556,147,Escherichia coli,WGS,Italy,24697,Pig,99.78,24697,2015.0
+0.0,246,562.58737,Escherichia coli strain 15057173,Good,5033096,154,Escherichia coli,WGS,Italy,24698,Pig,99.78,24698,2015.0
+0.99,31774,562.58738,Escherichia coli strain 15078696,Good,4560579,174,Escherichia coli,WGS,Italy,31774,Cow,99.78,31774,2015.0
+0.11,31775,562.58739,Escherichia coli strain 15056874,Good,4872388,118,Escherichia coli,WGS,Italy,31775,Cow,99.78,31775,2015.0
+0.22,24700,562.58741,Escherichia coli strain 101,Good,4963640,133,Escherichia coli,WGS,Norway,24700,Human,99.78,24700,2006.0
+0.22,4650,562.58742,Escherichia coli strain 102,Good,4959023,155,Escherichia coli,WGS,Norway,24516,Human,99.78,24516,2005.0
+0.0,24517,562.58743,Escherichia coli strain 103,Good,5308406,200,Escherichia coli,WGS,Norway,24517,Human,99.78,24517,2006.0
+2.95,24517,562.58745,Escherichia coli strain 105,Good,5282140,231,Escherichia coli,WGS,Norway,24518,Human,97.19,24518,2006.0
+0.22,24519,562.58748,Escherichia coli strain 112,Good,5117742,156,Escherichia coli,WGS,Norway,24519,Human,99.78,24519,2006.0
+0.11,24157,562.58749,Escherichia coli strain 111,Good,4774493,209,Escherichia coli,WGS,Norway,24520,Human,99.67,24520,2006.0
+0.11,2511,562.58751,Escherichia coli strain 106,Good,5488933,297,Escherichia coli,WGS,Norway,24521,Human,99.78,24521,2006.0
+0.11,24522,562.58752,Escherichia coli strain 107,Good,4930384,128,Escherichia coli,WGS,Norway,24522,Human,99.78,24522,2006.0
+0.0,10,562.58754,Escherichia coli strain 118,Good,5182576,181,Escherichia coli,WGS,Norway,10830,Human,99.78,24524,2006.0
+0.11,24525,562.58755,Escherichia coli strain 117,Good,4988687,195,Escherichia coli,WGS,Norway,24525,Human,99.67,24525,2007.0
+0.0,5698,562.58757,Escherichia coli strain 114,Good,4863845,135,Escherichia coli,WGS,Norway,24526,Human,99.78,24526,2006.0
+0.55,17996,562.58758,Escherichia coli strain 115,Good,5167387,353,Escherichia coli,WGS,Norway,24527,Human,99.78,24527,2006.0
+0.0,18,562.58761,Escherichia coli strain 201,Good,5273646,95,Escherichia coli,WGS,Norway,18,Human,99.78,24702,1999.0
+0.0,3803,562.58762,Escherichia coli strain 121,Good,5012259,129,Escherichia coli,WGS,Norway,24703,Human,99.78,24703,2008.0
+0.0,114,562.58763,Escherichia coli strain 202,Good,5176663,245,Escherichia coli,WGS,Norway,24704,Human,99.78,24704,2000.0
+0.0,114,562.58766,Escherichia coli strain 203,Good,5103330,161,Escherichia coli,WGS,Norway,24704,Human,99.78,24704,2000.0
+0.0,24707,562.58767,Escherichia coli strain 204,Good,4968991,105,Escherichia coli,WGS,Norway,24707,Human,99.78,24707,1999.0
+0.11,202,562.65781,Escherichia coli strain CFS0344,Good,4827020,172,Escherichia coli,WGS,United Kingdom,3208,Cow,99.78,11019,2007.0
+0.0,30929,562.65783,Escherichia coli strain CFS0348,Good,5266774,203,Escherichia coli,WGS,United Kingdom,30929,Cow,99.78,30929,2007.0
+4.06,31297,562.65784,Escherichia coli strain CFS0349,Good,5064862,454,Escherichia coli,WGS,United Kingdom,31297,Cow,99.11,31297,2007.0
+0.11,202,562.65785,Escherichia coli strain CFS0345,Good,4818206,182,Escherichia coli,WGS,United Kingdom,3208,Cow,99.44,11019,2007.0
+0.0,197,562.65786,Escherichia coli strain CFS0347,Good,4997862,147,Escherichia coli,WGS,United Kingdom,197,Cow,99.78,31298,2007.0
+0.33,202,562.65787,Escherichia coli strain CFS0354,Good,4673665,117,Escherichia coli,WGS,United Kingdom,25797,Cow,99.78,30931,2007.0
+0.0,177,562.65788,Escherichia coli strain CFS0359,Good,4763832,117,Escherichia coli,WGS,United Kingdom,177,Cow,99.78,3779,2007.0
+0.33,1938,562.65789,Escherichia coli strain CFS0355,Good,5170255,193,Escherichia coli,WGS,United Kingdom,6922,Cow,99.78,30933,2007.0
+0.88,177,562.65791,Escherichia coli strain CFS0360,Good,4693519,173,Escherichia coli,WGS,United Kingdom,177,Cow,99.67,3779,2007.0
+0.11,246,562.65796,Escherichia coli strain 123074,Good,4822617,117,Escherichia coli,WGS,Germany,30935,Cow,99.78,30935,
+0.0,246,562.65797,Escherichia coli strain 123445,Good,4925318,154,Escherichia coli,WGS,Germany,603,Cow,99.78,30936,
+0.11,246,562.65798,Escherichia coli strain E003488,Good,4806048,102,Escherichia coli,WGS,Germany,603,Human,99.55,23183,
+0.11,246,562.65799,Escherichia coli strain E006910,Good,4905905,116,Escherichia coli,WGS,Germany,603,Human,99.78,23770,
+0.0,246,562.65801,Escherichia coli strain R37,Good,4811033,122,Escherichia coli,WGS,Germany,603,Pig,99.78,23772,
+0.11,246,562.65802,Escherichia coli strain R61a,Good,4915747,132,Escherichia coli,WGS,Germany,1708,,99.78,1708,
+0.0,246,562.65803,Escherichia coli strain R107,Good,4757388,90,Escherichia coli,WGS,Germany,603,,99.78,3447,
+0.0,246,562.65804,Escherichia coli strain R208,Good,4762858,90,Escherichia coli,WGS,Germany,603,,99.78,3447,
+0.11,246,562.65805,Escherichia coli strain R299,Good,4914570,120,Escherichia coli,WGS,Germany,31300,Cow,99.78,31300,
+0.11,246,562.65806,Escherichia coli strain R392,Good,4817280,116,Escherichia coli,WGS,Germany,32047,Cow,99.78,32047,
+0.11,246,562.65807,Escherichia coli strain R423,Good,4740983,92,Escherichia coli,WGS,Germany,30935,Cow,99.78,30935,
+0.11,246,562.65808,Escherichia coli strain R432,Good,4722680,100,Escherichia coli,WGS,Germany,30935,Cow,99.78,30935,
+0.11,246,562.65809,Escherichia coli strain RS119,Good,4850534,124,Escherichia coli,WGS,Germany,23184,Human,99.78,23184,
+0.11,246,562.65811,Escherichia coli strain RS254,Good,4795887,129,Escherichia coli,WGS,Germany,603,Human,99.78,23185,
+0.0,,562.65812,Escherichia coli strain RS288,Good,4956577,139,Escherichia coli,WGS,Germany,,Human,99.78,,
+0.11,,562.65813,Escherichia coli strain RS333,Good,4788286,120,Escherichia coli,WGS,Germany,,Human,99.78,,
+0.11,,562.65814,Escherichia coli strain V139,Good,4739112,107,Escherichia coli,WGS,Germany,,Cat,99.78,,
+0.11,,562.65815,Escherichia coli strain RS334,Good,4794157,119,Escherichia coli,WGS,Germany,,Human,99.78,,
+0.0,246,562.65816,Escherichia coli strain V210,Good,4874026,166,Escherichia coli,WGS,Germany,42645,Cat,99.78,42645,
+0.11,246,562.65817,Escherichia coli strain V177,Good,4839475,90,Escherichia coli,WGS,Germany,603,Dog,99.78,42646,
+0.11,246,562.65818,Escherichia coli strain RS371,Good,4781635,113,Escherichia coli,WGS,Germany,603,Human,99.78,23774,
+0.0,246,562.65819,Escherichia coli strain V161,Good,4866803,187,Escherichia coli,WGS,Germany,23771,Dog,99.78,23775,
+0.0,18,562.135588,Escherichia coli MGL_136,Good,5307712,155,Escherichia coli,WGS,India,18,Human,100.0,27062,2020.0
+0.0,99,562.135594,Escherichia coli 20200203_MGL_03,Good,5273802,167,Escherichia coli,WGS,India,192,Human,100.0,27068,2019.0
+0.4,7116,562.13671,Escherichia coli strain 116,Good,4834860,98,Escherichia coli,WGS,Norway,7116,Human,100.0,7116,2015.0
+0.4,70,1328437.3,Escherichia coli BIDMC 3,Good,5479839,18,Escherichia coli,WGS,USA,70,Human,100.0,36623,2009.0
+0.4,70,1328439.3,Escherichia coli BIDMC 9,Good,5413189,52,Escherichia coli,WGS,USA,70,Human,100.0,36623,2009.0
+0.22,24705,562.58765,Escherichia coli strain 302,Good,4971033,101,Escherichia coli,WGS,Norway,24705,Human,99.78,24705,2007.0
+0.11,43489,562.65136,Escherichia coli strain AMC_172,Good,5205493,199,Escherichia coli,WGS,United Kingdom,43489,Human,99.78,43489,
+0.0,3211,562.65138,Escherichia coli strain AMC_554,Good,5029027,116,Escherichia coli,WGS,United Kingdom,12541,Human,99.78,43491,
+0.0,467,562.65143,Escherichia coli strain AMC_551,Good,5163324,107,Escherichia coli,WGS,United Kingdom,467,Human,99.78,42540,
+0.0,107,562.65145,Escherichia coli strain AMC_552,Good,5146442,117,Escherichia coli,WGS,United Kingdom,130,Human,99.78,42490,
+0.0,10,562.65146,Escherichia coli strain AMC_553,Good,5256790,174,Escherichia coli,WGS,United Kingdom,695,Human,99.78,42542,
+0.11,107,562.65161,Escherichia coli strain AMC_533,Good,5177405,116,Escherichia coli,WGS,United Kingdom,130,Human,99.78,43499,
+0.0,41,562.65164,Escherichia coli strain AMC_534,Good,5103332,73,Escherichia coli,WGS,United Kingdom,41,Human,99.78,41,
+0.0,18,562.65166,Escherichia coli strain AMC_525,Good,5010802,75,Escherichia coli,WGS,United Kingdom,18,Human,99.78,42552,
+0.0,,562.65204,Escherichia coli strain AMC_505,Good,5068988,87,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65237,Escherichia coli strain AMC_476,Good,5338843,198,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65239,Escherichia coli strain AMC_475,Good,4995478,87,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,18,562.65242,Escherichia coli strain AMC_465,Good,5302457,119,Escherichia coli,WGS,United Kingdom,18,Human,99.78,23092,
+0.11,,562.65246,Escherichia coli strain AMC_456,Good,5139357,81,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,1778,562.65259,Escherichia coli strain AMC_448,Good,5074419,91,Escherichia coli,WGS,United Kingdom,23375,Human,99.78,23375,
+0.0,,562.65265,Escherichia coli strain AMC_437,Good,4988274,91,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,10,562.65268,Escherichia coli strain AMC_441,Good,5402147,202,Escherichia coli,WGS,United Kingdom,139,Human,99.78,23744,
+0.0,1231,562.65269,Escherichia coli strain AMC_440,Good,5095872,136,Escherichia coli,WGS,United Kingdom,23745,Human,99.78,23745,
+0.0,,562.65282,Escherichia coli strain AMC_425,Good,4948619,88,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,,562.65285,Escherichia coli strain AMC_420,Good,5232921,132,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,10,562.65298,Escherichia coli strain AMC_403,Good,5112996,222,Escherichia coli,WGS,United Kingdom,164,Human,99.78,164,
+0.0,,562.65302,Escherichia coli strain AMC_409,Good,5164564,116,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,5424,562.65329,Escherichia coli strain AMC_68,Good,5042052,57,Escherichia coli,WGS,United Kingdom,43252,Human,99.78,43252,
+0.0,107,562.65341,Escherichia coli strain AMC_391,Good,5159091,114,Escherichia coli,WGS,United Kingdom,130,Human,99.78,43255,
+0.0,1172,562.65359,Escherichia coli strain AMC_380,Good,5230481,115,Escherichia coli,WGS,United Kingdom,1172,Human,99.78,4885,
+0.0,244,562.65374,Escherichia coli strain AMC_51,Good,5056326,86,Escherichia coli,WGS,United Kingdom,11516,Human,99.78,42418,
+0.0,10,562.65382,Escherichia coli strain AMC_44,Good,5247580,131,Escherichia coli,WGS,United Kingdom,23124,Human,99.78,23124,
+0.0,10,562.65392,Escherichia coli strain AMC_32,Good,5161928,111,Escherichia coli,WGS,United Kingdom,139,Human,99.78,43270,
+0.11,,562.65423,Escherichia coli strain AMC_816,Good,5247971,227,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.22,6167,562.65427,Escherichia coli strain AMC_6,Good,5089428,82,Escherichia coli,WGS,United Kingdom,42594,Human,99.78,42594,
+0.11,10,562.65438,Escherichia coli strain AMC_850,Good,5167286,144,Escherichia coli,WGS,United Kingdom,43287,Human,99.67,43287,
+0.0,23747,562.65441,Escherichia coli strain AMC_843,Good,5123308,122,Escherichia coli,WGS,United Kingdom,23747,Human,99.78,23747,
+0.0,,562.65446,Escherichia coli strain AMC_725,Good,4890627,96,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,107,562.65448,Escherichia coli strain AMC_724,Good,5204242,133,Escherichia coli,WGS,United Kingdom,2445,Human,99.78,23748,
+0.11,,562.65457,Escherichia coli strain AMC_716,Good,5054942,84,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.22,5539,562.65459,Escherichia coli strain AMC_714,Good,4852831,189,Escherichia coli,WGS,United Kingdom,42598,Human,99.78,42598,
+0.0,,562.65464,Escherichia coli strain AMC_168,Good,5072051,139,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,18,562.65479,Escherichia coli strain AMC_159,Good,5390323,121,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43411,
+0.0,6167,562.65497,Escherichia coli strain AMC_698,Good,5211424,91,Escherichia coli,WGS,United Kingdom,42617,Human,99.78,42617,
+0.0,2,562.65499,Escherichia coli strain AMC_701,Good,5288001,145,Escherichia coli,WGS,United Kingdom,2,Human,99.78,42619,
+0.0,44,562.65506,Escherichia coli strain AMC_693,Good,5235590,132,Escherichia coli,WGS,United Kingdom,44,Human,99.78,1426,
+0.0,,562.65524,Escherichia coli strain AMC_682,Good,5111462,93,Escherichia coli,WGS,United Kingdom,,Human,99.67,,
+0.0,,562.65536,Escherichia coli strain AMC_666,Good,5285015,173,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,43520,562.65538,Escherichia coli strain AMC_652,Good,5080775,163,Escherichia coli,WGS,United Kingdom,43520,Human,99.78,43520,
+0.11,,562.65545,Escherichia coli strain AMC_660,Good,5063827,113,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,42631,562.65554,Escherichia coli strain AMC_645,Good,5196353,108,Escherichia coli,WGS,United Kingdom,42631,Human,99.78,42631,
+0.0,7678,562.65558,Escherichia coli strain AMC_647,Good,5025139,56,Escherichia coli,WGS,United Kingdom,42635,Human,99.78,42635,
+0.0,18,562.65559,Escherichia coli strain AMC_650,Good,5332298,99,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43527,
+0.11,,562.65562,Escherichia coli strain AMC_636,Good,4964613,114,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65564,Escherichia coli strain AMC_635,Good,5165567,163,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65566,Escherichia coli strain AMC_632,Good,5263117,112,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.22,107,562.65572,Escherichia coli strain AMC_626,Good,5153449,96,Escherichia coli,WGS,United Kingdom,23140,Human,99.78,23140,
+0.0,10,562.65575,Escherichia coli strain AMC_624,Good,5208321,189,Escherichia coli,WGS,United Kingdom,10830,Human,99.78,42430,
+0.0,304,562.65583,Escherichia coli strain AMC_612,Good,5197459,98,Escherichia coli,WGS,United Kingdom,23143,Human,99.78,23143,
+0.11,,562.65594,Escherichia coli strain AMC_617,Good,4862129,130,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,107,562.65598,Escherichia coli strain AMC_604,Good,5319854,161,Escherichia coli,WGS,United Kingdom,2445,Human,99.78,42642,
+0.0,,562.65611,Escherichia coli strain AMC_595,Good,5192257,152,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,107,562.65612,Escherichia coli strain AMC_591,Good,5170546,113,Escherichia coli,WGS,United Kingdom,130,Human,99.78,43542,
+0.0,107,562.65613,Escherichia coli strain AMC_141,Good,5207493,138,Escherichia coli,WGS,United Kingdom,3321,Human,99.78,43543,
+0.0,10,562.65631,Escherichia coli strain AMC_119,Good,5165917,137,Escherichia coli,WGS,United Kingdom,4544,Human,99.78,4544,
+0.0,18,562.65633,Escherichia coli strain AMC_123,Good,5183422,117,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43559,
+0.0,,562.65636,Escherichia coli strain AMC_116,Good,5064923,146,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,3091,562.65638,Escherichia coli strain AMC_124,Good,5132255,71,Escherichia coli,WGS,United Kingdom,43524,Human,99.78,43524,
+0.0,10,562.65673,Escherichia coli strain AMC_193,Good,5365042,193,Escherichia coli,WGS,United Kingdom,695,Human,99.78,43583,
+0.0,,562.65674,Escherichia coli strain AMC_192,Good,5052619,59,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65677,Escherichia coli strain AMC_191,Good,4928018,102,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65691,Escherichia coli strain AMC_814,Good,4991764,102,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,,562.65695,Escherichia coli strain AMC_796,Good,5428160,188,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,6167,562.65704,Escherichia coli strain AMC_793,Good,5193002,127,Escherichia coli,WGS,United Kingdom,23761,Human,99.67,23761,
+0.22,18,562.65725,Escherichia coli strain AMC_772,Good,5394211,168,Escherichia coli,WGS,United Kingdom,18,Human,99.78,23380,
+0.0,,562.65726,Escherichia coli strain AMC_774,Good,4854146,84,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,10,562.65733,Escherichia coli strain AMC_223,Good,5247690,147,Escherichia coli,WGS,United Kingdom,164,Human,99.78,23166,
+0.22,244,562.65741,Escherichia coli strain AMC_222,Good,4946153,90,Escherichia coli,WGS,United Kingdom,11516,Human,99.78,23768,
+0.0,,562.65758,Escherichia coli strain AMC_210,Good,5045098,99,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,532,562.65763,Escherichia coli strain AMC_201,Good,5292620,127,Escherichia coli,WGS,United Kingdom,3918,Human,99.78,23181,
+0.0,44,562.65765,Escherichia coli strain AMC_205,Good,5055826,128,Escherichia coli,WGS,United Kingdom,44,Human,99.78,23182,
+0.0,3413,562.13556,Escherichia coli strain 7784,Good,5462063,2,Escherichia coli,Complete,United Kingdom,47442,,100.0,50905,2002.0
+0.0,208,562.135561,Escherichia coli MGL_91,Good,4782527,127,Escherichia coli,WGS,India,208,Human,99.6,578,2020.0
+0.0,548,562.135562,Escherichia coli MGL_87,Good,5222892,259,Escherichia coli,WGS,India,577,Human,100.0,15796,2020.0
+0.0,18,562.135563,Escherichia coli MGL_86,Good,5298198,157,Escherichia coli,WGS,India,18,Human,100.0,410,2020.0
+0.0,59,562.135567,Escherichia coli 20200622_MGL_66,Good,5036354,256,Escherichia coli,WGS,India,132,Human,100.0,191,2020.0
+0.0,414,562.135569,Escherichia coli 20200203_MGL_07,Good,5009194,221,Escherichia coli,WGS,India,414,Human,100.0,27043,2019.0
+0.0,5130,562.13557,Escherichia coli strain 319,Good,5567385,2,Escherichia coli,Complete,United Kingdom,5130,Human,100.0,16293,2012.0
+0.0,405,562.135571,Escherichia coli MGL_125,Good,5118398,160,Escherichia coli,WGS,India,405,Human,100.0,27042,2020.0
+0.0,131,562.135572,Escherichia coli MGL_123,Good,4879171,120,Escherichia coli,WGS,India,27046,Human,100.0,27046,2020.0
+0.0,59,562.135573,Escherichia coli MGL_117,Good,5049959,144,Escherichia coli,WGS,India,190,Human,100.0,190,2020.0
+0.1,52,562.135574,Escherichia coli MGL_116,Good,5393979,180,Escherichia coli,WGS,India,580,Human,100.0,580,2020.0
+0.0,59,562.135575,Escherichia coli MGL_118,Good,5024673,171,Escherichia coli,WGS,India,102,Human,100.0,408,2020.0
+0.0,405,562.135578,Escherichia coli 20200203_MGL_16,Good,5115970,230,Escherichia coli,WGS,India,405,Human,100.0,27042,2020.0
+0.1,114,562.135579,Escherichia coli MGL_1560,Good,5310171,188,Escherichia coli,WGS,India,404,Human,100.0,404,2021.0
+0.0,414,562.135581,Escherichia coli 20200203_MGL_06,Good,5058347,263,Escherichia coli,WGS,India,414,Human,100.0,27043,2019.0
+0.0,414,562.135582,Escherichia coli 20200203_MGL_05,Good,5052395,289,Escherichia coli,WGS,India,414,Human,100.0,27043,2019.0
+0.0,99,562.135584,Escherichia coli 20200203_MGL_20,Good,5220117,387,Escherichia coli,WGS,India,411,Human,99.8,411,2019.0
+0.1,59,562.135586,Escherichia coli MGL_150,Good,4978704,124,Escherichia coli,WGS,India,190,Human,100.0,406,2020.0
+0.4,2886,562.13559,Escherichia coli strain MRSN346647,Good,5158613,3,Escherichia coli,Complete,USA,2886,Human,100.0,2886,2016.0
+0.0,246,562.135591,Escherichia coli 20200203_MGL_12,Good,5073714,160,Escherichia coli,WGS,India,2924,Human,100.0,27065,2019.0
+0.0,208,562.135592,Escherichia coli MGL_131,Good,4820463,128,Escherichia coli,WGS,India,208,Human,100.0,578,2020.0
+0.1,114,562.135593,Escherichia coli MGL_126,Good,5181494,171,Escherichia coli,WGS,India,404,Human,100.0,404,2020.0
+0.0,33,562.64839,Escherichia coli strain AMC_350,Good,5167261,58,Escherichia coli,WGS,United Kingdom,33,Human,99.78,42361,
+0.0,2405,562.64856,Escherichia coli strain AMC_966,Good,4775593,53,Escherichia coli,WGS,United Kingdom,6179,Human,99.78,42880,
+0.0,467,562.64861,Escherichia coli strain AMC_964,Good,5210398,124,Escherichia coli,WGS,United Kingdom,467,Human,99.78,42371,
+0.11,2428,562.64864,Escherichia coli strain AMC_960,Good,5100938,221,Escherichia coli,WGS,United Kingdom,42883,Human,99.67,42883,
+0.0,104,562.64866,Escherichia coli strain AMC_958,Good,5206872,111,Escherichia coli,WGS,United Kingdom,42425,Human,99.78,42425,
+0.0,11351,562.64869,Escherichia coli strain AMC_947,Good,5265440,106,Escherichia coli,WGS,United Kingdom,11351,Human,99.78,42428,
+0.11,42885,562.64874,Escherichia coli strain AMC_955,Good,5110648,73,Escherichia coli,WGS,United Kingdom,42885,Human,99.78,42885,
+0.0,1466,562.64875,Escherichia coli strain AMC_950,Good,5228628,86,Escherichia coli,WGS,United Kingdom,1974,Human,99.78,42886,
+0.0,244,562.64883,Escherichia coli strain AMC_934,Good,5069045,85,Escherichia coli,WGS,United Kingdom,11516,Human,99.78,42889,
+0.11,18,562.64884,Escherichia coli strain AMC_939,Good,5336172,138,Escherichia coli,WGS,United Kingdom,18,Human,99.78,42703,
+0.0,21967,562.64888,Escherichia coli strain AMC_938,Good,5331823,302,Escherichia coli,WGS,United Kingdom,42375,Human,99.78,42375,
+0.0,8434,562.64891,Escherichia coli strain AMC_929,Good,4904904,160,Escherichia coli,WGS,United Kingdom,42439,Human,99.78,42439,
+0.0,44,562.64896,Escherichia coli strain AMC_925,Good,4942193,161,Escherichia coli,WGS,United Kingdom,44,Human,99.78,1426,
+0.0,12,562.64908,Escherichia coli strain AMC_918,Good,5063947,77,Escherichia coli,WGS,United Kingdom,12,Human,99.78,12,
+0.0,8425,562.64909,Escherichia coli strain AMC_919,Good,5149458,100,Escherichia coli,WGS,United Kingdom,42447,Human,99.78,42447,
+0.0,10,562.64915,Escherichia coli strain AMC_902,Good,5378043,140,Escherichia coli,WGS,United Kingdom,695,Human,99.67,43438,
+0.0,107,562.64917,Escherichia coli strain AMC_911,Good,4979055,81,Escherichia coli,WGS,United Kingdom,43440,Human,99.78,43440,
+0.11,43442,562.64931,Escherichia coli strain AMC_337,Good,5044368,81,Escherichia coli,WGS,United Kingdom,43442,Human,99.78,43442,
+0.0,104,562.64944,Escherichia coli strain AMC_318,Good,5242909,115,Escherichia coli,WGS,United Kingdom,42897,Human,99.78,42897,
+0.66,11351,562.64949,Escherichia coli strain AMC_316,Good,5321119,171,Escherichia coli,WGS,United Kingdom,11351,Human,99.78,42898,
+0.0,43453,562.64981,Escherichia coli strain AMC_87,Good,4730793,78,Escherichia coli,WGS,United Kingdom,43453,Human,99.78,43453,
+0.0,107,562.64983,Escherichia coli strain AMC_756,Good,5117219,110,Escherichia coli,WGS,United Kingdom,1370,Human,99.78,42915,
+0.0,18,562.65022,Escherichia coli strain AMC_292,Good,5225401,116,Escherichia coli,WGS,United Kingdom,18,Human,99.78,42930,
+0.11,5936,562.65027,Escherichia coli strain AMC_299,Good,5383807,129,Escherichia coli,WGS,United Kingdom,42935,Human,99.78,42935,
+0.0,18,562.65033,Escherichia coli strain AMC_276,Good,5019109,84,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43,
+0.0,10896,562.65036,Escherichia coli strain AMC_284,Good,5253457,142,Escherichia coli,WGS,United Kingdom,19386,Human,99.78,42477,
+0.0,3091,562.65065,Escherichia coli strain AMC_246,Good,5169388,69,Escherichia coli,WGS,United Kingdom,10354,Human,99.78,42396,
+0.11,107,562.65083,Escherichia coli strain AMC_240,Good,5022964,105,Escherichia coli,WGS,United Kingdom,42503,Human,99.78,42503,
+0.0,42512,562.65094,Escherichia coli strain AMC_234,Good,4559094,110,Escherichia coli,WGS,United Kingdom,42512,Human,99.78,42512,
+0.11,104,562.65116,Escherichia coli strain AMC_879,Good,5101160,109,Escherichia coli,WGS,United Kingdom,43478,Human,99.67,43478,
+0.0,10,562.65126,Escherichia coli strain AMC_176,Good,5205810,165,Escherichia coli,WGS,United Kingdom,695,Human,99.78,42536,
+0.11,10,562.65127,Escherichia coli strain AMC_175,Good,5258612,176,Escherichia coli,WGS,United Kingdom,695,Human,99.78,42537,
+0.0,18,562.65128,Escherichia coli strain AMC_174,Good,5355265,112,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43411,
+0.0,2483,562.65157,Escherichia coli strain AMC_538,Good,5146290,87,Escherichia coli,WGS,United Kingdom,42945,Human,99.78,42945,
+0.0,34,562.65158,Escherichia coli strain AMC_532,Good,4973093,95,Escherichia coli,WGS,United Kingdom,42548,Human,99.78,42548,
+0.0,107,562.65185,Escherichia coli strain AMC_519,Good,5100241,109,Escherichia coli,WGS,United Kingdom,23360,Human,99.78,23360,
+0.11,,562.65236,Escherichia coli strain AMC_466,Good,5075496,59,Escherichia coli,WGS,United Kingdom,,Human,99.67,,
+0.0,5070,562.65244,Escherichia coli strain AMC_458,Good,4745914,70,Escherichia coli,WGS,United Kingdom,23370,Human,99.78,23370,
+0.11,,562.65255,Escherichia coli strain AMC_454,Good,5045092,111,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,12,562.65262,Escherichia coli strain AMC_443,Good,4840823,74,Escherichia coli,WGS,United Kingdom,12,Human,99.78,12,
+0.0,107,562.65263,Escherichia coli strain AMC_434,Good,5051066,162,Escherichia coli,WGS,United Kingdom,1370,Human,99.78,23099,
+0.0,,562.65267,Escherichia coli strain AMC_435,Good,4908299,168,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,185,562.65312,Escherichia coli strain AMC_397,Good,4955604,127,Escherichia coli,WGS,United Kingdom,1258,Human,99.78,4691,
+0.0,,562.65323,Escherichia coli strain AMC_77,Good,5098486,80,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,185,562.65325,Escherichia coli strain AMC_78,Good,5001625,59,Escherichia coli,WGS,United Kingdom,43250,Human,99.78,43250,
+0.0,,562.65332,Escherichia coli strain AMC_63,Good,5024989,68,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65333,Escherichia coli strain AMC_61,Good,5342499,155,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,3821,562.65342,Escherichia coli strain AMC_392,Good,5238044,134,Escherichia coli,WGS,United Kingdom,7905,Human,99.78,43256,
+0.0,,562.65358,Escherichia coli strain AMC_381,Good,5139567,116,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65361,Escherichia coli strain AMC_368,Good,4806632,67,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,107,562.65365,Escherichia coli strain AMC_58,Good,5088471,160,Escherichia coli,WGS,United Kingdom,3321,Human,99.78,23121,
+0.0,6904,562.65381,Escherichia coli strain AMC_43,Good,5057001,130,Escherichia coli,WGS,United Kingdom,23123,Human,99.78,23123,
+0.11,,562.65397,Escherichia coli strain AMC_28,Good,4885023,80,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,18,562.65406,Escherichia coli strain AMC_19,Good,5260213,129,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43,
+0.11,202,562.65411,Escherichia coli strain AMC_10,Good,4806412,117,Escherichia coli,WGS,United Kingdom,3208,Human,99.78,42587,
+0.0,18,562.65426,Escherichia coli strain AMC_7,Good,5121239,100,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43,
+0.0,2483,562.65428,Escherichia coli strain AMC_865,Good,5012321,71,Escherichia coli,WGS,United Kingdom,11323,Human,99.78,42595,
+0.11,2351,562.65432,Escherichia coli strain AMC_867,Good,5051454,159,Escherichia coli,WGS,United Kingdom,2351,Human,99.78,42596,
+0.0,107,562.65447,Escherichia coli strain AMC_722,Good,5243813,193,Escherichia coli,WGS,United Kingdom,3321,Human,99.78,23121,
+0.0,107,562.65462,Escherichia coli strain AMC_703,Good,4889293,87,Escherichia coli,WGS,United Kingdom,42510,Human,99.78,42601,
+0.11,2069,562.65463,Escherichia coli strain AMC_169,Good,4922076,33,Escherichia coli,WGS,United Kingdom,2069,Human,99.78,42602,
+0.0,,562.65465,Escherichia coli strain AMC_707,Good,4957713,121,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,162,562.65476,Escherichia coli strain AMC_158,Good,5361293,220,Escherichia coli,WGS,United Kingdom,162,Human,99.78,43295,
+0.0,18,562.65484,Escherichia coli strain AMC_155,Good,5202069,74,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43511,
+0.22,107,562.65488,Escherichia coli strain AMC_149,Good,5159148,124,Escherichia coli,WGS,United Kingdom,130,Human,99.78,42490,
+0.22,162,562.65498,Escherichia coli strain AMC_700,Good,5247163,135,Escherichia coli,WGS,United Kingdom,42618,Human,99.78,42618,
+0.33,42622,562.65504,Escherichia coli strain AMC_145,Good,4865864,156,Escherichia coli,WGS,United Kingdom,42622,Human,99.44,42622,
+0.11,8928,562.65509,Escherichia coli strain AMC_684,Good,4922859,248,Escherichia coli,WGS,United Kingdom,8928,Human,99.67,42627,
+0.0,23753,562.65513,Escherichia coli strain AMC_690,Good,5208341,198,Escherichia coli,WGS,United Kingdom,23753,Human,99.78,23753,
+0.0,107,562.65514,Escherichia coli strain AMC_688,Good,5247639,125,Escherichia coli,WGS,United Kingdom,2445,Human,99.78,43444,
+0.0,18,562.65516,Escherichia coli strain AMC_681,Good,5133039,86,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43514,
+0.11,3091,562.65522,Escherichia coli strain AMC_677,Good,5180521,61,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,43516,
+0.11,,562.65528,Escherichia coli strain AMC_669,Good,5234969,138,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65567,Escherichia coli strain AMC_631,Good,5221514,88,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,512,562.65577,Escherichia coli strain AMC_619,Good,5072454,66,Escherichia coli,WGS,United Kingdom,23141,Human,99.78,23141,
+0.0,,562.65585,Escherichia coli strain AMC_615,Good,5437129,146,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65588,Escherichia coli strain AMC_609,Good,5206518,184,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,3091,562.65596,Escherichia coli strain AMC_603,Good,5159552,66,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,42640,
+0.0,2493,562.65605,Escherichia coli strain AMC_606,Good,4734510,115,Escherichia coli,WGS,United Kingdom,2493,Human,99.78,12778,
+0.0,23146,562.65608,Escherichia coli strain AMC_140,Good,5025009,157,Escherichia coli,WGS,United Kingdom,23146,Human,99.78,23146,
+0.0,107,562.65616,Escherichia coli strain AMC_593,Good,5215617,169,Escherichia coli,WGS,United Kingdom,1370,Human,99.78,23148,
+0.0,,562.65645,Escherichia coli strain AMC_588,Good,5250339,193,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.22,43572,562.65658,Escherichia coli strain AMC_574,Good,5007579,113,Escherichia coli,WGS,United Kingdom,43572,Human,99.67,43572,
+0.0,107,562.65662,Escherichia coli strain AMC_564,Good,5276918,171,Escherichia coli,WGS,United Kingdom,3321,Human,99.78,43523,
+0.0,10865,562.65665,Escherichia coli strain AMC_567,Good,5125364,121,Escherichia coli,WGS,United Kingdom,43579,Human,99.78,43579,
+0.0,107,562.65667,Escherichia coli strain AMC_196,Good,5274984,157,Escherichia coli,WGS,United Kingdom,3321,Human,99.78,23121,
+0.0,107,562.65671,Escherichia coli strain AMC_195,Good,5083645,107,Escherichia coli,WGS,United Kingdom,14886,Human,99.78,43538,
+0.0,171,562.65682,Escherichia coli strain AMC_188,Good,4877670,104,Escherichia coli,WGS,United Kingdom,43584,Human,99.78,43584,
+0.0,18,562.65686,Escherichia coli strain AMC_807,Good,5106764,107,Escherichia coli,WGS,United Kingdom,18,Human,99.78,23157,
+0.0,,562.65688,Escherichia coli strain AMC_811,Good,5007039,120,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,198,562.65694,Escherichia coli strain AMC_805,Good,5052852,159,Escherichia coli,WGS,United Kingdom,43589,Human,99.78,43589,
+0.0,31769,562.65702,Escherichia coli strain AMC_799,Good,5295052,178,Escherichia coli,WGS,United Kingdom,43592,Human,99.67,43592,
+0.0,18,562.65716,Escherichia coli strain AMC_782,Good,5299849,157,Escherichia coli,WGS,United Kingdom,18,Human,99.78,23161,
+0.0,,562.65722,Escherichia coli strain AMC_779,Good,5280470,95,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,2,562.65723,Escherichia coli strain AMC_778,Good,5221418,127,Escherichia coli,WGS,United Kingdom,2478,Human,99.78,23378,
+0.0,11351,562.65736,Escherichia coli strain AMC_225,Good,5169850,157,Escherichia coli,WGS,United Kingdom,11351,Human,99.78,23168,
+0.0,10,562.65739,Escherichia coli strain AMC_760,Good,5302160,90,Escherichia coli,WGS,United Kingdom,695,Human,99.78,3603,
+0.0,10,562.65749,Escherichia coli strain AMC_762,Good,5362324,112,Escherichia coli,WGS,United Kingdom,695,Human,99.78,23176,
+0.11,4201,562.65752,Escherichia coli strain AMC_207,Good,5369304,155,Escherichia coli,WGS,United Kingdom,4201,Human,99.78,11280,
+0.0,,562.65756,Escherichia coli strain AMC_208,Good,5044827,61,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,246,562.64831,Escherichia coli strain AMC_358,Good,4871782,101,Escherichia coli,WGS,United Kingdom,603,Human,99.78,42356,
+0.0,18,562.64851,Escherichia coli strain AMC_969,Good,5228306,161,Escherichia coli,WGS,United Kingdom,18,Human,99.33,42703,
+0.0,18,562.64865,Escherichia coli strain AMC_961,Good,5248538,143,Escherichia coli,WGS,United Kingdom,18,Human,99.78,42884,
+0.0,44,562.64879,Escherichia coli strain AMC_935,Good,5068861,123,Escherichia coli,WGS,United Kingdom,44,Human,99.78,42434,
+0.11,107,562.64899,Escherichia coli strain AMC_928,Good,5108661,100,Escherichia coli,WGS,United Kingdom,42891,Human,99.78,42891,
+0.0,43249,562.64903,Escherichia coli strain AMC_915,Good,5168540,119,Escherichia coli,WGS,United Kingdom,43249,Human,99.78,43249,
+0.11,7384,562.64906,Escherichia coli strain AMC_921,Good,5105688,122,Escherichia coli,WGS,United Kingdom,42379,Human,99.78,42379,
+0.0,107,562.64912,Escherichia coli strain AMC_904,Good,5129348,176,Escherichia coli,WGS,United Kingdom,1370,Human,99.78,42383,
+0.0,7542,562.64946,Escherichia coli strain AMC_315,Good,5092259,135,Escherichia coli,WGS,United Kingdom,43448,Human,99.78,43448,
+0.0,10,562.64957,Escherichia coli strain AMC_104,Good,5225812,139,Escherichia coli,WGS,United Kingdom,139,Human,99.67,24546,
+0.0,18,562.64959,Escherichia coli strain AMC_105,Good,5027352,60,Escherichia coli,WGS,United Kingdom,18,Human,99.78,42902,
+0.0,44,562.64967,Escherichia coli strain AMC_98,Good,4889489,62,Escherichia coli,WGS,United Kingdom,44,Human,99.78,1426,
+0.0,18,562.64972,Escherichia coli strain AMC_97,Good,5298111,141,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43411,
+0.0,42468,562.64992,Escherichia coli strain AMC_747,Good,5175804,62,Escherichia coli,WGS,United Kingdom,42468,Human,99.78,42468,
+0.0,43456,562.65006,Escherichia coli strain AMC_734,Good,4983502,153,Escherichia coli,WGS,United Kingdom,43456,Human,99.78,43456,
+0.22,202,562.65012,Escherichia coli strain AMC_302,Good,4779444,112,Escherichia coli,WGS,United Kingdom,571,Human,99.78,571,
+0.0,246,562.65015,Escherichia coli strain AMC_304,Good,4800689,91,Escherichia coli,WGS,United Kingdom,43458,Human,99.78,43458,
+0.11,107,562.65016,Escherichia coli strain AMC_305,Good,5006325,128,Escherichia coli,WGS,United Kingdom,43459,Human,99.78,43459,
+0.0,2177,562.65017,Escherichia coli strain AMC_307,Good,5042648,35,Escherichia coli,WGS,United Kingdom,12297,Human,99.78,12297,
+0.11,42929,562.65018,Escherichia coli strain AMC_306,Good,4908523,59,Escherichia coli,WGS,United Kingdom,42929,Human,99.78,42929,
+0.0,43463,562.65021,Escherichia coli strain AMC_288,Good,5083829,127,Escherichia coli,WGS,United Kingdom,43463,Human,99.78,43463,
+0.0,107,562.65028,Escherichia coli strain AMC_297,Good,5115473,154,Escherichia coli,WGS,United Kingdom,1370,Human,99.78,42936,
+0.0,44,562.65064,Escherichia coli strain AMC_2,Good,4929208,133,Escherichia coli,WGS,United Kingdom,42395,Human,99.78,42395,
+0.11,,562.65073,Escherichia coli strain AMC_1,Good,5216590,175,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,2,562.65079,Escherichia coli strain AMC_241,Good,5397648,150,Escherichia coli,WGS,United Kingdom,42499,Human,99.78,42499,
+0.0,,562.65084,Escherichia coli strain AMC_237,Good,5077533,106,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,18,562.65087,Escherichia coli strain AMC_897,Good,5165893,89,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43,
+0.0,10,562.65091,Escherichia coli strain AMC_229,Good,5338853,105,Escherichia coli,WGS,United Kingdom,695,Human,99.67,42509,
+0.0,107,562.65112,Escherichia coli strain AMC_880,Good,5203479,148,Escherichia coli,WGS,United Kingdom,2445,Human,99.78,42526,
+0.0,42530,562.65118,Escherichia coli strain AMC_875,Good,4968894,82,Escherichia coli,WGS,United Kingdom,42530,Human,99.78,42530,
+0.11,42535,562.65123,Escherichia coli strain AMC_181,Good,5174284,105,Escherichia coli,WGS,United Kingdom,42535,Human,99.78,42535,
+0.0,18,562.65134,Escherichia coli strain AMC_558,Good,5277215,171,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43411,
+0.11,512,562.65153,Escherichia coli strain AMC_547,Good,5065124,62,Escherichia coli,WGS,United Kingdom,1465,Human,99.78,42544,
+0.11,10,562.65155,Escherichia coli strain AMC_539,Good,5427238,149,Escherichia coli,WGS,United Kingdom,695,Human,99.78,42546,
+0.0,18,562.65163,Escherichia coli strain AMC_536,Good,5138516,112,Escherichia coli,WGS,United Kingdom,18,Human,99.78,42946,
+0.0,107,562.65173,Escherichia coli strain AMC_524,Good,5113997,134,Escherichia coli,WGS,United Kingdom,3321,Human,99.78,13323,
+0.11,,562.65203,Escherichia coli strain AMC_504,Good,4868214,60,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,,562.65206,Escherichia coli strain AMC_508,Good,4982282,106,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,18,562.65207,Escherichia coli strain AMC_493,Good,5252632,109,Escherichia coli,WGS,United Kingdom,18,Human,99.78,23087,
+0.0,,562.65212,Escherichia coli strain AMC_488,Good,4957034,51,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,,562.65219,Escherichia coli strain AMC_483,Good,5092643,140,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65223,Escherichia coli strain AMC_485,Good,5400647,143,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65225,Escherichia coli strain AMC_479,Good,5031527,149,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65235,Escherichia coli strain AMC_467,Good,5152499,150,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65287,Escherichia coli strain AMC_418,Good,4972168,120,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,,562.65288,Escherichia coli strain AMC_414,Good,4860062,69,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65304,Escherichia coli strain AMC_406,Good,5135085,93,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,3091,562.65316,Escherichia coli strain AMC_82,Good,5205381,80,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,42464,
+0.0,,562.65635,Escherichia coli strain AMC_115,Good,4866743,60,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65637,Escherichia coli strain AMC_122,Good,5221319,237,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,1172,562.65639,Escherichia coli strain AMC_125,Good,5141132,117,Escherichia coli,WGS,United Kingdom,1172,Human,99.78,4885,
+0.0,,562.65642,Escherichia coli strain AMC_582,Good,5063139,202,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65644,Escherichia coli strain AMC_581,Good,5093557,98,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.33,355,562.65648,Escherichia coli strain AMC_580,Good,5146535,108,Escherichia coli,WGS,United Kingdom,23078,Human,99.78,23078,
+0.11,15,562.65649,Escherichia coli strain AMC_589,Good,4721608,128,Escherichia coli,WGS,United Kingdom,31253,Human,99.78,43567,
+0.11,974,562.65651,Escherichia coli strain AMC_579,Good,4940178,60,Escherichia coli,WGS,United Kingdom,43568,Human,99.78,43568,
+0.0,107,562.65652,Escherichia coli strain AMC_572,Good,5150805,128,Escherichia coli,WGS,United Kingdom,43569,Human,99.78,43569,
+0.0,10,562.65659,Escherichia coli strain AMC_573,Good,5014903,80,Escherichia coli,WGS,United Kingdom,1633,Human,99.78,43573,
+0.11,514,562.65663,Escherichia coli strain AMC_565,Good,5075501,72,Escherichia coli,WGS,United Kingdom,43577,Human,99.78,43577,
+0.0,3335,562.65666,Escherichia coli strain AMC_566,Good,5151377,82,Escherichia coli,WGS,United Kingdom,23150,Human,99.78,23150,
+0.0,,562.65668,Escherichia coli strain AMC_563,Good,5157140,231,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,8286,562.65672,Escherichia coli strain AMC_194,Good,4560971,136,Escherichia coli,WGS,United Kingdom,23160,Human,99.78,43582,
+0.0,34,562.65675,Escherichia coli strain AMC_189,Good,4962031,88,Escherichia coli,WGS,United Kingdom,347,Human,99.78,23153,
+0.0,,562.65676,Escherichia coli strain AMC_190,Good,5128360,144,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.22,185,562.65679,Escherichia coli strain AMC_186,Good,5053182,122,Escherichia coli,WGS,United Kingdom,1258,Human,99.78,4691,
+0.0,43586,562.65684,Escherichia coli strain AMC_808,Good,5098460,80,Escherichia coli,WGS,United Kingdom,43586,Human,99.78,43586,
+0.0,,562.65689,Escherichia coli strain AMC_810,Good,5184043,55,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,10908,562.65696,Escherichia coli strain AMC_795,Good,4947090,82,Escherichia coli,WGS,United Kingdom,23106,Human,99.78,23158,
+0.0,,562.65699,Escherichia coli strain AMC_800,Good,5025573,101,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,15547,562.65701,Escherichia coli strain AMC_798,Good,5036688,93,Escherichia coli,WGS,United Kingdom,43591,Human,99.78,43591,
+0.0,34,562.65703,Escherichia coli strain AMC_803,Good,4803807,52,Escherichia coli,WGS,United Kingdom,12413,Human,99.78,43593,
+0.22,107,562.65705,Escherichia coli strain AMC_794,Good,5138739,145,Escherichia coli,WGS,United Kingdom,2445,Human,99.78,23762,
+0.0,4854,562.65706,Escherichia coli strain AMC_788,Good,4963490,116,Escherichia coli,WGS,United Kingdom,10819,Human,99.78,23763,
+0.0,,562.65708,Escherichia coli strain AMC_784,Good,4950085,77,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,10,562.65709,Escherichia coli strain AMC_786,Good,5055444,79,Escherichia coli,WGS,United Kingdom,695,Human,99.78,2701,
+0.0,,562.65711,Escherichia coli strain AMC_790,Good,5059919,117,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65712,Escherichia coli strain AMC_789,Good,5372055,205,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,23764,562.65713,Escherichia coli strain AMC_792,Good,5002664,82,Escherichia coli,WGS,United Kingdom,23764,Human,99.78,23764,
+0.0,10913,562.65714,Escherichia coli strain AMC_791,Good,4929232,74,Escherichia coli,WGS,United Kingdom,10913,Human,99.78,23159,
+0.11,8286,562.65715,Escherichia coli strain AMC_783,Good,4564103,134,Escherichia coli,WGS,United Kingdom,23160,Human,99.78,23160,
+0.22,1463,562.65717,Escherichia coli strain AMC_780,Good,4837872,55,Escherichia coli,WGS,United Kingdom,1463,Human,99.78,23376,
+0.0,10,562.65718,Escherichia coli strain AMC_781,Good,5306459,231,Escherichia coli,WGS,United Kingdom,695,Human,99.78,23377,
+0.0,2483,562.65719,Escherichia coli strain AMC_776,Good,5162457,131,Escherichia coli,WGS,United Kingdom,11142,Human,99.78,23162,
+0.0,34,562.65721,Escherichia coli strain AMC_777,Good,5041536,109,Escherichia coli,WGS,United Kingdom,347,Human,99.78,12596,
+0.22,107,562.65724,Escherichia coli strain AMC_771,Good,5044733,178,Escherichia coli,WGS,United Kingdom,23379,Human,99.78,23379,
+0.11,,562.65727,Escherichia coli strain AMC_773,Good,5022035,105,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,,562.65728,Escherichia coli strain AMC_766,Good,5002428,219,Escherichia coli,WGS,United Kingdom,,Human,98.89,,
+0.22,,562.65729,Escherichia coli strain AMC_763,Good,5309952,136,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.33,23766,562.65731,Escherichia coli strain AMC_764,Good,4694946,62,Escherichia coli,WGS,United Kingdom,23766,Human,99.78,23766,
+0.0,23165,562.65732,Escherichia coli strain AMC_765,Good,5081092,63,Escherichia coli,WGS,United Kingdom,23165,Human,99.78,23165,
+0.22,23767,562.65734,Escherichia coli strain AMC_224,Good,4698290,125,Escherichia coli,WGS,United Kingdom,23767,Human,99.78,23767,
+0.0,12983,562.65737,Escherichia coli strain AMC_759,Good,5337520,201,Escherichia coli,WGS,United Kingdom,12983,Human,99.78,23169,
+0.22,107,562.65743,Escherichia coli strain AMC_218,Good,5117623,125,Escherichia coli,WGS,United Kingdom,130,Human,99.78,23129,
+0.22,23174,562.65745,Escherichia coli strain AMC_221,Good,5088841,209,Escherichia coli,WGS,United Kingdom,23174,Human,99.67,23174,
+0.11,,562.65748,Escherichia coli strain AMC_770,Good,5047948,125,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.33,3091,562.65751,Escherichia coli strain AMC_215,Good,5154611,76,Escherichia coli,WGS,United Kingdom,23178,Human,99.78,23178,
+0.0,11806,562.65754,Escherichia coli strain AMC_206,Good,4704866,190,Escherichia coli,WGS,United Kingdom,23383,Human,99.78,23383,
+0.0,,562.65757,Escherichia coli strain AMC_213,Good,5070277,120,Escherichia coli,WGS,United Kingdom,,Human,99.67,,
+0.0,,562.65761,Escherichia coli strain AMC_202,Good,5111335,210,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,107,562.65764,Escherichia coli strain AMC_200,Good,5054863,105,Escherichia coli,WGS,United Kingdom,130,Human,99.78,23769,
+0.11,107,562.65384,Escherichia coli strain AMC_38,Good,5182249,146,Escherichia coli,WGS,United Kingdom,23125,Human,99.78,23125,
+0.0,3091,562.65385,Escherichia coli strain AMC_41,Good,4965287,86,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,23126,
+0.11,104,562.65386,Escherichia coli strain AMC_39,Good,5194632,128,Escherichia coli,WGS,United Kingdom,42425,Human,99.78,42425,
+0.0,103,562.65387,Escherichia coli strain AMC_42,Good,5288134,175,Escherichia coli,WGS,United Kingdom,42452,Human,99.78,42452,
+0.22,23127,562.65388,Escherichia coli strain AMC_34,Good,5034608,111,Escherichia coli,WGS,United Kingdom,23127,Human,99.78,23127,
+0.11,3091,562.65391,Escherichia coli strain AMC_35,Good,5070850,46,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,42464,
+0.0,43271,562.65393,Escherichia coli strain AMC_33,Good,4645083,74,Escherichia coli,WGS,United Kingdom,43271,Human,99.78,43271,
+0.0,34,562.65395,Escherichia coli strain AMC_31,Good,5026074,115,Escherichia coli,WGS,United Kingdom,347,Human,99.78,43272,
+0.33,,562.65399,Escherichia coli strain AMC_27,Good,5036092,235,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.33,23131,562.65402,Escherichia coli strain AMC_24,Good,4689302,106,Escherichia coli,WGS,United Kingdom,23131,Human,99.55,23131,
+0.11,18,562.65403,Escherichia coli strain AMC_25,Good,5209853,108,Escherichia coli,WGS,United Kingdom,18,Human,99.78,42450,
+0.11,,562.65404,Escherichia coli strain AMC_20,Good,5059745,97,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,3091,562.65405,Escherichia coli strain AMC_23,Good,5059322,59,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,42579,
+0.44,42584,562.65408,Escherichia coli strain AMC_18,Good,5171108,157,Escherichia coli,WGS,United Kingdom,42584,Human,99.78,42584,
+0.11,3091,562.65413,Escherichia coli strain AMC_13,Good,5062062,67,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,42589,
+0.22,1564,562.65414,Escherichia coli strain AMC_11,Good,5062085,99,Escherichia coli,WGS,United Kingdom,42417,Human,99.78,42417,
+0.0,43275,562.65415,Escherichia coli strain AMC_12,Good,5138900,106,Escherichia coli,WGS,United Kingdom,43275,Human,99.78,43275,
+0.0,107,562.65416,Escherichia coli strain AMC_14,Good,5023307,97,Escherichia coli,WGS,United Kingdom,130,Human,99.78,43255,
+0.0,43279,562.65419,Escherichia coli strain AMC_363,Good,4697554,69,Escherichia coli,WGS,United Kingdom,43279,Human,99.67,43279,
+0.11,18,562.65421,Escherichia coli strain AMC_815,Good,5202920,141,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43023,
+0.11,2356,562.65422,Escherichia coli strain AMC_817,Good,4986870,43,Escherichia coli,WGS,United Kingdom,12185,Human,99.78,43282,
+0.0,1556,562.65424,Escherichia coli strain AMC_8,Good,4686622,148,Escherichia coli,WGS,United Kingdom,42591,Human,99.55,42591,
+0.11,3555,562.65435,Escherichia coli strain AMC_846,Good,5100898,98,Escherichia coli,WGS,United Kingdom,43285,Human,99.78,43285,
+0.11,8129,562.65437,Escherichia coli strain AMC_864,Good,4944104,108,Escherichia coli,WGS,United Kingdom,23132,Human,99.78,23132,
+0.11,110,562.65439,Escherichia coli strain AMC_730,Good,5065098,156,Escherichia coli,WGS,United Kingdom,110,Human,99.78,43288,
+0.0,107,562.65443,Escherichia coli strain AMC_728,Good,5119535,122,Escherichia coli,WGS,United Kingdom,43290,Human,99.78,43290,
+0.0,7542,562.65444,Escherichia coli strain AMC_726,Good,5130306,157,Escherichia coli,WGS,United Kingdom,43291,Human,99.78,43291,
+0.0,,562.65445,Escherichia coli strain AMC_727,Good,4998969,108,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,44,562.65449,Escherichia coli strain AMC_723,Good,5028879,129,Escherichia coli,WGS,United Kingdom,44,Human,99.78,23134,
+0.0,1172,562.65451,Escherichia coli strain AMC_719,Good,5202957,97,Escherichia coli,WGS,United Kingdom,1172,Human,99.78,23749,
+0.11,107,562.65452,Escherichia coli strain AMC_720,Good,5091652,138,Escherichia coli,WGS,United Kingdom,42597,Human,99.78,42597,
+0.0,107,562.65453,Escherichia coli strain AMC_718,Good,5109990,138,Escherichia coli,WGS,United Kingdom,23136,Human,99.78,23136,
+0.0,,562.65454,Escherichia coli strain AMC_717,Good,5218495,110,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65455,Escherichia coli strain AMC_713,Good,5052195,119,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65456,Escherichia coli strain AMC_712,Good,4977914,139,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.33,,562.65458,Escherichia coli strain AMC_715,Good,4937447,102,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,107,562.65461,Escherichia coli strain AMC_170,Good,5003042,98,Escherichia coli,WGS,United Kingdom,42510,Human,99.78,42600,
+0.0,2356,562.65469,Escherichia coli strain AMC_708,Good,5063962,59,Escherichia coli,WGS,United Kingdom,43293,Human,99.78,43293,
+0.22,10,562.65474,Escherichia coli strain AMC_162,Good,5140115,182,Escherichia coli,WGS,United Kingdom,4321,Human,99.78,42605,
+0.0,103,562.65475,Escherichia coli strain AMC_161,Good,5278908,183,Escherichia coli,WGS,United Kingdom,42452,Human,99.78,42452,
+0.22,18,562.65477,Escherichia coli strain AMC_160,Good,5224072,91,Escherichia coli,WGS,United Kingdom,18,Human,99.78,43296,
+0.0,107,562.65481,Escherichia coli strain AMC_165,Good,5154743,146,Escherichia coli,WGS,United Kingdom,43508,Human,99.78,43508,
+0.0,34,562.65482,Escherichia coli strain AMC_166,Good,5119844,95,Escherichia coli,WGS,United Kingdom,347,Human,99.78,43509,
+0.0,3901,562.65483,Escherichia coli strain AMC_154,Good,4847679,30,Escherichia coli,WGS,United Kingdom,3901,Human,99.78,43510,
+0.11,107,562.65485,Escherichia coli strain AMC_152,Good,5092184,125,Escherichia coli,WGS,United Kingdom,1370,Human,99.78,42607,
+0.11,2356,562.65486,Escherichia coli strain AMC_153,Good,4891897,52,Escherichia coli,WGS,United Kingdom,42608,Human,99.78,42608,
+0.0,42611,562.65489,Escherichia coli strain AMC_150,Good,5111661,121,Escherichia coli,WGS,United Kingdom,42611,Human,99.78,42611,
+0.11,187,562.65491,Escherichia coli strain AMC_146,Good,5078618,205,Escherichia coli,WGS,United Kingdom,42613,Human,99.78,42613,
+0.0,,562.65492,Escherichia coli strain AMC_147,Good,5163875,147,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65493,Escherichia coli strain AMC_702,Good,5089244,128,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,3013,562.65494,Escherichia coli strain AMC_143,Good,5207934,105,Escherichia coli,WGS,United Kingdom,3013,Human,99.78,3013,
+0.11,42616,562.65496,Escherichia coli strain AMC_696,Good,4589573,60,Escherichia coli,WGS,United Kingdom,42616,Human,99.67,42616,
+0.11,,562.65501,Escherichia coli strain AMC_697,Good,5118326,91,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.33,107,562.65502,Escherichia coli strain AMC_156,Good,5069981,110,Escherichia coli,WGS,United Kingdom,130,Human,99.78,42490,
+0.11,107,562.65505,Escherichia coli strain AMC_692,Good,5057002,99,Escherichia coli,WGS,United Kingdom,1370,Human,99.78,42607,
+0.22,21,562.65508,Escherichia coli strain AMC_685,Good,5275874,119,Escherichia coli,WGS,United Kingdom,42567,Human,99.78,42626,
+0.11,,562.65511,Escherichia coli strain AMC_694,Good,5105407,101,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.33,1539,562.65518,Escherichia coli strain AMC_676,Good,5284012,108,Escherichia coli,WGS,United Kingdom,1539,Human,99.78,23755,
+0.11,,562.65519,Escherichia coli strain AMC_675,Good,5231872,265,Escherichia coli,WGS,United Kingdom,,Human,99.67,,
+0.0,34,562.65521,Escherichia coli strain AMC_678,Good,5080341,137,Escherichia coli,WGS,United Kingdom,347,Human,99.78,43515,
+0.0,,562.65526,Escherichia coli strain AMC_687,Good,5073465,86,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,6866,562.65527,Escherichia coli strain AMC_668,Good,5051076,115,Escherichia coli,WGS,United Kingdom,43517,Human,99.78,43517,
+0.0,592,562.65532,Escherichia coli strain AMC_671,Good,5094140,116,Escherichia coli,WGS,United Kingdom,43518,Human,99.78,43518,
+0.0,,562.65533,Escherichia coli strain AMC_664,Good,5214903,251,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.22,2483,562.65535,Escherichia coli strain AMC_662,Good,5124487,170,Escherichia coli,WGS,United Kingdom,23759,Human,99.78,23759,
+0.11,355,562.65542,Escherichia coli strain AMC_661,Good,5193441,85,Escherichia coli,WGS,United Kingdom,23137,Human,99.78,23137,
+0.0,3091,562.65543,Escherichia coli strain AMC_658,Good,5095972,166,Escherichia coli,WGS,United Kingdom,43524,Human,99.78,43524,
+0.11,514,562.65544,Escherichia coli strain AMC_659,Good,4965951,49,Escherichia coli,WGS,United Kingdom,2458,Human,99.78,43525,
+0.0,11720,562.65546,Escherichia coli strain AMC_657,Good,4971521,72,Escherichia coli,WGS,United Kingdom,43526,Human,99.78,43526,
+0.0,,562.65547,Escherichia coli strain AMC_653,Good,4892340,83,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,724,562.65551,Escherichia coli strain AMC_641,Good,5152486,217,Escherichia coli,WGS,United Kingdom,12603,Human,99.78,15576,
+0.0,,562.65552,Escherichia coli strain AMC_640,Good,5197544,82,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,,562.65553,Escherichia coli strain AMC_648,Good,4883544,178,Escherichia coli,WGS,United Kingdom,,Human,99.55,,
+0.11,3091,562.65556,Escherichia coli strain AMC_642,Good,5026132,59,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,42464,
+0.0,11351,562.65557,Escherichia coli strain AMC_643,Good,5249829,156,Escherichia coli,WGS,United Kingdom,11351,Human,99.78,42634,
+0.33,107,562.65568,Escherichia coli strain AMC_630,Good,5022286,109,Escherichia coli,WGS,United Kingdom,43529,Human,99.78,43529,
+0.0,304,562.65571,Escherichia coli strain AMC_625,Good,5099461,72,Escherichia coli,WGS,United Kingdom,43532,Human,99.78,43532,
+0.33,10,562.65573,Escherichia coli strain AMC_623,Good,5042900,105,Escherichia coli,WGS,United Kingdom,695,Human,99.78,2701,
+0.44,467,562.65581,Escherichia coli strain AMC_628,Good,5304277,137,Escherichia coli,WGS,United Kingdom,467,Human,99.78,23113,
+0.11,2428,562.65586,Escherichia coli strain AMC_614,Good,5214631,233,Escherichia coli,WGS,United Kingdom,2428,Human,99.67,43533,
+0.0,43534,562.65587,Escherichia coli strain AMC_608,Good,5052071,99,Escherichia coli,WGS,United Kingdom,43534,Human,99.78,43534,
+0.0,,562.65589,Escherichia coli strain AMC_607,Good,5042207,55,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,43536,562.65593,Escherichia coli strain AMC_616,Good,5220551,91,Escherichia coli,WGS,United Kingdom,43536,Human,99.78,43536,
+0.11,42641,562.65597,Escherichia coli strain AMC_602,Good,5193783,161,Escherichia coli,WGS,United Kingdom,42641,Human,99.78,42641,
+0.0,2618,562.65599,Escherichia coli strain AMC_601,Good,4886441,66,Escherichia coli,WGS,United Kingdom,42643,Human,99.78,42643,
+0.22,,562.65601,Escherichia coli strain AMC_597,Good,4683341,54,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.0,7542,562.65603,Escherichia coli strain AMC_596,Good,5129661,167,Escherichia coli,WGS,United Kingdom,43448,Human,99.78,43448,
+0.0,12,562.65607,Escherichia coli strain AMC_138,Good,5010986,80,Escherichia coli,WGS,United Kingdom,12,Human,99.78,12,
+0.0,17593,562.65609,Escherichia coli strain AMC_137,Good,5043125,236,Escherichia coli,WGS,United Kingdom,23074,Human,99.78,23147,
+0.0,3627,562.65614,Escherichia coli strain AMC_142,Good,4859840,147,Escherichia coli,WGS,United Kingdom,3627,Human,99.78,43544,
+0.22,110,562.65617,Escherichia coli strain AMC_599,Good,4963011,91,Escherichia coli,WGS,United Kingdom,110,Human,99.78,23149,
+0.11,,562.65619,Escherichia coli strain AMC_132,Good,5231683,94,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
+0.11,107,562.65621,Escherichia coli strain AMC_126,Good,5019197,73,Escherichia coli,WGS,United Kingdom,43440,Human,99.78,43547,
+0.11,3091,562.65622,Escherichia coli strain AMC_129,Good,5197752,108,Escherichia coli,WGS,United Kingdom,3091,Human,99.78,43548,
+0.33,70,562.65623,Escherichia coli strain AMC_131,Good,5175302,114,Escherichia coli,WGS,United Kingdom,1702,Human,99.78,43549,
+0.0,107,562.65624,Escherichia coli strain AMC_128,Good,5095438,161,Escherichia coli,WGS,United Kingdom,1370,Human,99.78,43550,
+0.0,107,562.65626,Escherichia coli strain AMC_127,Good,5159765,125,Escherichia coli,WGS,United Kingdom,130,Human,99.78,43542,
+0.22,43554,562.65628,Escherichia coli strain AMC_136,Good,5054563,202,Escherichia coli,WGS,United Kingdom,43554,Human,99.78,43554,
+0.0,2483,562.65632,Escherichia coli strain AMC_117,Good,5061267,87,Escherichia coli,WGS,United Kingdom,43558,Human,99.67,43558,
+0.0,,562.65634,Escherichia coli strain AMC_118,Good,4957774,101,Escherichia coli,WGS,United Kingdom,,Human,99.78,,
