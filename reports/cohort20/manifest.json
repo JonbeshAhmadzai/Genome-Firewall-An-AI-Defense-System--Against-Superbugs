@@ -1,0 +1,8 @@
+{
+  "models": {},
+  "skipped": {
+    "ampicillin": "Training and calibration groups must both contain Resistant and Susceptible classes",
+    "ceftriaxone": "Training and calibration groups must both contain Resistant and Susceptible classes",
+    "ciprofloxacin": "Training and calibration groups must both contain Resistant and Susceptible classes"
+  }
+}

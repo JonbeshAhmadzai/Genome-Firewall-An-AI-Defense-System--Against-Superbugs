@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "n_test": 3,
+    "balanced_accuracy": 0.0,
+    "resistant_recall": 0.0,
+    "susceptible_recall": 0.0,
+    "f1": 0.0,
+    "auroc": NaN,
+    "pr_auc": NaN,
+    "brier": 0.5572031063636507,
+    "no_call_rate": 0.3333333333333333,
+    "called_accuracy": 0.0,
+    "reliability_bins": 10
+  },
+  "brier": 0.5572031063636507,
+  "group_breakdown": [
+    {
+      "homology_group_id": "cgmlst_hc100:1340",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 0.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:46111",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 0.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:47766",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    }
+  ]
+}

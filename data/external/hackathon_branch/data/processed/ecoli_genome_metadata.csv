@@ -1,0 +1,51 @@
+checkm_contamination,cgmlst_hc100,genome_id,genome_name,genome_quality,genome_length,contigs,species,genome_status,isolation_country,cgmlst_hc50,host_common_name,checkm_completeness,cgmlst_hc20,collection_year
+0.0,6065,562.58704,Escherichia coli strain 14037824,Good,5480990,153,Escherichia coli,WGS,Italy,24496,Turkey,99.78,24496,2014.0
+0.0,24497,562.58705,Escherichia coli strain 14040376,Good,5196353,235,Escherichia coli,WGS,Italy,24497,Turkey,99.78,24497,2014.0
+0.33,24498,562.58706,Escherichia coli strain 14043377,Good,5370377,161,Escherichia coli,WGS,Italy,24498,Turkey,99.78,24498,2014.0
+0.0,24499,562.58707,Escherichia coli strain 14043512,Good,4868412,116,Escherichia coli,WGS,Italy,24499,Turkey,99.78,24499,2014.0
+0.55,24501,562.58709,Escherichia coli strain 14045775,Good,5640030,209,Escherichia coli,WGS,Italy,24501,Turkey,99.78,24501,2014.0
+0.0,177,562.58712,Escherichia coli strain 14053473,Good,4953062,102,Escherichia coli,WGS,Italy,177,Turkey,99.78,24504,2014.0
+0.55,177,562.58714,Escherichia coli strain 14047606,Good,4679182,93,Escherichia coli,WGS,Italy,24506,Turkey,99.78,24506,2014.0
+0.44,2553,562.58715,Escherichia coli strain 14050800,Good,5602950,325,Escherichia coli,WGS,Italy,2553,Turkey,99.78,2553,2014.0
+0.33,24508,562.58716,Escherichia coli strain 14057877,Good,5319355,242,Escherichia coli,WGS,Italy,24508,Turkey,99.78,24508,2014.0
+0.0,24510,562.58718,Escherichia coli strain 14062120,Good,5365159,142,Escherichia coli,WGS,Italy,24510,Turkey,99.78,24510,2014.0
+0.33,1948,562.58719,Escherichia coli strain 14062104,Good,5116609,163,Escherichia coli,WGS,Italy,8462,Turkey,99.78,24511,2014.0
+0.0,24342,562.58721,Escherichia coli strain 14066715,Good,5436157,200,Escherichia coli,WGS,Italy,24513,Turkey,99.78,24513,2014.0
+0.0,131,562.58723,Escherichia coli strain 14069546,Good,5251512,176,Escherichia coli,WGS,Italy,24515,Turkey,99.78,24515,2014.0
+0.0,341,562.58725,Escherichia coli strain 14091902,Good,5145383,128,Escherichia coli,WGS,Italy,24689,Turkey,99.78,24689,2014.0
+0.11,177,562.58726,Escherichia coli strain 14085180,Good,4897892,102,Escherichia coli,WGS,Italy,24690,Turkey,99.78,24690,2014.0
+0.11,24691,562.58727,Escherichia coli strain 14083136,Good,4864232,142,Escherichia coli,WGS,Italy,24691,Turkey,99.67,24691,2014.0
+0.0,268,562.58728,Escherichia coli strain 14087995,Good,5127901,182,Escherichia coli,WGS,Italy,24692,Turkey,99.78,24692,2014.0
+0.11,24380,562.58732,Escherichia coli strain 15051805,Good,5115630,110,Escherichia coli,WGS,Italy,31764,Cow,99.78,31764,2015.0
+0.55,3652,562.58733,Escherichia coli strain 15050011,Good,5316596,377,Escherichia coli,WGS,Italy,31772,Cow,99.78,31772,2015.0
+0.0,177,562.58734,Escherichia coli strain 15054212,Good,4896318,134,Escherichia coli,WGS,Italy,177,Cow,99.78,31773,2015.0
+0.22,24697,562.58736,Escherichia coli strain 15062645,Good,5123556,147,Escherichia coli,WGS,Italy,24697,Pig,99.78,24697,2015.0
+0.11,202,562.65781,Escherichia coli strain CFS0344,Good,4827020,172,Escherichia coli,WGS,United Kingdom,3208,Cow,99.78,11019,2007.0
+0.0,30929,562.65783,Escherichia coli strain CFS0348,Good,5266774,203,Escherichia coli,WGS,United Kingdom,30929,Cow,99.78,30929,2007.0
+4.06,31297,562.65784,Escherichia coli strain CFS0349,Good,5064862,454,Escherichia coli,WGS,United Kingdom,31297,Cow,99.11,31297,2007.0
+0.11,202,562.65785,Escherichia coli strain CFS0345,Good,4818206,182,Escherichia coli,WGS,United Kingdom,3208,Cow,99.44,11019,2007.0
+0.0,197,562.65786,Escherichia coli strain CFS0347,Good,4997862,147,Escherichia coli,WGS,United Kingdom,197,Cow,99.78,31298,2007.0
+0.33,202,562.65787,Escherichia coli strain CFS0354,Good,4673665,117,Escherichia coli,WGS,United Kingdom,25797,Cow,99.78,30931,2007.0
+0.0,177,562.65788,Escherichia coli strain CFS0359,Good,4763832,117,Escherichia coli,WGS,United Kingdom,177,Cow,99.78,3779,2007.0
+0.33,1938,562.65789,Escherichia coli strain CFS0355,Good,5170255,193,Escherichia coli,WGS,United Kingdom,6922,Cow,99.78,30933,2007.0
+0.88,177,562.65791,Escherichia coli strain CFS0360,Good,4693519,173,Escherichia coli,WGS,United Kingdom,177,Cow,99.67,3779,2007.0
+0.11,246,562.65796,Escherichia coli strain 123074,Good,4822617,117,Escherichia coli,WGS,Germany,30935,Cow,99.78,30935,
+0.11,246,562.65799,Escherichia coli strain E006910,Good,4905905,116,Escherichia coli,WGS,Germany,603,Human,99.78,23770,
+0.0,246,562.65801,Escherichia coli strain R37,Good,4811033,122,Escherichia coli,WGS,Germany,603,Pig,99.78,23772,
+0.11,246,562.65802,Escherichia coli strain R61a,Good,4915747,132,Escherichia coli,WGS,Germany,1708,,99.78,1708,
+0.0,246,562.65803,Escherichia coli strain R107,Good,4757388,90,Escherichia coli,WGS,Germany,603,,99.78,3447,
+0.0,246,562.65804,Escherichia coli strain R208,Good,4762858,90,Escherichia coli,WGS,Germany,603,,99.78,3447,
+0.11,246,562.65805,Escherichia coli strain R299,Good,4914570,120,Escherichia coli,WGS,Germany,31300,Cow,99.78,31300,
+0.11,246,562.65806,Escherichia coli strain R392,Good,4817280,116,Escherichia coli,WGS,Germany,32047,Cow,99.78,32047,
+0.11,246,562.65807,Escherichia coli strain R423,Good,4740983,92,Escherichia coli,WGS,Germany,30935,Cow,99.78,30935,
+0.11,246,562.65808,Escherichia coli strain R432,Good,4722680,100,Escherichia coli,WGS,Germany,30935,Cow,99.78,30935,
+0.11,246,562.65809,Escherichia coli strain RS119,Good,4850534,124,Escherichia coli,WGS,Germany,23184,Human,99.78,23184,
+0.11,246,562.65811,Escherichia coli strain RS254,Good,4795887,129,Escherichia coli,WGS,Germany,603,Human,99.78,23185,
+0.0,,562.65812,Escherichia coli strain RS288,Good,4956577,139,Escherichia coli,WGS,Germany,,Human,99.78,,
+0.11,,562.65813,Escherichia coli strain RS333,Good,4788286,120,Escherichia coli,WGS,Germany,,Human,99.78,,
+0.11,,562.65814,Escherichia coli strain V139,Good,4739112,107,Escherichia coli,WGS,Germany,,Cat,99.78,,
+0.11,,562.65815,Escherichia coli strain RS334,Good,4794157,119,Escherichia coli,WGS,Germany,,Human,99.78,,
+0.0,246,562.65816,Escherichia coli strain V210,Good,4874026,166,Escherichia coli,WGS,Germany,42645,Cat,99.78,42645,
+0.11,246,562.65817,Escherichia coli strain V177,Good,4839475,90,Escherichia coli,WGS,Germany,603,Dog,99.78,42646,
+0.11,246,562.65818,Escherichia coli strain RS371,Good,4781635,113,Escherichia coli,WGS,Germany,603,Human,99.78,23774,
+0.0,246,562.65819,Escherichia coli strain V161,Good,4866803,187,Escherichia coli,WGS,Germany,23771,Dog,99.78,23775,

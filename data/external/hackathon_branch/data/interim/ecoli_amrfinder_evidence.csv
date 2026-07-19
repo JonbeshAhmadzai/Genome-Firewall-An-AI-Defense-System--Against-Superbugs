@@ -1,0 +1,928 @@
+genome_id,feature,element_symbol,element_name,type,subtype,class,subclass,method,identity_to_reference,coverage_of_reference
+562.58703,amr_uhpt_e350q_point,uhpT_E350Q,Escherichia fosfomycin resistant UhpT,AMR,POINT,FOSFOMYCIN,FOSFOMYCIN,POINTX,95.68,100.0
+562.58703,amr_blacmy_amr,blaCMY,CMY-2 family class C beta-lactamase,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,BLASTX,98.69,100.0
+562.58703,amr_qnrb38_amr,qnrB38,quinolone resistance pentapeptide repeat protein QnrB38,AMR,AMR,QUINOLONE,QUINOLONE,ALLELEX,100.0,100.0
+562.58703,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58703,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58703,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58703,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58703,amr_cira_q56ter_point_disrupt,cirA_Q56Ter,Escherichia cefiderocol resistant CirA,AMR,POINT_DISRUPT,BETA-LACTAM,CEFIDEROCOL,POINTX,98.51,80.84
+562.58703,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58703,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.09,99.66
+562.58703,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.04,99.76
+562.58703,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58703,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,PARTIAL_CONTIG_ENDX,99.29,75.07
+562.58703,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58703,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58703,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58703,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58703,amr_dfra14_amr,dfrA14,trimethoprim-resistant dihydrofolate reductase DfrA14,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58704,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.05,100.0
+562.58704,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.14,100.0
+562.58704,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58704,amr_emrd_amr,emrD,multidrug efflux MFS transporter EmrD,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.75,100.0
+562.58704,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58704,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58704,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58704,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58704,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58704,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58704,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58704,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58704,amr_cmla1_amr,cmlA1,chloramphenicol efflux MFS transporter CmlA1,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58704,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58704,amr_estx_3_amr,estX-3,macrolide esterase EstX-3,AMR,AMR,MACROLIDE,TYLOSIN,ALLELEX,100.0,100.0
+562.58704,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58704,amr_dfra8_amr,dfrA8,trimethoprim-resistant dihydrofolate reductase DfrA8,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58704,amr_blatem_amr,blaTEM,TEM family class A beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,100.0,97.9
+562.58704,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58704,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58705,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58705,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58705,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58705,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.58705,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.05,100.0
+562.58705,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.73,100.0
+562.58705,amr_soxs_a12s_point,soxS_A12S,Escherichia ampicillin/chloramphenicol/quinolone/rifampin/tetracycline resistant SoxS,AMR,POINT,MULTIDRUG,AMPICILLIN/CHLORAMPHENICOL/QUINOLONE/RIFAMPIN/TETRACYCLINE,POINTX,99.07,100.0
+562.58705,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58705,amr_aac_6_ib4_amr,aac(6')-Ib4,aminoglycoside N-acetyltransferase AAC(6')-Ib4,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,ALLELEX,100.0,100.0
+562.58705,amr_catb3_amr,catB3,type B-3 chloramphenicol O-acetyltransferase CatB3,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58705,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58705,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58705,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58705,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58705,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58706,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.67,100.0
+562.58706,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.04,99.76
+562.58706,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58706,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58706,amr_sat2_amr,sat2,streptothricin N-acetyltransferase Sat2,AMR,AMR,STREPTOTHRICIN,STREPTOTHRICIN,EXACTX,100.0,100.0
+562.58706,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58706,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58706,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58706,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58706,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.42,100.0
+562.58706,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58706,amr_blatemp_c32t_point,blaTEMp_C32T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.57,100.0
+562.58706,amr_blatem_52_amr,blaTEM-52,extended-spectrum class A beta-lactamase TEM-52,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58707,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.05,100.0
+562.58707,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.67,100.0
+562.58707,amr_parc_s80r_point,parC_S80R,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.73,100.0
+562.58707,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58707,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.09,99.66
+562.58707,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58707,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58707,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58707,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58707,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58707,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58708,amr_parc_s57t_point,parC_S57T,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.2,100.0
+562.58708,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.58708,amr_uhpt_e350q_point,uhpT_E350Q,Escherichia fosfomycin resistant UhpT,AMR,POINT,FOSFOMYCIN,FOSFOMYCIN,POINTX,99.78,100.0
+562.58708,amr_emrd_amr,emrD,multidrug efflux MFS transporter EmrD,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.24,100.0
+562.58708,amr_cyaa_s352t_point,cyaA_S352T,Escherichia fosmidomycin resistant CyaA,AMR,POINT,FOSMIDOMYCIN,FOSMIDOMYCIN,POINTX,99.29,100.0
+562.58708,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.14,100.0
+562.58708,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.42,100.0
+562.58708,amr_mcr_1_2_amr,mcr-1.2,phosphoethanolamine--lipid A transferase MCR-1.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58709,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.04,99.76
+562.58709,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58709,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58709,amr_cira_h393rfster7_point_disrupt,cirA_H393RfsTer7,Escherichia cefiderocol resistant CirA,AMR,POINT_DISRUPT,BETA-LACTAM,CEFIDEROCOL,POINTX,99.84,100.0
+562.58709,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.58709,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58709,amr_blatemp_c32t_point,blaTEMp_C32T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.57,100.0
+562.58709,amr_blatem_52_amr,blaTEM-52,extended-spectrum class A beta-lactamase TEM-52,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58709,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.67,100.0
+562.58709,amr_mcr_1_2_amr,mcr-1.2,phosphoethanolamine--lipid A transferase MCR-1.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58709,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58709,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58709,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58709,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58709,amr_estx_3_amr,estX-3,macrolide esterase EstX-3,AMR,AMR,MACROLIDE,TYLOSIN,ALLELEX,100.0,100.0
+562.58709,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58709,amr_cmla1_amr,cmlA1,chloramphenicol efflux MFS transporter CmlA1,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58709,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58709,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58709,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58709,amr_sat2_amr,sat2,streptothricin N-acetyltransferase Sat2,AMR,AMR,STREPTOTHRICIN,STREPTOTHRICIN,EXACTX,100.0,100.0
+562.58709,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58712,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.58712,amr_parc_a56t_point,parC_A56T,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58712,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58712,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.58712,amr_blactx_m_1_amr,blaCTX-M-1,extended-spectrum class A beta-lactamase CTX-M-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58712,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58712,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58712,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,96.53,98.29
+562.58712,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58712,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58712,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,BLASTX,99.62,100.0
+562.58712,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58712,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58712,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58712,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58712,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58712,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58712,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,BLASTX,99.51,100.0
+562.58712,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.58712,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58712,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.58714,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.58714,amr_parc_a56t_point,parC_A56T,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58714,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58714,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.58714,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.86,99.66
+562.58714,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.86,99.66
+562.58714,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.27,98.29
+562.58714,amr_mcr_1_2_amr,mcr-1.2,phosphoethanolamine--lipid A transferase MCR-1.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58714,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58714,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58714,amr_blactx_m_1_amr,blaCTX-M-1,extended-spectrum class A beta-lactamase CTX-M-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58715,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.86,99.66
+562.58715,amr_cira_f257lfster30_point_disrupt,cirA_F257LfsTer30,Escherichia cefiderocol resistant CirA,AMR,POINT_DISRUPT,BETA-LACTAM,CEFIDEROCOL,POINTX,99.54,100.0
+562.58715,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.32,100.0
+562.58715,amr_cyaa_s352t_point,cyaA_S352T,Escherichia fosmidomycin resistant CyaA,AMR,POINT,FOSMIDOMYCIN,FOSMIDOMYCIN,POINTX,99.17,100.0
+562.58715,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.73,100.0
+562.58715,amr_emrd_amr,emrD,multidrug efflux MFS transporter EmrD,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.75,100.0
+562.58715,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.73,100.0
+562.58715,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58715,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58715,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,BLASTX,99.63,100.0
+562.58715,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58715,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.05,100.0
+562.58715,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58715,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58715,amr_dfra14_amr,dfrA14,trimethoprim-resistant dihydrofolate reductase DfrA14,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58715,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58716,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.63,99.66
+562.58716,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.63,99.66
+562.58716,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.58716,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58716,amr_soxs_a12s_point,soxS_A12S,Escherichia ampicillin/chloramphenicol/quinolone/rifampin/tetracycline resistant SoxS,AMR,POINT,MULTIDRUG,AMPICILLIN/CHLORAMPHENICOL/QUINOLONE/RIFAMPIN/TETRACYCLINE,POINTX,99.07,100.0
+562.58716,amr_emrd_amr,emrD,multidrug efflux MFS transporter EmrD,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.24,100.0
+562.58716,amr_parc_e84g_point,parC_E84G,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.73,100.0
+562.58716,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.73,100.0
+562.58716,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.73,100.0
+562.58716,amr_aac_6_ib4_amr,aac(6')-Ib4,aminoglycoside N-acetyltransferase AAC(6')-Ib4,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,ALLELEX,100.0,100.0
+562.58716,amr_catb3_amr,catB3,type B-3 chloramphenicol O-acetyltransferase CatB3,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58716,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58716,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58716,amr_blashv_12_amr,blaSHV-12,extended-spectrum class A beta-lactamase SHV-12,AMR,AMR,BETA-LACTAM,CEFIDEROCOL/CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58716,amr_estx_3_amr,estX-3,macrolide esterase EstX-3,AMR,AMR,MACROLIDE,TYLOSIN,ALLELEX,100.0,100.0
+562.58716,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58716,amr_cmla1_amr,cmlA1,chloramphenicol efflux MFS transporter CmlA1,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58716,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58716,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58716,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58716,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58716,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58716,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58718,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.56,100.0
+562.58718,amr_fosa7_5_amr,fosA7.5,fosfomycin resistance glutathione transferase FosA7.5,AMR,AMR,FOSFOMYCIN,FOSFOMYCIN,ALLELEX,100.0,100.0
+562.58718,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,97.35,100.0
+562.58718,amr_cira_q260ter_point_disrupt,cirA_Q260Ter,Escherichia cefiderocol resistant CirA,AMR,POINT_DISRUPT,BETA-LACTAM,CEFIDEROCOL,POINTX,99.55,100.0
+562.58718,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.42,100.0
+562.58718,amr_mcr_1_2_amr,mcr-1.2,phosphoethanolamine--lipid A transferase MCR-1.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58718,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58718,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58718,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58718,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58718,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58718,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58718,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,BLASTX,99.62,100.0
+562.58718,amr_cmla1_amr,cmlA1,chloramphenicol efflux MFS transporter CmlA1,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58718,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58718,amr_estx_3_amr,estX-3,macrolide esterase EstX-3,AMR,AMR,MACROLIDE,TYLOSIN,ALLELEX,100.0,100.0
+562.58718,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58718,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58718,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58718,amr_dfra5_amr,dfrA5,trimethoprim-resistant dihydrofolate reductase DfrA5,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58718,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58719,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58719,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58719,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.56,100.0
+562.58719,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58719,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.52,100.0
+562.58719,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.58719,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.67,100.0
+562.58719,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58719,amr_blashv_12_amr,blaSHV-12,extended-spectrum class A beta-lactamase SHV-12,AMR,AMR,BETA-LACTAM,CEFIDEROCOL/CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58719,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58719,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58719,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58719,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,BLASTX,99.75,100.0
+562.58719,amr_dfra5_amr,dfrA5,trimethoprim-resistant dihydrofolate reductase DfrA5,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58719,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58721,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58721,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.05,100.0
+562.58721,amr_soxs_a12s_point,soxS_A12S,Escherichia ampicillin/chloramphenicol/quinolone/rifampin/tetracycline resistant SoxS,AMR,POINT,MULTIDRUG,AMPICILLIN/CHLORAMPHENICOL/QUINOLONE/RIFAMPIN/TETRACYCLINE,POINTX,99.07,100.0
+562.58721,amr_gyra_d87y_point,gyrA_D87Y,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58721,amr_gyra_s83a_point,gyrA_S83A,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58721,amr_cira_w21cfster3_point_disrupt,cirA_W21CfsTer3,Escherichia cefiderocol resistant CirA,AMR,POINT_DISRUPT,BETA-LACTAM,CEFIDEROCOL,POINTX,100.0,100.0
+562.58721,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.58721,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.73,100.0
+562.58721,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58721,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58721,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58721,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58721,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58721,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,BLASTX,99.62,100.0
+562.58721,amr_cmla1_amr,cmlA1,chloramphenicol efflux MFS transporter CmlA1,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58721,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58721,amr_estx_3_amr,estX-3,macrolide esterase EstX-3,AMR,AMR,MACROLIDE,TYLOSIN,ALLELEX,100.0,100.0
+562.58721,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58721,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58721,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58721,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58721,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58721,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58723,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58723,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58723,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.58723,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58723,amr_soxs_a12s_point,soxS_A12S,Escherichia ampicillin/chloramphenicol/quinolone/rifampin/tetracycline resistant SoxS,AMR,POINT,MULTIDRUG,AMPICILLIN/CHLORAMPHENICOL/QUINOLONE/RIFAMPIN/TETRACYCLINE,POINTX,99.07,100.0
+562.58723,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.58723,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.58723,amr_mcr_1_2_amr,mcr-1.2,phosphoethanolamine--lipid A transferase MCR-1.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58723,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58723,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58723,amr_catb3_amr,catB3,type B-3 chloramphenicol O-acetyltransferase CatB3,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58723,amr_aac_6_ib4_amr,aac(6')-Ib4,aminoglycoside N-acetyltransferase AAC(6')-Ib4,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,ALLELEX,100.0,100.0
+562.58723,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,BLASTX,99.54,100.0
+562.58723,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.73,100.0
+562.58723,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,BLASTX,99.63,100.0
+562.58723,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58723,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58723,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58723,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58725,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,PARTIALX,99.64,54.16
+562.58725,amr_pare_i355t_point,parE_I355T,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.37,100.0
+562.58725,amr_parc_e84g_point,parC_E84G,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58725,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58725,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.58725,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58725,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58725,amr_cira_g352efster26_point_disrupt,cirA_G352EfsTer26,Escherichia cefiderocol resistant CirA,AMR,POINT_DISRUPT,BETA-LACTAM,CEFIDEROCOL,POINTX,99.7,100.0
+562.58725,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.2,100.0
+562.58725,amr_nfsa_h11y_point,nfsA_H11Y,Escherichia nitrofurantoin resistant NfsA,AMR,POINT,NITROFURAN,NITROFURANTOIN,POINTX,97.08,100.0
+562.58725,amr_cyaa_s352t_point,cyaA_S352T,Escherichia fosmidomycin resistant CyaA,AMR,POINT,FOSMIDOMYCIN,FOSMIDOMYCIN,POINTX,99.29,100.0
+562.58725,amr_emrd_amr,emrD,multidrug efflux MFS transporter EmrD,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.75,100.0
+562.58725,amr_uhpt_e350q_point,uhpT_E350Q,Escherichia fosfomycin resistant UhpT,AMR,POINT,FOSFOMYCIN,FOSFOMYCIN,POINTX,99.78,100.0
+562.58725,amr_mcr_1_2_amr,mcr-1.2,phosphoethanolamine--lipid A transferase MCR-1.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58725,amr_aac_3_iid_amr,aac(3)-IId,aminoglycoside N-acetyltransferase AAC(3)-IId,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58725,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58725,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58725,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58725,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58725,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58725,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58725,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.58726,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.58726,amr_parc_a56t_point,parC_A56T,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58726,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58726,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.58726,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58726,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58726,amr_blactx_m_1_amr,blaCTX-M-1,extended-spectrum class A beta-lactamase CTX-M-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58726,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.27,98.29
+562.58726,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58726,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58726,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58726,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58726,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58726,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58726,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.58726,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.58726,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.58727,amr_cira_l323ter_point_disrupt,cirA_L323Ter,Escherichia cefiderocol resistant CirA,AMR,POINT_DISRUPT,BETA-LACTAM,CEFIDEROCOL,POINTX,99.7,100.0
+562.58727,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,INTERNAL_STOP,98.14,100.0
+562.58727,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.58727,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.58727,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58727,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58727,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58727,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,BLASTX,99.75,100.0
+562.58727,amr_mcr_1_2_amr,mcr-1.2,phosphoethanolamine--lipid A transferase MCR-1.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58727,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58727,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58727,amr_qnrb19_amr,qnrB19,quinolone resistance pentapeptide repeat protein QnrB19,AMR,AMR,QUINOLONE,QUINOLONE,ALLELEX,100.0,100.0
+562.58728,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.58728,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58728,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58728,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.58728,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,98.05,100.0
+562.58728,amr_nfsa_q72ter_point_disrupt,nfsA_Q72Ter,Escherichia nitrofurantoin resistant NfsA,AMR,POINT_DISRUPT,NITROFURAN,NITROFURANTOIN,POINTX,99.17,100.0
+562.58728,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.42,100.0
+562.58728,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58728,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58728,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58728,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58728,amr_mcr_1_2_amr,mcr-1.2,phosphoethanolamine--lipid A transferase MCR-1.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58728,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58728,amr_mef_b_amr,mef(B),macrolide efflux MFS transporter Mef(B),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN,EXACTX,100.0,100.0
+562.58728,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58728,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58728,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.58732,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.71,100.0
+562.58732,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.09,99.66
+562.58732,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58732,amr_sat2_amr,sat2,streptothricin N-acetyltransferase Sat2,AMR,AMR,STREPTOTHRICIN,STREPTOTHRICIN,EXACTX,100.0,100.0
+562.58732,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58732,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.58732,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58732,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.58732,amr_tet_m_amr,tet(M),tetracycline resistance ribosomal protection protein Tet(M),AMR,AMR,TETRACYCLINE,TETRACYCLINE,BLASTX,98.12,100.0
+562.58732,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58732,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.58732,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58732,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58732,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,BLASTX,99.75,100.0
+562.58732,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.58732,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58732,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58732,amr_blatem_amr,blaTEM,TEM family class A beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,PARTIAL_CONTIG_ENDX,100.0,86.01
+562.58733,amr_nfsa_v127yfster12_point_disrupt,nfsA_V127YfsTer12,Escherichia nitrofurantoin resistant NfsA,AMR,POINT_DISRUPT,NITROFURAN,NITROFURANTOIN,POINTX,98.33,100.0
+562.58733,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.09,99.66
+562.58733,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,97.88,100.0
+562.58733,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58733,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.32,100.0
+562.58733,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58733,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58733,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58733,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58733,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58733,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,BLASTX,99.63,100.0
+562.58733,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58733,amr_mcr_4_6_amr,mcr-4.6,phosphoethanolamine--lipid A transferase MCR-4.6,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58733,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58733,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,BLASTX,99.63,100.0
+562.58733,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58734,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.58734,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58734,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.58734,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.58734,amr_parc_a56t_point,parC_A56T,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58734,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.58734,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.27,98.29
+562.58734,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58734,amr_dfra12_amr,dfrA12,trimethoprim-resistant dihydrofolate reductase DfrA12,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58734,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58734,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.58734,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.58734,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.58734,amr_blactx_m_55_amr,blaCTX-M-55,extended-spectrum class A beta-lactamase CTX-M-55,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58734,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.5,100.0
+562.58734,amr_mcr_3_2_amr,mcr-3.2,phosphoethanolamine--lipid A transferase MCR-3.2,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58734,amr_tet_m_amr,tet(M),tetracycline resistance ribosomal protection protein Tet(M),AMR,AMR,TETRACYCLINE,TETRACYCLINE,BLASTX,98.12,100.0
+562.58734,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58734,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58734,amr_sul3_amr,sul3,sulfonamide-resistant dihydropteroate synthase Sul3,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58734,amr_aac_3_iid_amr,aac(3)-IId,aminoglycoside N-acetyltransferase AAC(3)-IId,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58734,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58734,amr_bleo_amr,bleO,bleomycin binding protein,AMR,AMR,BLEOMYCIN,BLEOMYCIN,BLASTX,99.22,96.27
+562.58736,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.58736,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.58736,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.09,99.66
+562.58736,amr_mcr_1_1_amr,mcr-1.1,phosphoethanolamine--lipid A transferase MCR-1.1,AMR,AMR,COLISTIN,COLISTIN,ALLELEX,100.0,100.0
+562.58736,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.71,100.0
+562.58736,amr_blactx_m_1_amr,blaCTX-M-1,extended-spectrum class A beta-lactamase CTX-M-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.58736,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.58736,amr_mph_b_amr,mph(B),Mph(B) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.58736,amr_rdmcl_amr,rdmCL,spiramycin modification protein RdmCL,AMR,AMR,MACROLIDE,TYLOSIN,EXACTX,100.0,100.0
+562.58736,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58736,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58736,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58736,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58736,amr_aac_3_iid_amr,aac(3)-IId,aminoglycoside N-acetyltransferase AAC(3)-IId,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58736,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,BLASTX,99.75,100.0
+562.58736,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.58736,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,EXACTX,100.0,100.0
+562.58736,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.58736,amr_lnu_f_amr,lnu(F),lincosamide nucleotidyltransferase Lnu(F),AMR,AMR,LINCOSAMIDE,LINCOSAMIDE,BLASTX,98.83,94.14
+562.58736,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.58736,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.58736,amr_qnrs1_amr,qnrS1,quinolone resistance pentapeptide repeat protein QnrS1,AMR,AMR,QUINOLONE,QUINOLONE,ALLELEX,100.0,100.0
+562.58736,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.58736,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.58736,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,PARTIAL_CONTIG_ENDX,100.0,76.34
+562.65781,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65781,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65781,amr_pare_l416f_point,parE_L416F,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65781,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65781,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65781,amr_sat2_amr,sat2,streptothricin N-acetyltransferase Sat2,AMR,AMR,STREPTOTHRICIN,STREPTOTHRICIN,EXACTX,100.0,100.0
+562.65781,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.65781,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,PARTIALX,95.97,60.49
+562.65781,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65781,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65781,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.65781,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65781,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,EXACTX,100.0,100.0
+562.65781,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65781,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,BLASTX,98.5,100.0
+562.65781,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65781,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65781,amr_blatemp_g162t_point,blaTEMp_G162T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.35,78.57
+562.65781,amr_blatem_amr,blaTEM,TEM family class A beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,PARTIAL_CONTIG_ENDX,100.0,83.22
+562.65781,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.65781,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.65781,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,PARTIAL_CONTIG_ENDX,100.0,86.64
+562.65782,amr_parc_s80w_point,parC_S80W,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65782,amr_nfsa_q44ter_point,nfsA_Q44Ter,Escherichia nitrofurantoin resistant NfsA,AMR,POINT,NITROFURAN,NITROFURANTOIN,POINTX,99.17,100.0
+562.65782,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65782,amr_gyra_d87g_point,gyrA_D87G,Escherichia quinolone/triclosan resistant GyrA,AMR,POINT,QUINOLONE/TRICLOSAN,QUINOLONE/TRICLOSAN,POINTX,98.97,99.66
+562.65782,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65782,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.73,100.0
+562.65782,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65782,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65782,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.65783,amr_gyra_d87y_point,gyrA_D87Y,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.86,99.66
+562.65783,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.86,99.66
+562.65783,amr_ompf_g157rfster6_point_disrupt,ompF_G157RfsTer6,Escherichia carbapenem resistant OmpF,AMR,POINT_DISRUPT,BETA-LACTAM,CARBAPENEM,POINTX,92.56,100.0
+562.65783,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.32,100.0
+562.65783,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.73,100.0
+562.65783,amr_emrd_amr,emrD,multidrug efflux MFS transporter EmrD,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.75,100.0
+562.65783,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65783,amr_cyaa_s352t_point,cyaA_S352T,Escherichia fosmidomycin resistant CyaA,AMR,POINT,FOSMIDOMYCIN,FOSMIDOMYCIN,POINTX,99.29,100.0
+562.65783,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65783,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65783,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,EXACTX,100.0,100.0
+562.65783,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65783,amr_blatemp_g162t_point,blaTEMp_G162T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.45,92.43
+562.65783,amr_blatem_40_amr,blaTEM-40,inhibitor-resistant broad-spectrum class A beta-lactamase TEM-40,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.65783,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65783,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65783,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65783,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.65783,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.65783,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65783,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,BLASTX,100.0,91.25
+562.65783,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65783,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65784,amr_parc_e84k_point,parC_E84K,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65784,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65784,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65784,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65784,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.65784,amr_ampc_c_42t_point,ampC_C-42T,Escherichia cephalosporin resistant ampC promoter,AMR,POINT,BETA-LACTAM,CEPHALOSPORIN,POINTN,97.55,100.0
+562.65784,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.73,100.0
+562.65784,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65784,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65784,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65784,amr_blatemp_g162t_point,blaTEMp_G162T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.45,92.43
+562.65784,amr_blatem_30_amr,blaTEM-30,inhibitor-resistant broad-spectrum class A beta-lactamase TEM-30,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.65784,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.65785,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65785,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65785,amr_pare_l416f_point,parE_L416F,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65785,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65785,amr_sat2_amr,sat2,streptothricin N-acetyltransferase Sat2,AMR,AMR,STREPTOTHRICIN,STREPTOTHRICIN,EXACTX,100.0,100.0
+562.65785,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65785,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.65785,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,PARTIALX,95.97,60.49
+562.65785,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65785,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65785,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.65785,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65785,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65785,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65785,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,EXACTX,100.0,100.0
+562.65785,amr_blatemp_g162t_point,blaTEMp_G162T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.35,78.57
+562.65785,amr_blatem_amr,blaTEM,TEM family class A beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,PARTIAL_CONTIG_ENDX,100.0,83.22
+562.65785,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.65785,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.65785,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,BLASTX,100.0,91.22
+562.65786,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65786,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65786,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65786,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65786,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65786,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65786,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,EXACTX,100.0,100.0
+562.65786,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65786,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65786,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65786,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,99.73,100.0
+562.65786,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.56,100.0
+562.65786,amr_blacmy_2_amr,blaCMY-2,extended-spectrum class C beta-lactamase CMY-2,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65786,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65787,amr_ompf_n274tfster7_point_disrupt,ompF_N274TfsTer7,Escherichia carbapenem resistant OmpF,AMR,POINT_DISRUPT,BETA-LACTAM,CARBAPENEM,POINTX,100.0,100.0
+562.65787,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65787,amr_sat2_amr,sat2,streptothricin N-acetyltransferase Sat2,AMR,AMR,STREPTOTHRICIN,STREPTOTHRICIN,EXACTX,100.0,100.0
+562.65787,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65787,amr_blatemp_c32t_point,blaTEMp_C32T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.83,100.0
+562.65787,amr_blatem_30_amr,blaTEM-30,inhibitor-resistant broad-spectrum class A beta-lactamase TEM-30,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.65787,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65787,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65787,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65787,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.65787,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,PARTIALX,95.97,60.49
+562.65787,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.65787,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65788,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.65788,amr_parc_a56t_point,parC_A56T,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.65788,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.65788,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.65788,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65788,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65788,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.27,98.29
+562.65788,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.65788,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65788,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65788,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65788,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,PARTIAL_CONTIG_ENDX,100.0,53.64
+562.65788,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65788,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65788,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65788,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.65788,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65788,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65788,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.65789,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65789,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65789,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.52,100.0
+562.65789,amr_pare_l416f_point,parE_L416F,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65789,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65789,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65789,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65789,amr_aph_4_ia_amr,aph(4)-Ia,aminoglycoside O-phosphotransferase APH(4)-Ia,AMR,AMR,AMINOGLYCOSIDE,HYGROMYCIN,BLASTX,99.71,100.0
+562.65789,amr_aac_3_iva_amr,aac(3)-IVa,aminoglycoside N-acetyltransferase AAC(3)-IVa,AMR,AMR,AMINOGLYCOSIDE,APRAMYCIN/GENTAMICIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65789,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65789,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65789,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65789,amr_sat2_amr,sat2,streptothricin N-acetyltransferase Sat2,AMR,AMR,STREPTOTHRICIN,STREPTOTHRICIN,EXACTX,100.0,100.0
+562.65789,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65789,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.65789,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,93.6,99.02
+562.65789,amr_dfra12_amr,dfrA12,trimethoprim-resistant dihydrofolate reductase DfrA12,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65789,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65789,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65789,amr_dfra10_amr,dfrA10,trimethoprim-resistant dihydrofolate reductase DfrA10,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65789,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65789,amr_rdmcl_amr,rdmCL,spiramycin modification protein RdmCL,AMR,AMR,MACROLIDE,TYLOSIN,EXACTX,100.0,100.0
+562.65789,amr_mph_b_amr,mph(B),Mph(B) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65789,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65789,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,PARTIAL_CONTIG_ENDX,100.0,70.48
+562.65791,amr_parc_a56t_point,parC_A56T,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.65791,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.6,100.0
+562.65791,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,EXACTX,100.0,100.0
+562.65791,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65791,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65791,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,EXACTX,100.0,100.0
+562.65791,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.27,98.29
+562.65791,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65791,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,BLASTX,100.0,97.05
+562.65791,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65791,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65791,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,BLASTX,100.0,97.13
+562.65791,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,EXACTX,100.0,100.0
+562.65791,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65791,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65791,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.65791,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,EXACTX,100.0,100.0
+562.65796,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65796,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65796,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65796,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65796,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65796,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65796,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65796,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65796,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65796,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65796,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65796,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65796,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65796,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65796,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65796,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65796,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65796,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65799,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65799,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65799,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65799,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65799,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65799,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65799,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65799,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65799,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65799,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65799,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65799,amr_blatem_1_amr,blaTEM-1,broad-spectrum class A beta-lactamase TEM-1,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.65799,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65799,amr_lnu_f_amr,lnu(F),lincosamide nucleotidyltransferase Lnu(F),AMR,AMR,LINCOSAMIDE,LINCOSAMIDE,EXACTX,100.0,100.0
+562.65799,amr_dfra12_amr,dfrA12,trimethoprim-resistant dihydrofolate reductase DfrA12,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65799,amr_dfra1_amr,dfrA1,trimethoprim-resistant dihydrofolate reductase DfrA1,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65799,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,PARTIAL_CONTIG_ENDX,100.0,54.75
+562.65799,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,PARTIAL_CONTIG_ENDX,100.0,54.75
+562.65801,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65801,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65801,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65801,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65801,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65801,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65801,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65801,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65801,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65801,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65801,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65801,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65801,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65801,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65801,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,PARTIAL_CONTIG_ENDX,100.0,86.33
+562.65801,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65802,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65802,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65802,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65802,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65802,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65802,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65802,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65802,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,BLASTX,97.69,98.63
+562.65802,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65802,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65802,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65802,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65802,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65802,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65802,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65802,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.65802,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65802,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65802,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65803,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65803,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65803,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65803,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65803,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65803,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65803,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65803,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65803,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65803,amr_dfra12_amr,dfrA12,trimethoprim-resistant dihydrofolate reductase DfrA12,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65803,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65803,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65804,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65804,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65804,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65804,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65804,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65804,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65804,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65804,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65804,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65805,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65805,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65805,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65805,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65805,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65805,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65805,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65805,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65805,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65805,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65805,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65805,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65805,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65805,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65805,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65805,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65805,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65805,amr_cata1_amr,catA1,type A-1 chloramphenicol O-acetyltransferase,AMR,AMR,PHENICOL,CHLORAMPHENICOL,BLASTX,100.0,95.89
+562.65806,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65806,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65806,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65806,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65806,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65806,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65806,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65806,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65806,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65806,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65806,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65806,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65806,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65806,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65806,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65806,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65806,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65806,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65806,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65807,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65807,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65807,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65807,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65807,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65807,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65807,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65807,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65807,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65807,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65807,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65807,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65807,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65807,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65808,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65808,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65808,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65808,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65808,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65808,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65808,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65808,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65808,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65808,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65808,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65808,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65808,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65808,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65809,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65809,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65809,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65809,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65809,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65809,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65809,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65809,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65809,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65809,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65809,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65809,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65809,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65809,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65809,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65809,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65809,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65809,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65809,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65811,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65811,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65811,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65811,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65811,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65811,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65811,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65811,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65811,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65811,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65811,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65811,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65811,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65811,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65811,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.65811,amr_catb3_amr,catB3,type B-3 chloramphenicol O-acetyltransferase CatB3,AMR,AMR,PHENICOL,CHLORAMPHENICOL,PARTIAL_CONTIG_ENDX,100.0,70.0
+562.65811,amr_blaoxa_1_amr,blaOXA-1,oxacillin-hydrolyzing class D beta-lactamase OXA-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65811,amr_aac_6_ib_cr5_amr,aac(6')-Ib-cr5,fluoroquinolone-acetylating aminoglycoside 6'-N-acetyltransferase AAC(6')-Ib-cr5,AMR,AMR,AMINOGLYCOSIDE/QUINOLONE,AMIKACIN/KANAMYCIN/QUINOLONE/TOBRAMYCIN,ALLELEX,100.0,100.0
+562.65812,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65812,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65812,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65812,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65812,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65812,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65812,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65812,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65812,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65812,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65812,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65812,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65812,amr_aph_3_ia_amr,aph(3')-Ia,aminoglycoside O-phosphotransferase APH(3')-Ia,AMR,AMR,AMINOGLYCOSIDE,KANAMYCIN,BLASTX,99.63,100.0
+562.65812,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,EXACTX,100.0,100.0
+562.65812,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65812,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65812,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65812,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65812,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65812,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65812,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65812,amr_blaoxa_1_amr,blaOXA-1,oxacillin-hydrolyzing class D beta-lactamase OXA-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65812,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65812,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,PARTIAL_CONTIG_ENDX,100.0,89.73
+562.65812,amr_aac_6_ib_cr5_amr,aac(6')-Ib-cr5,fluoroquinolone-acetylating aminoglycoside 6'-N-acetyltransferase AAC(6')-Ib-cr5,AMR,AMR,AMINOGLYCOSIDE/QUINOLONE,AMIKACIN/KANAMYCIN/QUINOLONE/TOBRAMYCIN,ALLELEX,100.0,100.0
+562.65812,amr_catb3_amr,catB3,type B-3 chloramphenicol O-acetyltransferase CatB3,AMR,AMR,PHENICOL,CHLORAMPHENICOL,PARTIAL_CONTIG_ENDX,100.0,70.0
+562.65813,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65813,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65813,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65813,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65813,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65813,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65813,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65813,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65813,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65813,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65813,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65813,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65813,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65813,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65813,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65813,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65813,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65813,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65813,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65814,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65814,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65814,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65814,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65814,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65814,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65814,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65814,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65814,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65814,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65814,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65814,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65814,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65814,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65815,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65815,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65815,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65815,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65815,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65815,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65815,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65815,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65815,amr_dfra36_amr,dfrA36,trimethoprim-resistant dihydrofolate reductase DfrA36,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65815,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65815,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65815,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65815,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65815,amr_ant_2_ia_amr,ant(2'')-Ia,aminoglycoside nucleotidyltransferase ANT(2'')-Ia,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN/KANAMYCIN/TOBRAMYCIN,EXACTX,100.0,100.0
+562.65815,amr_aada1_amr,aadA1,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65815,amr_flor_amr,floR,chloramphenicol/florfenicol efflux MFS transporter FloR,AMR,AMR,PHENICOL,CHLORAMPHENICOL/FLORFENICOL,BLASTX,99.75,100.0
+562.65815,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65815,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65815,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65816,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65816,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65816,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65816,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65816,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,INTERNAL_STOP,99.52,100.0
+562.65816,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65816,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65816,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65816,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,BLASTX,99.67,100.0
+562.65816,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65816,amr_dfra14_amr,dfrA14,trimethoprim-resistant dihydrofolate reductase DfrA14,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65816,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65816,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65816,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65816,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65816,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.65816,amr_aac_6_ib_cr5_amr,aac(6')-Ib-cr5,fluoroquinolone-acetylating aminoglycoside 6'-N-acetyltransferase AAC(6')-Ib-cr5,AMR,AMR,AMINOGLYCOSIDE/QUINOLONE,AMIKACIN/KANAMYCIN/QUINOLONE/TOBRAMYCIN,ALLELEX,100.0,100.0
+562.65816,amr_blaoxa_1_amr,blaOXA-1,oxacillin-hydrolyzing class D beta-lactamase OXA-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65816,amr_catb3_amr,catB3,type B-3 chloramphenicol O-acetyltransferase CatB3,AMR,AMR,PHENICOL,CHLORAMPHENICOL,PARTIAL_CONTIG_ENDX,100.0,70.0
+562.65816,amr_blatemp_c32t_point,blaTEMp_C32T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.49,100.0
+562.65816,amr_blatem_30_amr,blaTEM-30,inhibitor-resistant broad-spectrum class A beta-lactamase TEM-30,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0
+562.65817,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65817,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65817,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65817,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65817,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65817,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65817,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65817,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65817,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65817,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65817,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65817,amr_aada2_amr,aadA2,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA2,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65817,amr_dfra12_amr,dfrA12,trimethoprim-resistant dihydrofolate reductase DfrA12,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65817,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65818,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65818,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65818,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65818,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65818,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65818,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65818,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,BLASTX,99.61,100.0
+562.65818,amr_tet_b_amr,tet(B),tetracycline efflux MFS transporter Tet(B),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65818,amr_sul1_amr,sul1,sulfonamide-resistant dihydropteroate synthase Sul1,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65818,amr_aada5_amr,aadA5,ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65818,amr_dfra17_amr,dfrA17,trimethoprim-resistant dihydrofolate reductase DfrA17,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65818,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65818,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65818,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65818,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.65818,amr_aac_6_ib_cr5_amr,aac(6')-Ib-cr5,fluoroquinolone-acetylating aminoglycoside 6'-N-acetyltransferase AAC(6')-Ib-cr5,AMR,AMR,AMINOGLYCOSIDE/QUINOLONE,AMIKACIN/KANAMYCIN/QUINOLONE/TOBRAMYCIN,ALLELEX,100.0,100.0
+562.65818,amr_blaoxa_1_amr,blaOXA-1,oxacillin-hydrolyzing class D beta-lactamase OXA-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65818,amr_catb3_amr,catB3,type B-3 chloramphenicol O-acetyltransferase CatB3,AMR,AMR,PHENICOL,CHLORAMPHENICOL,PARTIALX,100.0,70.0
+562.65819,amr_parc_s80i_point,parC_S80I,Escherichia quinolone resistant ParC,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.87,100.0
+562.65819,amr_pare_s458a_point,parE_S458A,Escherichia quinolone resistant ParE,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,99.68,100.0
+562.65819,amr_mdtm_amr,mdtM,multidrug efflux MFS transporter MdtM,AMR,AMR,EFFLUX,EFFLUX,BLASTX,97.8,100.0
+562.65819,amr_blaec_amr,blaEC,BlaEC family class C beta-lactamase,AMR,AMR,BETA-LACTAM,BETA-LACTAM,BLASTX,98.41,100.0
+562.65819,amr_acrf_amr,acrF,multidrug efflux RND transporter permease subunit AcrF,AMR,AMR,EFFLUX,EFFLUX,INTERNAL_STOP,99.52,100.0
+562.65819,amr_gyra_d87n_point,gyrA_D87N,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65819,amr_gyra_s83l_point,gyrA_S83L,Escherichia quinolone resistant GyrA,AMR,POINT,QUINOLONE,QUINOLONE,POINTX,98.97,99.66
+562.65819,amr_tet_a_amr,tet(A),tetracycline efflux MFS transporter Tet(A),AMR,AMR,TETRACYCLINE,TETRACYCLINE,EXACTX,100.0,100.0
+562.65819,amr_dfra14_amr,dfrA14,trimethoprim-resistant dihydrofolate reductase DfrA14,AMR,AMR,TRIMETHOPRIM,TRIMETHOPRIM,EXACTX,100.0,100.0
+562.65819,amr_mrx_a_amr,mrx(A),phosphorylated macrolide efflux MFS transporter Mrx(A),AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,EXACTX,100.0,100.0
+562.65819,amr_mph_a_amr,mph(A),Mph(A) family macrolide 2'-phosphotransferase,AMR,AMR,MACROLIDE,AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN,BLASTX,99.67,100.0
+562.65819,amr_aph_6_id_amr,aph(6)-Id,aminoglycoside O-phosphotransferase APH(6)-Id,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65819,amr_aph_3_ib_amr,aph(3'')-Ib,aminoglycoside O-phosphotransferase APH(3'')-Ib,AMR,AMR,AMINOGLYCOSIDE,STREPTOMYCIN,EXACTX,100.0,100.0
+562.65819,amr_sul2_amr,sul2,sulfonamide-resistant dihydropteroate synthase Sul2,AMR,AMR,SULFONAMIDE,SULFONAMIDE,EXACTX,100.0,100.0
+562.65819,amr_blactx_m_15_amr,blaCTX-M-15,extended-spectrum class A beta-lactamase CTX-M-15,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65819,amr_aac_3_iie_amr,aac(3)-IIe,aminoglycoside N-acetyltransferase AAC(3)-IIe,AMR,AMR,AMINOGLYCOSIDE,GENTAMICIN,EXACTX,100.0,100.0
+562.65819,amr_aac_6_ib_cr5_amr,aac(6')-Ib-cr5,fluoroquinolone-acetylating aminoglycoside 6'-N-acetyltransferase AAC(6')-Ib-cr5,AMR,AMR,AMINOGLYCOSIDE/QUINOLONE,AMIKACIN/KANAMYCIN/QUINOLONE/TOBRAMYCIN,ALLELEX,100.0,100.0
+562.65819,amr_blaoxa_1_amr,blaOXA-1,oxacillin-hydrolyzing class D beta-lactamase OXA-1,AMR,AMR,BETA-LACTAM,CEPHALOSPORIN,ALLELEX,100.0,100.0
+562.65819,amr_catb3_amr,catB3,type B-3 chloramphenicol O-acetyltransferase CatB3,AMR,AMR,PHENICOL,CHLORAMPHENICOL,PARTIAL_CONTIG_ENDX,100.0,70.0
+562.65819,amr_blatemp_c32t_point,blaTEMp_C32T,Escherichia amoxicillin-clavulanic acid/piperacillin-tazobactam/ticarcillin-clavulanic acid resistant blaTEM promoter,AMR,POINT,BETA-LACTAM,AMOXICILLIN-CLAVULANIC_ACID/PIPERACILLIN-TAZOBACTAM/TICARCILLIN-CLAVULANIC_ACID,POINTN,99.49,100.0
+562.65819,amr_blatem_30_amr,blaTEM-30,inhibitor-resistant broad-spectrum class A beta-lactamase TEM-30,AMR,AMR,BETA-LACTAM,BETA-LACTAM,ALLELEX,100.0,100.0

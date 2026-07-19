@@ -1,0 +1,4 @@
+species,antibiotic,n_test,balanced_accuracy,resistant_recall,susceptible_recall,f1,auroc,pr_auc,brier,no_call_rate,called_accuracy,reliability_bins
+Escherichia coli,ampicillin,4,0.6666666666666666,0.3333333333333333,1.0,0.5,0.3333333333333333,0.8055555555555556,0.21435965206817764,0.75,1.0,10
+Escherichia coli,ceftriaxone,3,0.0,0.0,0.0,0.0,,,0.5572031063636507,0.3333333333333333,0.0,10
+Escherichia coli,ciprofloxacin,5,0.5,0.0,1.0,0.0,1.0,1.0,0.20705065996843403,0.2,0.75,10

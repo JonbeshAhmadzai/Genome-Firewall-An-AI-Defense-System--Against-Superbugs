@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "n_test": 4,
+    "balanced_accuracy": 0.6666666666666666,
+    "resistant_recall": 0.3333333333333333,
+    "susceptible_recall": 1.0,
+    "f1": 0.5,
+    "auroc": 0.3333333333333333,
+    "pr_auc": 0.8055555555555556,
+    "brier": 0.21435965206817764,
+    "no_call_rate": 0.75,
+    "called_accuracy": 1.0,
+    "reliability_bins": 10
+  },
+  "brier": 0.21435965206817764,
+  "group_breakdown": [
+    {
+      "homology_group_id": "cgmlst_hc100:103",
+      "n": 1,
+      "called": 1,
+      "no_call_rate": 0.0,
+      "called_accuracy": 1.0
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:11498",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:2938",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    },
+    {
+      "homology_group_id": "cgmlst_hc100:3345",
+      "n": 1,
+      "called": 0,
+      "no_call_rate": 1.0,
+      "called_accuracy": NaN
+    }
+  ]
+}
