@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
+import shutil
+import sys
 import tempfile
 from typing import Any
 
@@ -32,7 +34,28 @@ BENCHMARK_PATH = ROOT / "reports" / "cohort100_test25" / "model_benchmark.csv"
 COHORT_SUMMARY_PATH = REPORT_DIR / "cohort_summary.json"
 FEATURES_PATH = ROOT / "data" / "processed" / "cohort100" / "amrfinder_features.csv"
 EVIDENCE_PATH = ROOT / "data" / "processed" / "cohort100" / "amrfinder_evidence.csv"
-AMRFINDER = os.getenv("AMRFINDER_EXECUTABLE", "/home/becode/miniconda3/envs/genome-firewall/bin/amrfinder")
+
+
+def _resolve_amrfinder() -> str:
+    """Resolve AMRFinderPlus without embedding a developer-machine path."""
+
+    configured = os.getenv("AMRFINDER_EXECUTABLE", "").strip()
+    if configured:
+        return configured
+    on_path = shutil.which("amrfinder")
+    if on_path:
+        return on_path
+    beside_python = Path(sys.executable).with_name("amrfinder")
+    if beside_python.is_file():
+        return str(beside_python)
+    return "amrfinder"
+
+
+AMRFINDER = _resolve_amrfinder()
+
+
+def _amrfinder_available() -> bool:
+    return Path(AMRFINDER).is_file() or shutil.which(AMRFINDER) is not None
 
 app = FastAPI(title="Genome Firewall API", version="0.1.0")
 app.add_middleware(
@@ -91,7 +114,13 @@ def coverage() -> FileResponse:
 
 @app.get("/api/health")
 def health() -> dict[str, Any]:
-    return {"status": "ok", "service": "genome-firewall-api", "llm_available": llm_available()}
+    return {
+        "status": "ok",
+        "service": "genome-firewall-api",
+        "llm_available": llm_available(),
+        "amrfinder_available": _amrfinder_available(),
+        "amrfinder_executable": AMRFINDER,
+    }
 
 
 @app.get("/api/config")
@@ -159,6 +188,14 @@ async def predict(
 ) -> dict[str, Any]:
     """Run FASTA QC, AMRFinderPlus, model scoring, and optional explanation."""
 
+    if not _amrfinder_available():
+        raise HTTPException(
+            status_code=503,
+            detail=(
+                "AMRFinderPlus is unavailable in this deployment. Deploy with the repository Dockerfile "
+                "or set AMRFINDER_EXECUTABLE to an installed amrfinder binary."
+            ),
+        )
     if species not in _available_species():
         raise HTTPException(status_code=400, detail=f"No trained model scope is available for {species}.")
     drugs = _available_drugs(species)
