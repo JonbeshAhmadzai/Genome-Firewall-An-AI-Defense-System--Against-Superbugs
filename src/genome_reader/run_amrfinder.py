@@ -15,7 +15,7 @@ def run_amrfinder(
     *,
     executable: str = "amrfinder",
     database: str | None = None,
-    organism: str | None = "Escherichia",
+    organism: str | None = None,
     plus: bool = True,
     threads: int = 8,
 ) -> Path:

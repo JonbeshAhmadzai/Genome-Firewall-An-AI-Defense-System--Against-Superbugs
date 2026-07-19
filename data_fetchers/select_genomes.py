@@ -17,10 +17,14 @@ from pathlib import Path
 
 import pandas as pd
 
+from targets_config import ACTIVE_TARGETS
+
 
 DEFAULT_LABELS = Path("data/raw/bvbrc/labels.csv")
 DEFAULT_OUT = Path("data/raw/bvbrc/selected")
-PASSING_TARGETS = ("ciprofloxacin", "ampicillin", "ceftriaxone")
+# The active list comes from targets_config.py. Add/enable a pair there instead
+# of editing this selector when a new validated target is ready.
+PASSING_TARGETS = tuple(dict.fromkeys(antibiotic for _, antibiotic in ACTIVE_TARGETS))
 
 
 def stable_key(genome_id: str, seed: int) -> str:

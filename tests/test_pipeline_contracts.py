@@ -27,9 +27,20 @@ from src.genome_reader.run_amrfinder import run_amrfinder
 from src.trust.calibration import apply_no_call, reliability_table
 from src.trust.evidence import classify_evidence
 from src.validation.scorecard import scorecard
+from src.pipeline.router import resolve_route
+from targets_config import ACTIVE_TARGETS, validate_config
 
 
 class PipelineContractTests(unittest.TestCase):
+    def test_config_registry_routes_bacteria_and_rejects_unimplemented_viruses(self) -> None:
+        self.assertEqual(validate_config(), [])
+        self.assertIn(("Escherichia coli", "ciprofloxacin"), ACTIVE_TARGETS)
+        bacterial = resolve_route("Escherichia coli", "ciprofloxacin")
+        self.assertTrue(bacterial.supported)
+        virus = resolve_route("Influenza A virus", "oseltamivir")
+        self.assertFalse(virus.supported)
+        self.assertIn("reader", virus.unsupported_reason())
+
     def test_small_cohort_selector_balances_every_passing_target(self) -> None:
         rows = []
         for antibiotic in ("ciprofloxacin", "ampicillin", "ceftriaxone"):

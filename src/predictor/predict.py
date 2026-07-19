@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 
 from src.trust.calibration import apply_no_call
+from targets_config import TRUST
 from .target_gate import TargetGateDecision, apply_target_gate
 
 
@@ -26,10 +27,12 @@ def predict_target(
     *,
     target_present: bool | None | Iterable[bool | None],
     target_names: tuple[str, ...] = (),
-    min_confidence: float = 0.70,
+    min_confidence: float | None = None,
 ) -> pd.DataFrame:
     """Predict from one calibrated model and apply trust + target gates."""
 
+    if min_confidence is None:
+        min_confidence = float(TRUST["min_confidence"])
     feature_columns = list(model_artifact["feature_columns"])
     missing = [column for column in feature_columns if column not in features.columns]
     if missing:

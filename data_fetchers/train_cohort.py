@@ -17,7 +17,7 @@ if str(ROOT) not in sys.path:
 from src.predictor.predict import load_model, predict_target
 from src.predictor.train import prepare_target_frame, train_target
 from src.validation.evaluate import evaluate_artifact
-from targets_config import MOLECULAR_TARGETS
+from targets_config import ACTIVE_TARGETS, MOLECULAR_TARGETS, target_spec
 
 
 def main() -> int:
@@ -43,8 +43,9 @@ def main() -> int:
     predictions: list[pd.DataFrame] = []
     manifest: dict[str, object] = {"models": {}, "skipped": {}}
 
+    active_pairs = set(ACTIVE_TARGETS)
     for species, antibiotic in labels[["species", "antibiotic"]].drop_duplicates().itertuples(index=False):
-        if antibiotic not in MOLECULAR_TARGETS:
+        if (species, antibiotic) not in active_pairs or antibiotic not in MOLECULAR_TARGETS:
             continue
         try:
             frame = prepare_target_frame(labels, features, groups, species=species, antibiotic=antibiotic)
@@ -66,7 +67,7 @@ def main() -> int:
                 artifact,
                 features,
                 target_present=target_values,
-                target_names=MOLECULAR_TARGETS[antibiotic],
+                target_names=target_spec(species, antibiotic)["molecular_targets"],
             )
             predicted.insert(1, "species", species)
             predicted.insert(2, "antibiotic", antibiotic)

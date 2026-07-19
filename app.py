@@ -13,12 +13,14 @@ from src.genome_reader.build_features import build_feature_matrix
 from src.genome_reader.fasta_qc import fasta_stats
 from src.genome_reader.run_amrfinder import run_amrfinder
 from src.predictor.predict import load_model, predict_target
-from targets_config import MOLECULAR_TARGETS
 from src.explanation.llm_explainer import explain_predictions, llm_available
+from src.pipeline.router import resolve_route
+from targets_config import enabled_species
 
 
 ROOT = Path(__file__).resolve().parent
 REPORT_DIR = ROOT / "reports" / "cohort30"
+MODEL_ROOT = ROOT / "models" / "cohort30"
 FEATURES_PATH = ROOT / "data" / "processed" / "cohort30" / "amrfinder_features.csv"
 EVIDENCE_PATH = ROOT / "data" / "processed" / "cohort30" / "amrfinder_evidence.csv"
 LABELS_PATH = ROOT / "data" / "raw" / "bvbrc" / "selected" / "selected_labels.csv"
@@ -71,6 +73,15 @@ predictions = load_csv(REPORT_DIR / "cohort_predictions.csv")
 features = load_csv(FEATURES_PATH)
 evidence = load_csv(EVIDENCE_PATH)
 labels = load_csv(LABELS_PATH)
+available_species = (
+    sorted(metrics["species"].dropna().astype(str).unique())
+    if "species" in metrics and not metrics.empty
+    else (
+        sorted(predictions["species"].dropna().astype(str).unique())
+        if "species" in predictions and not predictions.empty
+        else list(enabled_species(kind="bacterium"))
+    )
+)
 
 
 def render_decision_cards(frame: pd.DataFrame) -> None:
@@ -108,7 +119,7 @@ if predictions.empty:
 
 with st.sidebar:
     st.header("MVP scope")
-    st.write("Escherichia coli")
+    st.write(", ".join(available_species))
     st.write(f"{features['genome_id'].nunique() if 'genome_id' in features else 0} genomes")
     st.write(f"{max(len(features.columns) - 1, 0)} AMR features")
     st.write("AMRFinderPlus + calibrated logistic models")
@@ -125,6 +136,7 @@ tab_upload, tab_overview, tab_predictions, tab_evidence, tab_models = st.tabs(
 with tab_upload:
     st.subheader("Score a reconstructed genome")
     st.caption("Input must be one quality-checked reconstructed bacterial genome. Species identification and genome reconstruction are out of scope.")
+    upload_species = st.selectbox("Species configuration", available_species)
     explain_with_llm = st.checkbox(
         "Generate an optional AI explanation",
         help="The LLM receives only structured QC, prediction, and AMR evidence. It cannot change the prediction or target gate.",
@@ -136,13 +148,18 @@ with tab_upload:
             output_path = Path(temporary) / "amrfinder.tsv"
             input_path.write_bytes(upload.getvalue())
             try:
+                configured_drugs = sorted(metrics["antibiotic"].astype(str).unique())
+                first_route = resolve_route(upload_species, configured_drugs[0], model_root=MODEL_ROOT)
+                if not first_route.supported:
+                    st.error(first_route.unsupported_reason())
+                    st.stop()
                 with st.spinner("Running FASTA QC, AMRFinderPlus, and the prediction models…"):
                     qc = fasta_stats(input_path)
                     run_amrfinder(
                         input_path,
                         output_path,
                         executable="/home/becode/miniconda3/envs/genome-firewall/bin/amrfinder",
-                        organism="Escherichia",
+                        organism=first_route.amrfinder_organism,
                         plus=True,
                         threads=8,
                     )
@@ -154,9 +171,15 @@ with tab_upload:
                 qc_columns[2].metric("N50", f"{qc['n50']:,} bp")
                 qc_columns[3].metric("Ambiguous bases", f"{qc['ambiguous_fraction']:.2%}")
                 all_scored = []
-                for upload_drug in sorted(metrics["antibiotic"].unique()):
-                    model_path = ROOT / "models" / "cohort30" / f"escherichia_coli__{upload_drug}.joblib"
-                    artifact = load_cached_model(str(model_path))
+                for upload_drug in configured_drugs:
+                    route = resolve_route(upload_species, upload_drug, model_root=MODEL_ROOT)
+                    if not route.supported:
+                        st.warning(route.unsupported_reason())
+                        continue
+                    if not route.model_path.exists():
+                        st.warning(f"No trained model artifact found for {upload_species} / {upload_drug}.")
+                        continue
+                    artifact = load_cached_model(str(route.model_path))
                     for column in artifact["feature_columns"]:
                         if column not in matrix.columns:
                             matrix[column] = 0
@@ -164,7 +187,7 @@ with tab_upload:
                         artifact,
                         matrix,
                         target_present=None,
-                        target_names=MOLECULAR_TARGETS.get(upload_drug, ()),
+                        target_names=route.molecular_targets,
                     )
                     scored.insert(1, "antibiotic", upload_drug)
                     scored["evidence_category"] = (
@@ -206,7 +229,7 @@ with tab_upload:
                         st.write(
                             explain_predictions(
                                 scored_frame,
-                                species="Escherichia coli",
+                                species=upload_species,
                                 antibiotic="all supported antibiotics",
                                 qc=qc,
                                 evidence=upload_evidence,
@@ -231,7 +254,12 @@ with tab_overview:
         render_summary_card("AMR features", f"{feature_count:,}", "determinant + engineered")
     with fourth:
         render_summary_card("Evidence rows", f"{len(evidence):,}", "AMRFinderPlus findings")
-    st.markdown("**Scope:** <span class='scope-badge'>Escherichia coli</span><span class='scope-badge'>ampicillin</span><span class='scope-badge'>ceftriaxone</span><span class='scope-badge'>ciprofloxacin</span>", unsafe_allow_html=True)
+    scope_species = " ".join(f"<span class='scope-badge'>{species}</span>" for species in available_species)
+    scope_drugs = " ".join(
+        f"<span class='scope-badge'>{drug}</span>"
+        for drug in sorted(predictions["antibiotic"].astype(str).unique())
+    )
+    st.markdown(f"**Configured model scope:** {scope_species} {scope_drugs}", unsafe_allow_html=True)
     st.subheader("Held-out metrics")
     st.dataframe(metrics, use_container_width=True, hide_index=True)
     st.subheader("Decision policy")

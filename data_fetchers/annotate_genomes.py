@@ -14,6 +14,7 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from src.genome_reader.run_amrfinder import run_amrfinder
+from targets_config import enabled_species, pathogen_spec
 
 
 def genome_id(path: Path) -> str:
@@ -27,10 +28,21 @@ def main() -> int:
     parser.add_argument("--max-genomes", type=int, default=None)
     parser.add_argument("--genome-list", type=Path, default=None)
     parser.add_argument("--executable", default="amrfinder")
-    parser.add_argument("--organism", default="Escherichia")
+    parser.add_argument(
+        "--species",
+        default=enabled_species(kind="bacterium")[0],
+        help="Configured bacterial species; its AMRFinderPlus organism is selected automatically.",
+    )
+    parser.add_argument("--organism", default=None, help="Optional AMRFinderPlus override.")
     parser.add_argument("--threads", type=int, default=8)
     parser.add_argument("--plus", action=argparse.BooleanOptionalAction, default=True)
     args = parser.parse_args()
+    species_config = pathogen_spec(args.species)
+    if species_config.get("reader") != "amrfinderplus":
+        raise SystemExit(
+            f"Target annotation backend {species_config.get('reader')!r} is not implemented for {args.species}."
+        )
+    organism = args.organism or species_config.get("amrfinder_organism")
     paths = sorted(args.genome_dir.glob("*.fna.gz"))
     if args.genome_list is not None:
         requested = {
@@ -56,7 +68,7 @@ def main() -> int:
                     path,
                     output,
                     executable=args.executable,
-                    organism=args.organism,
+                    organism=organism,
                     plus=args.plus,
                     threads=args.threads,
                 )
